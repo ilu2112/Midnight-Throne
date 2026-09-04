@@ -1,0 +1,3375 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "description": "Monster stat blocks from the Combat Encounters section, merged with their D6 action tables. Each object is one monster: stat fields (TYPE, NUMBER, MIND, ...) plus D6_ACTIONS - a list of 6 entries (D6 1-6), where entries covering the same action range read \"Same as N\". Monsters without a D6 table (a single fixed action) have an ACTION field instead.",
+  "num_monsters": 59,
+  "monsters": [
+    {
+      "page": 136,
+      "name": "Abyssal Vexator",
+      "TYPE": "Demon",
+      "NUMBER": 1,
+      "MIND": 50,
+      "ENDURANCE": 40,
+      "BODY": 30,
+      "HEALTH": "8+4 per Level",
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (Chest)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 80,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D6 damage"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D8 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Chain Lash (Physical): The Abyssal Vexator extends its ethereal chains and makes a deadly attack against a target. On a hit, the target takes D6 Piercing damage and must succeed on an Athletics check or be knocked Prone."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Tormenting Bind: The Abyssal Vexator targets a creature it can see and attempts to wrap its chains around the creature's body. The target must succeed on a Dodge check or be Restrained by the chains. At the start of the target's turn, it takes D4 Necrotic damage as the chains constrict and torment it. The Abyssal Vexator doesn't act against a character while they are affected by this Action; it will either change target or simply wait for the character to die or free themselves."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Abyssal Wither (Magical): The Abyssal Vexator focuses its power on a target, who must succeed on an Endurance check or have its vitality drained away. On a failed check, the target takes D10 Necrotic damage and its maximum Health is reduced by the amount of damage taken. This reduction lasts until the target finishes a Camp Rest."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Abyssal Vexators are demons specialized in inflicting excruciating pain upon their victims. Their monstrous form is difficult to discern, as they are essentially just ethereal shadows shrouded in an aura of oppressive darkness. Abyssal Vexators wield an array of ethereal chains that writhe and lash like serpents, each link infused with a cursed enchantment designed to bind and torment their prey. In combat, an Abyssal Vexator unleashes a terrifying chain attack, ensnaring its victims with its spectral links, pulling them closer to experience the full brunt of its maleficent power. The chains wrap tightly around their bodies, inflicting an agonizing and unending torment that leaves the unfortunate souls broken and withered."
+    },
+    {
+      "page": 137,
+      "name": "Amalgam",
+      "TYPE": "Undead",
+      "NUMBER": 1,
+      "MIND": 20,
+      "ENDURANCE": 60,
+      "BODY": 60,
+      "HEALTH": 15,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "2 (Chest)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+1 Armor (all Hit Locations except Chest)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D8 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Gruesome Slam (Physical): The Amalgam swings one of its massive limbs at a target in a brutal, sweeping motion, dealing D6 Bludgeoning damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Necrotic Burst: The Amalgam's decaying flesh pulses with necrotic energy as it releases a burst of dark power. All creatures in the room must succeed on an Endurance check or take D6 Necrotic damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Dismembering Strike (Physical): The Amalgam focuses its assault on a single target, attempting to tear them apart. It makes a melee attack against the target, dealing D6 Slashing damage. If the attack hits, the target must succeed on an Athletics check or be Restrained, as the Amalgam's gnarled appendages ensnare them. The target takes 1 Slashing damage at the start of their turns while ensnared. The Amalgam doesn't act against a character while they are affected by this Action; it will either change target or simply wait for the character to die or free themselves."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Amalgams are grotesque and nightmarish undead constructs, a horrific fusion of multiple corpses and dark magic. These abominations are easy to recognize due to their body swollen and bloated from the sickening union of flesh and decay. Pieces of dismembered limbs and mismatched body parts jut out at odd angles, held together by taut, necrotic sinews that seem on the verge of tearing apart at any moment. The Amalgam's lumbering movements are slow but unyielding, causing the very ground to tremble beneath its immense weight."
+    },
+    {
+      "page": 138,
+      "name": "Armor Construct",
+      "TYPE": "Construct",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 80,
+      "BODY": 60,
+      "HEALTH": 15,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (Chest, Head)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Penetrating (1)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D8 damage",
+            "+10 Combat Skill",
+            "+1 Armor (all Hit Locations)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D10 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Crushing Fist (Physical): The Armor Construct swings one of its massive fists at a target with incredible force, dealing D6 Bludgeoning damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Arcane Shield: The Armor Construct raises its arms, summoning a shimmering arcane shield that provides it with a boost to Health equal to half its maximum Health. This additional Health can go over the Armor Construct's usual max, but lasts until the start of the its next turn."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Rune Strike (Physical): The Armor Construct channels its power into a devastating melee attack. It makes a melee attack against a target, dealing D8 Slashing damage. If the attack hits, the target must succeed on an Endurance check or be Paralyzed for 1 round."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "The Vaelorian often bound spirits to suits of armor to achieve the perfect sentinel, patrolling and seeking out those who dare trespass upon its creator's domain. Armor Constructs are always an imposing sight, composed of heavy metal plates interlocked to form the appearance of an armored humanoid figure. Its surface is adorned with intricate runes and sigils, pulsing with an ominous glow. With every step, the ground trembles beneath its weight, and its mighty gauntleted fists can pulverize solid stone with ease."
+    },
+    {
+      "page": 139,
+      "name": "Astral Beast",
+      "TYPE": "Animal, Astral",
+      "NUMBER": 1,
+      "MIND": 50,
+      "ENDURANCE": 40,
+      "BODY": 50,
+      "HEALTH": 12,
+      "HIT LOCATION": "Quadruped ( Head)",
+      "ARMOR": "2 (Forequarters)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 70,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+8 Health",
+            "+D8 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+5 Health",
+            "+D10 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Celestial Surge (Magical): The Astral Beast summons a surge of celestial energy and releases it in a directed blast, dealing D6 Arcane damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Nebula Shield: The Astral Beast envelops itself in a shimmering nebula, creating a protective barrier. Until the start of its next turn, the Astral Beast becomes Resistant to all damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Astral Tempest (Magical): The Astral Beast channels its cosmic power and unleashes a storm of astral energy upon its surroundings. All creatures that failed the Spellward check take D8 Arcane damage, or half damage if they succeeded."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Astral Beasts are colossal creatures that shimmer with iridescent hues, stardust and swirling nebulae visible across its skin. Its very presence distorts reality, warping the astral fabric and causing small tears into it. When provoked, the Astral Beast wields unfathomable celestial powers, summoning cosmic storms and unleashing torrents of astral energy upon those who dare to challenge it."
+    },
+    {
+      "page": 140,
+      "name": "Bladewings",
+      "TYPE": "Animal",
+      "NUMBER": "D4+1",
+      "MIND": 70,
+      "ENDURANCE": 30,
+      "BODY": 10,
+      "HEALTH": 5,
+      "HIT LOCATION": "Winged Biped ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 20,
+      "SPOILS": "Resources table",
+      "TRAIT": "Swift",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+1 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Scythe Slash (Physical): The Bladewing swoops down at a target, using its razor-sharp wings to slash. It makes a melee attack, dealing D6 Slashing damage on a hit. If the target is wearing no Armor, they are now Bleeding (1)."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Shadow Dive: The Bladewing disappears into the shadows, increasing its Combat Skill for any defensive check by 10 until its next turn."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Shrieking Assault: The Bladewing screeches loudly, unsettling and distracting all creatures. Affected creatures must succeed on a Resolve check or have Disadvantage on their next attack roll. Additionally, the Bladewing can then make a melee attack as a Free Action against one of the affected creatures, dealing D6 Slashing damage on a hit."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Bladewings are small, bat-like creatures with wings resembling sharp, scythe-like blades that glint with a metallic shine. Each Bladewing is covered in sleek, obsidian-black fur, allowing them to blend seamlessly into the shadows as they take flight with uncanny grace and speed. These nightmarish creatures unleash a haunting screech as they descend upon their prey, their razor-sharp wings capable of slicing through flesh with ease."
+    },
+    {
+      "page": 141,
+      "name": "Blood Stalker",
+      "TYPE": "Humanoid",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 50,
+      "BODY": 40,
+      "HEALTH": "5+2 per Level",
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "2 (Chest)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Penetrating (1)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D8 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Fang Strike (Physical): The Blood Stalker lunges at a target, attempting to sink its fangs into their flesh. It makes a melee attack, dealing D6 Piercing damage on a hit. If the attack hits, the target must make an Endurance check or take additional D4 Necrotic damage as the Blood Stalker's bite weakens their vitality."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Blood Frenzy: The next time the Blood Stalker reduces a creature to 0 Health or 0 Toughness with a melee attack, it can use a Reaction to make another melee attack against a different target within reach, gaining Advantage on the attack check."
+        },
+        {
+          "D6": 4,
+          "Action": "Vampiric Drain (Physical): The Blood Stalker targets a creature, biting into it and dealing D6 Piercing damage. The Blood Stalker gains a boost to Health equal to half the damage dealt. This gain resets after 1 round."
+        },
+        {
+          "D6": 5,
+          "Action": "Same as 4"
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 4"
+        }
+      ],
+      "DESCRIPTION": "Blood Stalkers are terrifying predators that prey upon any living creature to sustain their insatiable thirst for blood. Its pale, alabaster skin is accentuated by crimson eyes that glint with a predatory hunger, almost distracting from the sight of its terrible fangs. The Blood Stalker moves with eerie grace and preternatural speed, allowing it to unleash volleys of furious attacks, gaining power from the blood spilled and even healing itself."
+    },
+    {
+      "page": 142,
+      "name": "Blightfang Rats",
+      "TYPE": "Animal, Undead",
+      "NUMBER": 3,
+      "MIND": 60,
+      "ENDURANCE": 30,
+      "BODY": 40,
+      "HEALTH": 6,
+      "HIT LOCATION": "Quadruped ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 20,
+      "SPOILS": "Resources table",
+      "TRAIT": "Pack",
+      "LEVEL ADAPTATION": [],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Bite (Physical): The Blightfang Rat bites you with its sharp, needle-like teeth, dealing D6 Piercing damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Scratch (Physical): The Blightfang Rat scratches you, dealing D4 Slashing damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 6,
+          "Action": "Rally: The Blightfang Rat screeches loudly, riling up all Blightfang Rats in the room and increasing their Combat Skill by +10 until the next round."
+        }
+      ],
+      "DESCRIPTION": "These abominable rodents are grotesque amalgamations of rotting flesh and shadows, their sinewy bodies covered in mangy, mottled fur. Blightfang Rats can really spread havoc quickly if left unchecked, and unfortunately for the citizens of Veldonia, their numbers keep increasing right under their feet, ready to unleash an apocalyptic wave of suffering upon the world."
+    },
+    {
+      "page": 143,
+      "name": "Bone Golem",
+      "TYPE": "Construct, Undead",
+      "NUMBER": 1,
+      "MIND": 30,
+      "ENDURANCE": 60,
+      "BODY": 50,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "3 (Chest)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Penetrating (1)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+8 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D8 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Crushing Slam (Physical): The Bone Golem raises one of its massive arms and slams it down onto a target, dealing D6 Bludgeoning damage on a hit. The target must succeed on an Athletics check or be knocked Prone."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Necrotic Grasp (Magical): The Bone Golem reaches out with its skeletal hand, attempting to drain the life force of a target. It deals D6 Necrotic damage on a hit, regaining Health equal to half the damage dealt."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Rending Strike (Physical): The Bone Golem strikes at a target with its jagged bone edges, attempting to tear through armor and flesh. It makes a melee attack, dealing D6 Slashing damage on a hit. If the attack hits a Location protected by Armor, an immediate Armor Integrity check must be made due to the Bone Golem's rending attack."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Towering above most other creatures, the Bone Golem is a nightmarish fusion of skeletal fragments, held together by dark magic and ancient runes etched into its calcified surface. Its empty eye sockets glow with an eerie, malevolent light, and its articulated body moves with an unnatural fluidity, wielding immense strength and resilience and shrugging off all but the most potent of attacks. It lumbers forward with a relentless purpose, leaving a trail of desolation in its wake, and its thunderous footsteps resonate through the halls of Ker Nethalas."
+    },
+    {
+      "page": 144,
+      "name": "Bone Spiders",
+      "TYPE": "Construct, Undead",
+      "NUMBER": 3,
+      "MIND": 30,
+      "ENDURANCE": 40,
+      "BODY": 40,
+      "HEALTH": 6,
+      "HIT LOCATION": "Arachnid ( Cephalothorax)",
+      "ARMOR": "2 (Abdomen)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Resources table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D8 damage",
+            "+1 Armor (all Hit Locations except Abdomen)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Venomous Bite (Physical): The Bone Spider lunges at a target, attempting to sink its razor-sharp fangs into their flesh to deal D4 Piercing damage on a hit. If the attack hits, the target must succeed on an Endurance check or be Paralyzed for 1 round."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Skittering Assault (Physical): The Bone Spider swiftly moves across the battlefield, scaling walls and terrain with unnatural agility and attacking, dealing D6 Slashing damage. If the attack hits, the target must succeed on a Dodge check or be knocked Prone."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Web Bind: The Bone Spider launches strands of sticky webbing at a target, attempting to restrain them. The target must succeed on a Dodge check or be Restrained by the webbing."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "The skeletal form of Bone Spiders is an amalgamation of bones from various creatures, woven together with dark magic into a twisted, eight-legged horror. The Bone Spider's razor-sharp fangs, fashioned from the remnants of long-dead predators, drip with venom that can induce both paralysis and excruciating pain. These abominations move with uncanny silence, able to scale walls and ceilings with unnatural agility, making them elusive and relentless predators."
+    },
+    {
+      "page": 145,
+      "name": "Cavebound Leech",
+      "TYPE": "Animal",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 60,
+      "BODY": 40,
+      "HEALTH": 10,
+      "HIT LOCATION": "Serpentoid ( Head)",
+      "ARMOR": "1 (All Locations)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Resources table",
+      "TRAIT": "Penetrating (1), Alert",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Constricting Grasp (Physical): The Cavebound Leech lunges at a target, attempting to wrap its slimy body around them and constrict. It makes a melee attack, dealing D6 Bludgeoning damage on a hit. If the attack hits, the target is Restrained. The target takes 1 Bludgeoning damage at the start of each of their turns while Restrained. The Cavebound Leech doesn't act against a character while they are affected by this Action; instead, it uses its Engulfing Devour Action."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Razor Bite (Physical): The Cavebound Leech strikes with its razor-sharp teeth, attempting to pierce the target's flesh. It makes a melee attack, dealing D6 Piercing damage on a hit. This attack ignores all Armor."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Engulfing Devour (Physical): The Cavebound Leech targets a creature it has Restrained with its Constricting Grasp ability. It opens its maw wide and attempts to engulf the creature, dealing 2D8 Acid damage. If no creature was affected by Constricting Grasp, the Cavebound Leech deals D6 Piercing damage, healing for half of the damage done."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "The slimy, segmented body of a Cavebound Leech stretches for several meters, with a glistening, mucus-covered exoskeleton that allows it to move effortlessly through the underground passages. Its elongated, razor-sharp teeth line its maw, capable of piercing through even the sturdiest of armors. The Cavebound Leech lies in wait for its prey and ready to strike with lightning speed to devour them with its terrible jaws."
+    },
+    {
+      "page": 146,
+      "name": "Corpse Ants",
+      "TYPE": "Animal",
+      "NUMBER": 3,
+      "MIND": 40,
+      "ENDURANCE": 60,
+      "BODY": 40,
+      "HEALTH": 8,
+      "HIT LOCATION": "Insectoid ( Head)",
+      "ARMOR": "1 (All Locations)",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Resources table",
+      "TRAIT": "Penetrating (1), Pack",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Chitinous Bite (Physical): The Corpse Ant lunges at a target, its chitinous jaws snapping shut with incredible force, dealing D6 Piercing damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Acidic Spray: The Corpse Ant releases a spray of corrosive acid, affecting all characters in the room. Characters must make a Dodge check or receive D6 Acid damage. Additionally, a creature that fails the check must immediately make an Armor Integrity check, as the acid eats away at their armor."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Putrid Eruption: The Corpse Ant suddenly bulges in a grotesque way, exploding in a burst of foul-smelling gas and necrotic energy. All creatures within the room must succeed on an Endurance check or take D8 Necrotic damage. On a successful check, they take half damage. The Corpse Ant doesn't survive this Action."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "These monstrous creatures are several times the size of a regular ant, their chitinous exoskeleton a deep black. Corpse Ants move with unnatural swiftness and coordination, in a ceaseless search for fresh corpses to consume. Their large, serrated jaws are capable of tearing through steel armor, a fact that more than one poor lost soul has experienced first hand."
+    },
+    {
+      "page": 147,
+      "name": "Death Sage",
+      "TYPE": "Undead",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 40,
+      "BODY": 20,
+      "HEALTH": 10,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Resources table",
+      "TRAIT": "Horrifying",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D8 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Necrotic Bolt (Magical): The Death Sage casts a bolt of necrotic energy at a target, dealing D6 Necrotic damage on a hit. The target must also succeed on an Endurance check or have their maximum Toughness reduced by 1 until they finish a rest."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Crippling Curse (Magical): The Death Sage points a bony finger at a target, unleashing a curse that weakens their movements. The target must succeed on an Endurance check or gain Disadvantage on all Weapon Skills and Dodge checks for D4 rounds."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Drain Life (Magical): The Death Sage targets a creature and attempts to drain its life force. The target must make an Endurance check or take D6 Necrotic damage and the Death Sage regains Health equal to half the damage dealt."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Death Sages were among the most revered members of Vaelorian society, magi-priests that worshiped Kalatha, the Vaelorian Goddess of death. Having managed to become one with death itself, Death Sages wield necromantic powers that defy the laws of mortality. Their physical form is withered and skeletal, swathed in tattered robes that once bore grandeur and opulence. These undead mages wield dark spells with ease, unleashing devastating curses and necrotic energies, and draining the life force from the living to sustain their unnatural existence."
+    },
+    {
+      "page": 148,
+      "name": "Desiccated Cryptguards",
+      "TYPE": "Undead",
+      "NUMBER": 2,
+      "MIND": 40,
+      "ENDURANCE": 60,
+      "BODY": 20,
+      "HEALTH": 10,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "2 (Chest)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill",
+            "+1 Armor (all Hit Locations except Chest)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D8 damage"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Rusting Slash (Physical): The Desiccated Cryptguard swings its corroded sword at a target, aiming to weaken their armor. It makes a melee attack, dealing D6 Slashing damage on a hit. If the attack hits, the target must immediately make an Armor Integrity check, as their armor begins to rust and deteriorate."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Relentless Assault (Physical): The Desiccated Cryptguard moves forward with a determined stride, attempting to overwhelm a target with multiple strikes. It makes two melee attacks against the same target, dealing D4+1 Slashing damage for each hit."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Tomb Guardian's Wrath (Physical): The Desiccated Cryptguard channels its guardian spirit and delivers a powerful strike imbued with unholy energy. It makes a melee attack, dealing D6 Slashing damage. If the attack hits, the target must succeed on a Resolve check or become Frightened (20)."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Desiccated Cryptguards are skeletal sentinels tasked with guarding the sacred resting place of ancient Vaelorian nobility. Their skeletal forms are draped in tattered remnants of armor, once a symbol of valor and protection, now corroded and withered by the passage of time. When intruders dare to trespass, the Desiccated Cryptguards rise from their slumber and unleash relentless attacks upon those who seek to desecrate the crypt's sanctity."
+    },
+    {
+      "page": 149,
+      "name": "Dwerax",
+      "TYPE": "Demon",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 60,
+      "BODY": 60,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "2 (Chest)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening, Alert",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D8 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Claw Grasp (Physical): The Dwerax lunges at a target, attempting to ensnare them in its wickedly clawed hands. It makes a melee attack, dealing D6 Slashing damage on a hit. If the attack hits, the target is Restrained by the Dwerax. The target takes 1 Slashing damage at the start of each of their turns while grappled. The Dwerax doesn't act against a character while they are affected by this Action; it will either change target or simply wait for the character to die or free themselves."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Abyssal Bite (Physical): The Dwerax lunges at a target with its gaping maw, attempting to tear through their defenses. It makes a melee attack, dealing D6 Piercing damage on a hit that ignores all Armor."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Tremor Strike: The Dwerax strikes the ground with its massive clawed hands, creating a shockwave that radiates outward. All creatures within the room must succeed on an Acrobatics check or be knocked Prone and take D4 Bludgeoning damage."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Dwerax are terrifying amalgamations of grotesque features, possessing unnaturally long arms that extend down to their misshapen knees that end in wickedly clawed hands. Its pale, pallid skin seems to absorb what little light dares to venture into its subterranean domain, giving the Dwerax a hauntingly spectral appearance. Its face is devoid of eyes, replaced by an enormous, gaping maw filled with a nightmarish array of razor-sharp teeth, forever bared in a fearsome and insatiable hunger. This mouth serves as both sensory organ and deadly weapon, honed to detect the slightest vibrations and rend apart its victims with horrifying efficiency."
+    },
+    {
+      "page": 150,
+      "name": "Fangvine",
+      "TYPE": "Plant",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 30,
+      "HEALTH": "8+2 per Level",
+      "HIT LOCATION": "Serpentoid ( Head)",
+      "ARMOR": "2 (Body)",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Resources table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Ensnaring Grasp (Physical): The Fangvine's tendrils lash out at a target within reach, attempting to ensnare them. It makes a melee attack, dealing D6 Bludgeoning damage on a hit. If the attack hits, the target is Restrained by the Fangvine."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Thorned Assault (Physical): The Fangvine rapidly sprouts rows of obsidian-like thorns from the ground around a target. The thorns strike at the target, dealing D6 Piercing damage on a hit. If the attack hits, the target must succeed on an Endurance check or be Paralyzed for 1 round."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Savage Grasp: The Fangvine spreads its tendrils underground, only to have them burst with brutal ferocity against a target. The target must pass a Dodge check or become Restrained. While Restrained, the target suffers 2 Piercing damage. The Fangvine doesn't act against a character while they are affected by this Action; it will either change target or simply wait for the character to die or free themselves."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "A Fangvine possesses thick, sinewy roots resembling gnarled tendrils that slither through the soil, seeking out vibrations and scent trails of potential prey. When a living creature unknowingly steps upon the Fangvine's subterranean lair, its tendrils lash out with incredible speed, ensnaring the unfortunate victim with crushing force. Rows of razor-sharp teeth, like thorns of darkened obsidian, emerge from the earth, piercing and tearing into its prey, injecting a paralyzing venom that leaves them immobilized, as the Fangvine feeds."
+    },
+    {
+      "page": 151,
+      "name": "Flayed Knight",
+      "TYPE": "Undead",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 60,
+      "BODY": 50,
+      "HEALTH": 16,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (all Hit Locations)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+1 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Spectral Strike (Physical): The Flayed Knight swings its spectral blade at a target, its ethereal form allowing the weapon to pass through armor and resistance. It makes a melee attack, dealing D4 Slashing damage on a hit that ignores all Armor."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Haunting Grasp (Magical): The Flayed Knight extends its ghostly hand toward a target, attempting to drain their life force. It deals D6 Necrotic damage on a hit and regains Health equal to half the damage dealt."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Vengeful Cleave (Physical): The Flayed Knight swings its blade in a wide arc, attempting to cleave through multiple targets within its reach. It makes a melee attack against two creatures, dealing D6 Slashing damage to each target. If either attack hits and reduces a target to 0 Toughness, the Flayed Knight regains Health equal to half the damage dealt."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Flayed Knights are a horrifying apparition of a once-glorious knight whose body has been grotesquely flayed and stripped of its flesh. Its skeletal form is adorned with the tattered remnants of once-regal armor, now stained with the memories of its violent demise. Brandishing its rusted and blood-stained blade, the Flayed Knight unleashes unholy fury upon any who dare to cross its path. Its spectral weapon cleaves through flesh and bone with ease, leaving behind a trail of death."
+    },
+    {
+      "page": 152,
+      "name": "Flesh Eater",
+      "TYPE": "Humanoid, Undead",
+      "NUMBER": 1,
+      "MIND": 30,
+      "ENDURANCE": 30,
+      "BODY": 65,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 10,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening",
+      "LEVEL ADAPTATION": [],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Rancid Claw (Physical): The Flesh Eater slashes at a target with its grotesque claws, dealing D6 Slashing damage. The target must succeed on an Endurance check or be afflicted with a festering wound. At the start of each of the target's turns, they take an additional 1 Necrotic damage until they recover any amount of Wounds or the combat is over."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Grasp: The Flesh Eater lunges at a target, attempting to engulf it in its rotting embrace. The target must make an Athletics opposed check against the Flesh Eater's Body. On a failure, they are Restrained by the Flesh Eater, taking 1 Bludgeoning damage that ignores Armor at the start of their turn until they free themselves. The Flesh Eater doesn't act against a character while they are affected by this Action; it will either change target or simply wait for the character to die or free themselves."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Slam (Physical): The Flesh Eater raises itself on its hind limbs and then slams down with tremendous force onto a target, dealing D8 Bludgeoning damage."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "These monstrous creatures possess a rotting, bloated form, with pallid skin stretched taut over protruding bones and oozing sores. Their jagged teeth are perpetually exposed in a wicked grin, and they exude a putrid stench that betrays their unholy nature. Flesh Eaters move with unsettling swiftness, able to traverse the darkest recesses with uncanny stealth, preying upon unsuspecting victims who dare venture into its domain. Their insidious claws tear through flesh and bone, savoring the agony of its quarry as it devours their essence, perpetuating their cursed existence."
+    },
+    {
+      "page": 153,
+      "name": "Fleshmelt Slime",
+      "TYPE": "Elemental, Undead",
+      "NUMBER": 1,
+      "MIND": 20,
+      "ENDURANCE": 60,
+      "BODY": 40,
+      "HEALTH": 12,
+      "HIT LOCATION": "–",
+      "ARMOR": "–",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 40,
+      "SPOILS": "Resources table",
+      "TRAIT": "Elemental Affinity: Acid",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Corrosive Touch (Physical): The Fleshmelt Slime extends a pseudopod towards a target, attempting to touch and dissolve their flesh. It makes a melee attack, dealing D6 Acid damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Putrid Eruption: The Fleshmelt Slime violently erupts, releasing a burst of noxious fumes and corrosive fluids around it. Creatures caught in the area must succeed on an Endurance check or take 2D4 Acid damage and have their weapon Skills reduced by -5 until the end of combat."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Devour Essence (Magical): The Fleshmelt Slime extends a tendril towards a creature, attempting to drain their life force. The target must succeed on an Endurance check or take 2D4 Necrotic damage and have their Toughness maximum reduced by the same amount until they finish a rest. The Fleshmelt Slime regains Health equal to the damage dealt."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "This abominable ooze is a repulsive amalgamation of melted and rotten flesh, its form constantly shifting and quivering. Its surface appears as a ghastly palette of decomposing bodies, their tortured features forever frozen in twisted agony. As it oozes and stretches, it leaves a trail of putrid ichor and dissolving bone in its wake, leaving the very ground it touches barren and tainted. The Fleshmelt Slime feeds on the life essence of its victims, its acidic touch melting flesh and reducing bones to a grotesque pulp."
+    },
+    {
+      "page": 154,
+      "name": "Giant Spider",
+      "TYPE": "Animal",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 40,
+      "BODY": 40,
+      "HEALTH": 10,
+      "HIT LOCATION": "Arachnid ( Cephalothorax)",
+      "ARMOR": "1 (All Locations)",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Resources table",
+      "TRAIT": "Penetrating (1), Alert",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Venomous Bite (Physical): The Giant Spider lunges at a target, attempting to sink its serrated fangs into their flesh. It makes a melee attack, dealing D4 Piercing damage on a hit. If the attack hits, the target must succeed on an Endurance check or be Poisoned (1)."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Web Snare: The Giant Spider shoots sticky webbing at a target, attempting to restrain them. The target must succeed on a Dodge check or be Restrained by the webbing."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Terrifying Gaze (Magical): The Giant Spider fixes its gaze on a target, who must succeed on a Resolve check or be Frightened (20)."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "This arachnid monstrosity weaves intricate webs that easily ensnare any creature unfortunate enough to walk into them. Its hairy, jet-black body is marked with crimson patterns, signaling the venomous threat it poses. Eight beady eyes, each glinting with predatory intelligence, survey its surroundings with an uncanny awareness, while its serrated fangs drip with a potent neurotoxin."
+    },
+    {
+      "page": 155,
+      "name": "Hive Larvae",
+      "TYPE": "Animal",
+      "NUMBER": 4,
+      "MIND": 20,
+      "ENDURANCE": 20,
+      "BODY": 10,
+      "HEALTH": 2,
+      "HIT LOCATION": "–",
+      "ARMOR": "–",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Resources table",
+      "TRAIT": "Penetrating (1)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+20 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Swarm Bite (Physical): The Hive Larva surges forward, attempting to bite a target within reach. It makes a melee attack, dealing D4 Piercing damage on a hit. If the attack hits, the target must succeed on an Endurance check or take ongoing 1 Acid damage at the start of each of their turns until they receive magical healing or the combat ends. This effect is not cumulative."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Luminescent Distraction (Magical): The Hive Larva emits a blinding burst of luminescence, attempting to disorient nearby creatures. All creatures within the room must succeed on an Endurance check or be Blinded until the end of their next turn as their vision is overwhelmed by the intense light."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Consume Essence (Magical): The Hive Larva extend their proboscises toward a target, attempting to drain its life force. The target must succeed on an Endurance check or take D6 Necrotic damage and have their Toughness maximum reduced by the same amount until they finish a rest. The Hive Larva heals up to half the damage dealt."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Hive Larvae are repugnant grub-like monsters, loathsome creatures with a collective hunger for all that exists. These creatures, each about the size of a cat, are covered in slimy, iridescent carapaces, pulsating with an unsettling luminescence that draws the eyes towards them. Emerging from the hidden depths of their hive, they always appear in groups, moving as one and exhibiting a hive-mind intelligence. With relentless determination, they voraciously consume everything in their path, from the roots of ancient trees to unsuspecting creatures crossing their territory."
+    },
+    {
+      "page": 156,
+      "name": "Hive Warrior",
+      "TYPE": "Humanoid, Animal",
+      "NUMBER": 2,
+      "MIND": 30,
+      "ENDURANCE": 30,
+      "BODY": 45,
+      "HEALTH": 8,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+6 Health",
+            "+D6 damage",
+            "+20 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Rending Strike (Physical): The Hive Warrior lunges at a target, slashing with its elongated claws. It makes a melee attack, dealing D6 Slashing damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Venomous Spines: The Hive Warrior hurls a volley of venomous spines at a target, forcing them to make a Dodge check to avoid suffering 1 Piercing damage. Additionally, if the target is hit, they must succeed on an Endurance check or be Poisoned (2)."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Unyielding Charge (Physical): The Hive Warrior charges at a target, closing the distance with incredible speed. It makes a melee attack, dealing D6 Bludgeoning damage and knocking the target Prone."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "After Hive Larvae have had their fill and devoured everything in their path, they nest within the carcasses of their victims, eventually emerging as Hive Warriors, monstrosities with elongated limbs, sleek exoskeletons, and an almost construct-like appearance. Possessing heightened senses, ferocious strength, and deadly agility, they guard their subterranean hive and protect their queen, a colossal and alien entity."
+    },
+    {
+      "page": 157,
+      "name": "Hollow Shambler",
+      "TYPE": "Undead",
+      "NUMBER": 1,
+      "MIND": 30,
+      "ENDURANCE": 30,
+      "BODY": 45,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Chest)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Soul Devour: The Hollow Shambler lunges forward, attempting to engulf a creature. The targeted creature must succeed on an Athletics check or be pulled into the Hollow Shambler's chest cavity. The creature takes 2D4 Piercing damage immediately, and 1 Necrotic damage at the start of each of its turns while inside the Shambler, until it escapes. A creature can escape by using its action to make a successful Athletics check or by inflicting a total of 3 damage to the Hollow Shambler. The Hollow Shambler doesn't act against a character while they are affected by this Action; it will either change target or simply wait for the character to die or free themselves."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Distorted Lurch: The Hollow Shambler's disjointed limbs allow it to move in an unpredictable and unsettling manner, increasing its Combat Skill by 5 for D4 rounds."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Tormented Wail: The Hollow Shambler releases a haunting wail that chills the souls of those who hear it. Every creature must make a Resolve check. On a failed check, the creature is Frightened (20)."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "These creatures of decay are the clear result of Vaelorian experimentation and their never-ending pursuit of creating new forms of undead. Hollow Shamblers lack a head, leaving their neck a hollow void; instead they possess an enormous maw that gapes open in their chest cavity, a grotesque chasm lined with rows of jagged, razor-sharp teeth. Their body is a mass of tattered, rotting flesh, capable only of moving with a disjointed gait, their limbs contorting unnaturally, as if puppeteered by an unseen malevolence. The creatures' purpose is to consume the souls of the living, drawing them into their chest maw to join the restless spirits trapped within its tormented form."
+    },
+    {
+      "page": 158,
+      "name": "Living Moss",
+      "TYPE": "Undead, Plant",
+      "NUMBER": 1,
+      "MIND": 30,
+      "ENDURANCE": 60,
+      "BODY": 45,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Resources table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+20 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Necrotic Touch (Physical): The Living Moss reaches out with a necrotic-infused tendril, attempting to strike a target and dealing D6 Necrotic damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Ensnaring Vines: The Living Moss summons writhing thorny vines from the ground to ensnare a target. The target must succeed on a Dodge check or be Restrained by the vines. If the target is already Restrained, they suffer D6 Bludgeoning damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "End Life (Magical): The Living Moss extends a cluster of tendrils toward a creature forcing it to make an Endurance check or take 2 Necrotic damage that targets their Health directly, ignoring any remaining Toughness."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "A Living Moss’ grotesque form is a twisted amalgamation of decaying vegetation and rotting flesh, melded together in a repulsive union. As the Living Moss moves, the ground beneath its feet withers and dies, leaving behind a trail of death and desolation. When threatened, the Living Moss summons writhing, thorny vines to ensnare its enemies, draining the life force from them and adding their remains to its own decaying form."
+    },
+    {
+      "page": 159,
+      "name": "Necropede",
+      "TYPE": "Animal, Undead",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 30,
+      "BODY": 25,
+      "HEALTH": 16,
+      "HIT LOCATION": "Serpentoid ( Head)",
+      "ARMOR": "2 (Head)",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 40,
+      "SPOILS": "Resources table",
+      "TRAIT": "Venomous",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+2 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Bone Slam (Physical): The Necropede slams its skeletal body onto a target, dealing D6 Bludgeoning damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Soul Drain (Magical): The Necropede emits a burst of its dark aura, attempting to drain the life force of a target. The target must succeed on an Endurance check or take 2D4 Necrotic damage and the Necropede gains Temporary Health equal to half the damage dealt."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Spinal Whip: The Necropede lashes out with its inhuman tail spine, targeting all creatures in the room. Each target must make a Dodge check. Those who fail the check take D6 Piercing damage and are knocked Prone. On a success, they take half damage and are not knocked Prone."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "This grotesque fusion of insect and cadaver is a chilling sight to behold. Its razor-sharp pincers and venomous stinger are imbued with necromantic energy, ensuring that those unfortunate enough to cross its path become lifeless vessels animated to carry out its malevolent will. The Necropede's presence is heralded by a stifling aura of dread, causing even the bravest hearts to tremble. Rarely spotted, whispers of its unholy existence abound in scholarly circles, as it is said to be the creation of a deranged sorcerer who sought to conquer death itself, now unleashed upon the world as a relentless harbinger of doom."
+    },
+    {
+      "page": 160,
+      "name": "Netherfiend",
+      "TYPE": "Demon",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 40,
+      "HEALTH": 10,
+      "HIT LOCATION": "Winged Biped ( Head)",
+      "ARMOR": "2 (Head)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D4 damage",
+            "+20 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Infernal Claw (Physical): The Netherfiend slashes at a target with its sharp, obsidian claws. It makes a melee attack, dealing D6 Slashing damage on a hit. Additionally, the target must succeed on a Spellward check or be affected by the Netherfiend's Infernal Mark for D4 rounds. The Netherfiend’s attacks deal an additional 1 Fire damage to creatures with the Infernal Mark. The duration is cumulative if this Action is rolled again."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Eldritch Flames (Magical): The Netherfiend conjures eldritch flames that streak toward a target, dealing D4 Fire damage on a hit. Additionally, the target must succeed on an Endurance check or receive the Burning condition."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Corrupting Bind (Magical): The Netherfiend weaves tendrils of corrupted magic that ensnare a target, who must succeed on an Athletics check or be Restrained by the tendrils."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Despite being considered only lesser demons, Netherfiends are formidable opponents, wielding infernal powers, capable of conjuring eldritch flames and weaving tendrils of corrupted magic to ensnare their prey. Standing barely a meter tall on cloven hooves, its sinewy, obsidian-black body seems to flicker with a sinister, ethereal glow. Horns curve menacingly from its skull, and its eyes burn with crimson fire, reflecting its insatiable thirst for chaos and suffering. Sharp, jagged wings sprout from its back, carrying the creature effortlessly through the shadows, allowing it to strike swiftly and vanish into the darkness."
+    },
+    {
+      "page": 161,
+      "name": "Plaguebringer",
+      "TYPE": "Undead, Elemental",
+      "NUMBER": 1,
+      "MIND": 20,
+      "ENDURANCE": 60,
+      "BODY": 50,
+      "HEALTH": 16,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "2 (Head)",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening, Venomous, Elemental Affinity: Necrotic",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D4 damage",
+            "+1 Armor (all Hit Locations except Chest)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Corrosive Claws (Physical): The Plaguebringer slashes at a target with its sharp, venom-coated claws. It makes a melee attack, dealing D6 Slashing damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Virulent Cloud (Magical): The Plaguebringer releases a cloud of virulent plague that spreads across the room. Creatures caught in the cloud must pass an Endurance check or take 1 Poison damage and have Disadvantage on attack rolls and Skill checks for D4 rounds as they are afflicted by the debilitating sickness. The duration is cumulative if Virulent Cloud is rolled again."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Disease Spew (Magical): The Plaguebringer regurgitates a vile spray of diseased matter that deals 2 Necrotic damage that reduces the target’s Health, bypassing Toughness."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "This nightmarish monster spreads disease and decay wherever it roams. Its vile form is a grotesque amalgamation of rotting flesh and oozing pustules, exuding a noxious stench that permeates the air. Swarms of diseased insects writhe and buzz around its wretched body, drawn to the sickness that emanates from it. Its sharp, jagged claws are coated with a toxic venom that can corrode flesh on contact, and it can unleash a devastating cloud of virulent plague, enveloping its foes in a sickening miasma that withers and consumes all it touches."
+    },
+    {
+      "page": 162,
+      "name": "Pyreborn",
+      "TYPE": "Elemental",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 60,
+      "HEALTH": 8,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Elemental Affinity: Fire, Vulnerable to Cold damage",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+12 Health",
+            "+D4 damage"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Ember Strike (Magical): The Pyreborn extends a tendril of flames to a target, dealing D6 Fire damage on a hit. Additionally, the target must succeed on a Dodge check to avoid receiving the Burning condition."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Inferno Burst: The Pyreborn erupts in a burst of intense flames, forcing all creatures to succeed on a Dodge check or take 2 Fire damage. On a failed check, they also receive the Burning condition."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Firestorm (Magical): The Pyreborn summons a firestorm. All creatures in the area must succeed on a Dodge check, taking D4 Fire damage and receiving the Burning condition on a failed check."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Pyreborns are a particularly violent type of fire elementals. Summoned by ancient rituals from the plane of fire, these creatures were commonly used as guardians by the ancient Vaelorians. Unleashing torrents of fire, it engulfs enemies in all-consuming flames and summoned firestorms, ensuring nothing but complete devastation."
+    },
+    {
+      "page": 163,
+      "name": "Ratkin Marauders",
+      "TYPE": "Humanoid",
+      "NUMBER": 3,
+      "MIND": 80,
+      "ENDURANCE": 50,
+      "BODY": 50,
+      "HEALTH": 6,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (Head)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D4 damage",
+            "+1 Armor (all Hit Locations except Chest)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+20 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Claw Slash (Physical): The Ratkin Marauder lunges forward, slashing at a target with its razor-sharp claws, dealing D6 Slashing damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Dirty Trick: The Ratkin Marauder uses its cunning to throw dirt, debris, or a makeshift weapon into the eyes of a target, who must succeed on a Dodge check or be Blinded until the end of their next turn as they struggle to clear their vision."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Alarm: The Ratkin Marauder takes out a strange horn, preparing itself to sound the alarm. You can attempt to interrupt the call by making a successful Thievery check. A failure means that the Ratkin has sounded the alarm, triggering a Tension Die check."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Standing upright with a hunched posture, these nightmarish beasts have coarse, mottled fur covering their sinewy and muscular frame, while their razor-sharp claws and teeth make for formidable natural weapons. Their eyes gleam with an unsettling intelligence, and can be usually seen draped in tattered remnants of stolen garments and armor, displaying trophies taken from their vanquished foes as a gruesome warning to any who dare oppose them. As the lowest warrior caste in Verrixian society, they are the weakest members; still, they are highly skilled in guerrilla warfare and ambush tactics, striking swiftly and vanishing into the shadows, leaving behind a trail of terror and chaos. Ratkin Marauders are the first among their kin in merciless raids, plundering settlements and leaving no corner of civilization safe from their ravenous plundering."
+    },
+    {
+      "page": 164,
+      "name": "Razorjaw",
+      "TYPE": "Animal",
+      "NUMBER": 1,
+      "MIND": 70,
+      "ENDURANCE": 50,
+      "BODY": 60,
+      "HEALTH": 12,
+      "HIT LOCATION": "Quadruped ( Head)",
+      "ARMOR": "1 (Forequarters)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Penetrating (2)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D4 damage",
+            "+1 Armor (all Hit Locations except Forequarters)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Vicious Bite (Physical): The Razorjaw lunges at a target with its massive maw, attempting to bite down with its deadly teeth and dealing D6 Piercing damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Claw Swipe (Physical): The Razorjaw swipes at a target with its razor-sharp claws. It makes a melee attack, dealing 2 Slashing damage on a hit. Additionally, the target must succeed on a Dodge or take ongoing Bleeding (1) damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Savage Pounce: The Razorjaw leaps toward a target, attempting to knock them to the ground. The target must succeed on an Athletics check or be knocked Prone. If the target is knocked Prone, the Razorjaw immediately follows up with another bite attack as a Free Action, dealing D4 Piercing damage on a hit."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Razorjaws possess scaly, black skin that grants them natural camouflage for their life deep within the necropolis. Their limbs are thick and muscular, allowing them to traverse the rugged terrain with remarkable agility and speed, while their razor-sharp claws can tear through the toughest of obstacles (or adversaries) with ease. However, their most terrifying feature lies within their massive maw: a set of gleaming, serrated teeth resembling deadly, interlocking blades, from which they derive their name."
+    },
+    {
+      "page": 165,
+      "name": "Reanimated Homunculus",
+      "TYPE": "Undead, Construct",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 50,
+      "BODY": 20,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "2 (Chest)",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+1 Armor (all Hit Locations except Chest)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Slam (Physical): The Reanimated Homunculus staggers forward, attempting to slam a target with its stitched-together limbs. It makes a melee attack, dealing D4 Bludgeoning damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Necrotic Aura: The Reanimated Homunculus emits an unstable necrotic aura around itself. Creatures within the aura must succeed on an Endurance check or take 1 Necrotic damage at the start of each of their turns. The aura lasts for 2 rounds or until the Reanimated Homunculus is destroyed. The duration is cumulative if rolled again."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Unstable Detonation (Magical): The Reanimated Homunculus suddenly freezes in place, its necromantic essence becoming increasingly volatile. At the start of its next turn, the Reanimated Homunculus explodes in a burst of necrotic energy. All creatures within the room must succeed on a Dodge check or take 2D10 Necrotic damage, half on a successful check. The Reanimated Homunculus is destroyed in the process."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "These creatures are a twisted amalgamation of necromantic science and dark alchemy, the most sacred arts in Vaelorian society. Its form is a grotesque mockery of life, with stitched-together limbs and patchwork flesh, and its body emits an aura of necrotic energy, crackling with the volatile essence that animates it. Reanimated Homunculi are highly unstable, their necromantic essence making it unpredictable and potentially explosive. In combat, they don’t really pose a serious threat, due to their slow and clumsy movements. It is only when they appear to freeze in place that running becomes the wise choice, as an explosion is sure to follow, obliterating both the Homunculus and anyone in its vicinity."
+    },
+    {
+      "page": 166,
+      "name": "Rotwalkers",
+      "TYPE": "Undead",
+      "NUMBER": 3,
+      "MIND": 20,
+      "ENDURANCE": 30,
+      "BODY": 20,
+      "HEALTH": 8,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 40,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D6 damage"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Grasping Claw (Physical): The Rotwalker extends a decaying arm, attempting to grasp a target with its skeletal hand, dealing D4 Necrotic damage on a hit. Additionally, the target must succeed on a Dodge check or be Restrained, as the Rotwalker's grip tightens."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Festering Aura: The Rotwalker emits a foul aura of decay around itself. Creatures within the aura must succeed on an Endurance check or take 2 Necrotic damage at the start of each of their turns. The aura lasts for 2 rounds or until the Rotwalker is destroyed. The duration is cumulative if Festering Cloud is rolled again."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Deathly Embrace: The Rotwalker lunges at a target, attempting to pull them into a ghastly embrace. The target must succeed on an Athletics check or be Restrained. While grappled, the target takes ongoing 1 Necrotic damage at the start of each of their turns until they break free or the Rotwalker is destroyed. The Rotwalker doesn't act against a character while they are affected by this Action; it will either change target or simply wait for the character to die or free themselves."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "A Rotwalker’s wretched form is that of a once-human creature, now consumed by the relentless march of decomposition. Its pallid, leathery skin hangs loosely from its skeletal frame, exposing festering wounds and bones in a gruesome display of mortality's defeat. The Rotwalker's eyes, hollow and devoid of life, glow with an unholy, malevolent light, seeking out the living with a ravenous hunger. The stench of death and decay precedes its arrival, warning the unfortunate of its relentless pursuit."
+    },
+    {
+      "page": 167,
+      "name": "Skeletal Horrors",
+      "TYPE": "Undead",
+      "NUMBER": 2,
+      "MIND": 20,
+      "ENDURANCE": 20,
+      "BODY": 25,
+      "HEALTH": 8,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (Chest)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 20,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening",
+      "LEVEL ADAPTATION": [],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Cursed Slash (Physical): The Skeletal Horror swings its weapon with an eerie precision, dealing D6 Slashing damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Ethereal Grasp (Magical): The Skeletal Horror reaches out with its hand, attempting to touch the essence of a target's life force. The target must make an Endurance check. On a failed check, they take D6 Necrotic damage, and the Skeletal Horror regains Health equal to half the damage dealt. On a successful roll, the target takes half damage, and the Skeletal Horror doesn't regain Health."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Haunting Wail (Magical): The Skeletal Horror lets out a haunting wail that reverberates through the air. All creatures must make a successful Resolve check to avoid becoming Stunned (1)."
+        },
+        {
+          "D6": 6,
+          "Action": "Vengeful Onslaught (Physical): The Skeletal Horror charges forward with relentless determination, targeting one creature. It makes a melee attack against the target, dealing D4 Piercing damage on a hit. If the attack hits, the Skeletal Horror immediately uses its Ethereal Grasp ability as a Free Action."
+        }
+      ],
+      "DESCRIPTION": "The remnants of fallen warriors cursed to wander eternally, these skeletal monsters are shrouded in the tattered remnants of their once-proud armor, their bones blackened and charred by the fires of the afterlife. They wield spectral weapons with an unnatural dexterity, instilling dread in the hearts of any who dare cross their path. Skeletal Horrors mercilessly hunt those who trespass upon their cursed domain with relentless dedication, stopping at nothing to ensure all living creatures are dead."
+    },
+    {
+      "page": 168,
+      "name": "Stone Warden",
+      "TYPE": "Elemental",
+      "NUMBER": 1,
+      "MIND": 30,
+      "ENDURANCE": 60,
+      "BODY": 80,
+      "HEALTH": 15,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Elemental Affinity: Force, Vulnerable to Psychic damage",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D4 damage"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Stone Spike (Magical): The Stone Warden raises its arm, causing a spike of stone to burst from the ground beneath a target, dealing D6 Force damage. The target must also pass a Dodge check or be Restrained as they are impaled on the spike."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Tremor Strike: The Stone Warden delivers a powerful stomp, sending shockwaves through the ground. All creatures within the room must succeed on an Acrobatics check or take D6 Bludgeoning damage and be knocked Prone."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Landslide: The Stone Warden raises its arms, causing the earth to shift and buckle. All creatures within the room must succeed on an Athletics check or take D8 Bludgeoning damage."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Stone Wardens are the most common type of earth elementals found in Ker Nethalas. Their stony humanoid features exude an aura of primordial power and ageless knowledge. When roused to protect their domain, they wield tremendous strength, unleashing seismic force upon any intruders who threaten whatever it is that moves these creatures to act. Stone spikes emerge from the ground to impale its foes, and landslides are summoned with a mere gesture, making them terrible foes to face."
+    },
+    {
+      "page": 169,
+      "name": "Swarmer",
+      "TYPE": "Animal, Construct",
+      "NUMBER": 1,
+      "MIND": 50,
+      "ENDURANCE": 40,
+      "BODY": 30,
+      "HEALTH": 12,
+      "HIT LOCATION": "–",
+      "ARMOR": "–",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Resources table",
+      "TRAIT": "Penetrating (1), Venomous",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+20 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Venomous Bite (Physical): The Swarmer lunges forward, attempting to bite a target with its multitude of stingers and fangs. It makes a melee attack, dealing D4+1 Poison damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Acid Spray (Magical): The Swarmer releases a spray of corrosive acid in front of it. Creatures within the cone must succeed on a Dodge check or take D6 Acid damage and have their Armor reduced by 1 until they can repair it back at Camp."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Swarm Assault: The Swarmer engulfs a target within its monstrous swarm, attacking from multiple angles and dealing 2 Piercing damage. The target must succeed on an Endurance check or be Blinded until their next turn as the swarm obscures their vision."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Swarmers are horrifying and relentless monsters, a nightmarish amalgamation born from the union of thousands of smaller creatures. Their colossal form is a grotesque mass of chittering insects, squirming worms, and writhing serpents, all fused together in a monstrous swarm. Swarmers attack with unrelenting ferocity, unleashing a deluge of venomous bites, stings, and corrosive secretions upon their prey. Their origin is a complete mystery, but as most things in Ker Nethalas, it's most likely yet another Vaelorian aberration."
+    },
+    {
+      "page": 170,
+      "name": "Tomb Crawler",
+      "TYPE": "Animal",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 40,
+      "BODY": 25,
+      "HEALTH": 16,
+      "HIT LOCATION": "Serpentoid ( Head)",
+      "ARMOR": "2 (Body)",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Resources table",
+      "TRAIT": "Venomous",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Spine Strike (Physical): The Tomb Crawler raises its segmented body and lashes out with its jagged spines, dealing D6 Piercing damage on a hit. Additionally, the target must succeed on an Endurance check or receive -10 to their next attack action."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Paralyzing Bite (Physical): The Tomb Crawler lunges forward, attempting to bite a target with its venomous fangs. It makes a melee attack, dealing D4 Piercing damage on a hit. Additionally, the target must succeed on an Endurance check or be Paralyzed for 1 round as the venom takes effect."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Slash (Physical): The Tomb Crawler lashes, dealing 2 Slashing damage. The target is now Bleeding (1)."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Tomb Crawlers are nightmarish giant millipedes, a horror that preys on the unwary intruders that venture into their domain. This monstrous arthropod boasts a segmented exoskeleton adorned with an array of jagged spines and bony protrusions, providing both protection and an eerie, skeletal appearance. Its numerous legs propel it forward with uncanny speed and agility, and its coloration is a blend of earthy hues, allowing it to blend seamlessly with the darkness, rendering it nearly invisible until it is upon its hapless prey. The creature's fanged mandibles secrete a paralyzing venom, swiftly incapacitating its victims, which it then carries away to its hidden lair for a slow and terrifying consumption."
+    },
+    {
+      "page": 171,
+      "name": "Umbra Fiend",
+      "TYPE": "Astral",
+      "NUMBER": 1,
+      "MIND": 50,
+      "ENDURANCE": 40,
+      "BODY": 25,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 40,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening, Resistant to all Physical, non-Magical damage",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+8 Health",
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Shadow Claw (Physical): The Umbra Fiend materializes its jagged, obsidian claws and slashes at a target, dealing D6 Slashing damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Darkness Pulse (Magical): The Umbra Fiend releases a pulse of shadowy energy. Creatures within the room take 2 Necrotic damage and must succeed on an Endurance check or have their vision obscured by darkness, causing them to have Disadvantage on attack checks for 1 round."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Evasive Shadows: The Umbra Fiend merges with the shadows, becoming unsubstantial and difficult to target. Until the start of its next turn, attacks against the Umbra Fiend have Disadvantage."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "This ominous creature lacks any discernible form as it's composed entirely of inky, swirling shadows that seem to pulse with an otherworldly malevolence. Its presence dims the very light around it, casting an aura of unnerving darkness that instills a primal fear in all who behold it. In moments of aggression, it materializes jagged, obsidian claws from its shadowy form, capable of rending both flesh and soul with a touch."
+    },
+    {
+      "page": 172,
+      "name": "Unfettered Familiar",
+      "TYPE": "Astral",
+      "NUMBER": 1,
+      "MIND": 70,
+      "ENDURANCE": 40,
+      "BODY": 20,
+      "HEALTH": 8,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Resistant to all Physical, non-Magical damage",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+2 Health",
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+2 Health",
+            "+D6 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Arcane Burst (Magical): The Unfettered Familiar channels its residual arcane energy into a concentrated burst, dealing D6 Arcane damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Ethereal Grasp (Magical): The Unfettered Familiar extends its ethereal form to touch a target. The target must succeed on an Endurance check or suffer 1 Arcane damage and be Blinded for 1 round."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Arcane Feedback (Magical): The next time the Unfettered Familiar is attacked, it can trigger a magical backlash as a Reaction. The attacking creature must succeed on a Resolve check or take D6 Arcane damage and have its next Magical Ability have a 50% chance of failing as the feedback disrupts its focus."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Once bound to a sorcerer's will, these extraordinary entities possess an ethereal and shimmering form, translucent like a wisp, and adorned with faint, arcane markings that trace the vestiges of their past servitude. Though no longer bound to a master, all Unfettered Familiars retain an aura of magical potency, hinting at the knowledge they once acquired in their time of servitude. They roam the many arcane laboratories found in Ker Nethalas, consumed by rage and hatred of all physical beings, making them terrible foes to encounter."
+    },
+    {
+      "page": 173,
+      "name": "Vaelorian Magus",
+      "TYPE": "Undead",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 20,
+      "HEALTH": 16,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+4 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Death Bolt (Magical): The Vaelorian Magus conjures a bolt of necrotic energy and hurls it at a target, dealing D6 Necrotic damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Apparition Summoning (Magical): The Vaelorian Magus channels its dark powers to summon a ghastly apparition. All characters must make a Resolve check or become Frightened (20)."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Eldritch Enfeeblement (Magical): The Vaelorian Magus targets a creature and attempts to weaken its magical and physical capabilities. The target has Disadvantage on its next attack roll or Skill check as its vitality is drained by the Magus's curse."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Clad in tattered robes that once boasted intricate patterns and symbols of a bygone era, these undead spellcasters wield an aura of malevolence and ancient knowledge. Vaelorian Magi command the forces of death and decay, having transitioned from live necromancers to undead beings long ago. Their skeletal hands, often the only thing visible under their robes, bear the mark of countless rituals and forbidden spells, remnants of a life devoted to unlocking the secrets of forbidden knowledge."
+    },
+    {
+      "page": 174,
+      "name": "Vinekin",
+      "TYPE": "Plant, Humanoid",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 30,
+      "HEALTH": 10,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "–",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+5 Health",
+            "+D8 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Thorn Lash (Physical): The Vinekin extends its arm, summoning sharp thorny vines to lash out at a target, dealing D6 Piercing damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Entangling Roots (Magical): The Vinekin summons twisted roots from the ground to ensnare all creatures within the room. Each creature in that area must succeed on a Dodge check or be Restrained. While Restrained, the target takes 1 Slashing damage at the start of each of their turns until they break free or the Vinekin is destroyed. If already Restrained, the victim takes 2 Slashing damage immediately."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Brutal Slam (Physical): The Vinekin charges at a target, dealing D6 Bludgeoning damage on a hit. Additionally, the target must succeed on an Athletics check or be knocked Prone as the Vinekin's brute force overpowers it."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "It is unclear what the Vinekin, a plant-like humanoid species, are doing in Ker Nethalas. Their forms are a tangle of writhing vines and thorny brambles, that somehow form the outline of a humanoid shape. They wield dark and chaotic powers, able to manipulate the corrupted plant life to ensnare and entrap their prey. They can summon tendrils and thorns to tear apart their enemies, but they seem to prefer direct physical combat. Many attempts at communicating with them have been made, but unfortunately they seem to be only interested in violence."
+    },
+    {
+      "page": 175,
+      "name": "Voidweaver",
+      "TYPE": "Astral",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 20,
+      "BODY": 20,
+      "HEALTH": 8,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Resistant to all Physical, non-Magical damage",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+2 Health",
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+2 Health",
+            "+D6 damage",
+            "+10 Magic Resistance"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Void Ray (Magical): The Voidweaver channels the power of the void through its form, firing a beam of dark energy that deals D4+1 Arcane damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Cosmic Distortion (Magical): The Voidweaver manipulates the fabric of reality, creating a zone of cosmic distortion. Creatures within the room have Disadvantage on weapon Skills and Dodge checks, as the void's unpredictable energies disrupt their movements and perception. The zone lasts for 2 rounds, resetting on rolling it again."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Void Nova (Magical): The Voidweaver harnesses the chaotic power of the void within itself, causing a violent burst of energy. All creatures within the room take D6 Arcane damage. Additionally, creatures that fail an Athletics check are pushed down to their knees, becoming Prone."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Brought into the material plane as a result of a ritual summoning, Voidweavers are creatures attuned to the chaotic forces of the void, wielding dark astral magic in combat. Its form is an ever-shifting mass of swirling shadows and cosmic dust, a mesmerizing display of cosmic energy harnessed by its will. When provoked, the Voidweaver unleashes its formidable void magic, manipulating dark energies to distort the fabric of reality and tearing its enemies apart with powerful void rays."
+    },
+    {
+      "page": 176,
+      "name": "Vorleg",
+      "TYPE": "Animal",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 40,
+      "BODY": 40,
+      "HEALTH": 10,
+      "HIT LOCATION": "Quadruped ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Penetrating (1), Alert, Venomous",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D4 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Venomous Bite (Physical): The Vorleg lunges forward, attempting to sink its sharp fangs into a target, dealing D6 Piercing damage on a hit."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Ensnaring Tentacles (Physical): The Vorleg unfurls its tentacles and lashes out at a target, dealing D6 Bludgeoning damage on a hit. Additionally, if the attack hits, the target must succeed on an Athletics check or be grappled by the Vorleg's tentacles, becoming Restrained."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Paralyzing Grasp: The Vorleg's tentacles close tighter around a creature it has grappled. The target must succeed on an Endurance check or receive 2D10 Bludgeoning damage. If no target has been grappled by the Vorleg’s tentacles, this ability immediately leaves the target Restrained instead."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "The reptilian form of Vorlegs is sleek and well-adapted to its dark and damp habitat, its scales glistening with an oily sheen that reflects the little ambient light found in the necropolis. The Vorleg's beady eyes gleam with intelligence, and its sharp fangs are ever ready to deliver a venomous bite. What is truly dangerous about Vorlegs, though, is their multiple tentacles that cover their backs, which they can use to strike with uncanny precision and ensnare its prey in a vice-like grip. The tentacles are lined with barbed hooks and secrete a paralyzing toxin, rendering victims helpless as the creature moves in for the kill."
+    },
+    {
+      "page": 177,
+      "name": "Wraithskull",
+      "TYPE": "Undead, Astral",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 20,
+      "BODY": 10,
+      "HEALTH": 10,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Frightening",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Soul Drain (Magical): The Wraithskull targets a creature and attempts to drain its life force. The target takes D6 Necrotic damage and the Wraithskull gains Temporary Health equal to half the damage dealt."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Ethereal Phantasm: The Wraithskull momentarily fades into the ethereal plane, becoming incorporeal until its next turn. While in this state, it becomes Immune to non-magical damage and effects."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Wail of Torment (Magical): The Wraithskull releases a bone-chilling wail that echoes through the air, striking terror into the hearts of its enemies. Each creature must succeed on a Resolve check or become Frightened (20)."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "These fragile yet terrifying entities hover through the air, tethered to the mortal realm only by dark magic. Its disembodied presence travels the dark passages of the necropolis, as it seeks to feed upon the life force of the living to sustain its spectral existence. The legends mentioning Wraithskulls speak of fallen Vaelorian necromancers, executed due to their ambition and condemned to serve as guards in the endless halls of the necropolis."
+    },
+    {
+      "page": 178,
+      "name": "Wrath Elemental",
+      "TYPE": "Demon, Elemental",
+      "NUMBER": 1,
+      "MIND": 30,
+      "ENDURANCE": 50,
+      "BODY": 40,
+      "HEALTH": 15,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "2 (Chest)",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "Spoils table",
+      "TRAIT": "Swift, Elemental Affinity: Infernal",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Magic Resistance"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Elemental Fury (Magical): The Wrath Elemental channels its inner turmoil of elements, choosing one of them to unleash upon its foes. Roll D6: It can either create a cone of fire (1-2), a line of lightning (3-4), or a river of crashing water (5-6). Each creature in the room takes D6 damage of the chosen elemental type: Fire for fire, Lightning for lightning, and Force for Water."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Infernal Resilience: The Wrath Elemental taps into its demonic nature, gaining Temporary Health equal to half its current Health. The Wrath Elemental cannot have more than twice its Health this way."
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 3"
+        },
+        {
+          "D6": 5,
+          "Action": "Chaotic Eruption (Magical): The Wrath Elemental releases a burst of unstable energy, causing a chaotic disturbance in the area around it. Each creature within the room is Blinded for 1 round and knocked Prone."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Wrath Elementals are a terrifying fusion of elemental fury and infernal malevolence, a result of different planes of existence clashing together. Their forms are an ever-shifting tempest of swirling winds, raging fire, surging water, and crackling lightning, each element locked in eternal conflict within its monstrous frame. These fearsome creatures wield both the destructive might of the elements and the corrupting influence of demonic power. When provoked, a Wrath Elemental unleashes a devastating onslaught of elemental wrath, summoning storms of fire, torrents of water, and bolts of lightning to annihilate its adversaries. Their demonic nature grants them an innate resilience against harm, allowing them to withstand attacks that would fell other lesser beings."
+    },
+    {
+      "page": 181,
+      "name": "Carnage Devourer",
+      "TYPE": "Demon",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 60,
+      "BODY": 80,
+      "HEALTH": 30,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Penetrating (2), Savage, Ruthlessness (1)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D6+2 damage"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+15 Health",
+            "+D10 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Rampaging Charge: The Carnage Devourer charges forward in a straight line, trampling everything in its path. Each creature engaged with it in combat must make a Dodge check or receive 2D8 Bludgeoning damage and be knocked Prone."
+        },
+        {
+          "D6": 2,
+          "Action": "Flamebrand Cleave (Physical): The Carnage Devourer brings down its massive cleaver in a sweeping arc, targeting all creatures in the room and dealing D6 Slashing damage. Targets hit by this attack must also pass an Endurance check or receive the Burning condition."
+        },
+        {
+          "D6": 3,
+          "Action": "Earthshaker Slam: The Carnage Devourer slams its cleaver into the ground with tremendous force, creating a shockwave of splintered earth. All creatures must make an Acrobatics check or be knocked Prone and take D6 Bludgeoning damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Rage Unleashed: The Carnage Devourer's fury intensifies, granting it Advantage on all attack rolls and increasing its damage by D6 for 2 rounds. During this time, it cannot be Frightened or Charmed."
+        },
+        {
+          "D6": 5,
+          "Action": "Annihilation Roar (Magical): The Carnage Devourer releases a deafening roar that chills the hearts of its foes. All creatures must make a Resolve check or be Frightened (20)."
+        },
+        {
+          "D6": 6,
+          "Action": "Devouring Blaze (Magical): The Carnage Devourer summons forth a torrent of flames, forcing all creatures to make a Dodge check or take D6 Fire damage and be set ablaze, suffering from the Burning condition."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "The Carnage Devourer, a relentless embodiment of chaos and destruction, strides as a colossal juggernaut, a living embodiment of raw carnage made to spread death and suffering. With its monstrous cleaver, it tears through both armor and flesh with ease. As it marches, it leaves a trail of roaring flames that consume all in its path, further fueling its voracious appetite for annihilation."
+    },
+    {
+      "page": 183,
+      "name": "Dreadlord",
+      "TYPE": "Demon, Undead",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 30,
+      "HEALTH": 20,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Ruthlessness (1)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+10 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Shadow Reapers (Magical): The Dreadlord summons D4 Shadow Reapers to fight on its behalf. These shadowy minions attack immediately after the Dreadlord's turn, each making a scythe attack (Combat Skill 40, D4 Cold damage) against a creature, disappearing immediately after."
+        },
+        {
+          "D6": 2,
+          "Action": "Aura of Despair (Magical): The Dreadlord radiates an aura of despair for D4 rounds. Creatures that start their turn near the Dreadlord must make a Resolve check or be Frightened (10)."
+        },
+        {
+          "D6": 3,
+          "Action": "Ethereal Scythe (Physical): The Dreadlord swings its spectral scythe at a target, dealing D8 Slashing damage on a hit. If the target is a PC, they must succeed on an Endurance check or have its maximum Toughness reduced by the amount of damage taken. This reduction lasts until the character finishes a rest."
+        },
+        {
+          "D6": 4,
+          "Action": "Shroud of Darkness: The Dreadlord wraps itself in a shroud of darkness, becoming heavily obscured and becoming Resistant to all damage except Holy damage until the start of its next turn."
+        },
+        {
+          "D6": 5,
+          "Action": "Weakening Gaze (Magical): The Dreadlord fixates its gaze upon a creature, consuming the target’s physical condition. The target must pass an Endurance check or become infected with the Rot (see page 87)."
+        },
+        {
+          "D6": 6,
+          "Action": "Abyssal Projectiles (Magical): The Dreadlord hurls abyssal projectiles at up to three targets. Each target must make a Spellward check, taking D6+2 Necrotic damage on a failed check."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "The Dreadlord is a nightmarish enforcer of darkness and despair. Its very presence casts a shroud of dread, permeating the air with an aura that drains hope and vitality, and with each gesture it commands an ethereal army of shadow reapers, each one a harbinger of impending doom. Its mastery over the abyss allows it to conjure projectiles that seek out the very souls of its foes, and those who survive must face its terrible scythe."
+    },
+    {
+      "page": 185,
+      "name": "Glacial Burrower",
+      "TYPE": "Animal, Elemental",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 70,
+      "BODY": 80,
+      "HEALTH": 30,
+      "HIT LOCATION": "Quadruped ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Penetrating (2), Ruthlessness (1), Elemental Affinity: Cold",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 damage",
+            "+1 Armor (all Hit Locations)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Blizzard Gust (Magical): The Glacial Burrower releases a blast of freezing air in a cone, dealing 2D6 Cold damage to all characters."
+        },
+        {
+          "D6": 2,
+          "Action": "Bone-Chilling Strike (Physical): The Glacial Burrower strikes with its massive frozen limbs, targeting a single creature and dealing D6+2 Bludgeoning damage."
+        },
+        {
+          "D6": 3,
+          "Action": "Burrow Assault: The Glacial Burrower disappears beneath the ground and reemerges with violence. Creatures must pass an Acrobatics check or take 2D6 Bludgeoning damage and be knocked Prone."
+        },
+        {
+          "D6": 4,
+          "Action": "Icy Hailstones (Magical): The Glacial Burrower conjures hailstones of ice and hurls them at up to three targets. Each hit target takes 2D6 Cold damage and must make an Athletics check or be knocked Prone."
+        },
+        {
+          "D6": 5,
+          "Action": "Frozen Rampage: The Glacial Burrower charges forward in a straight line. Creatures must make a Dodge check or take 2D6 Bludgeoning damage and be knocked Prone."
+        },
+        {
+          "D6": 6,
+          "Action": "Glacial Fury: The Glacial Burrower channels its frozen rage, causing a chilling aura to emanate from it. Enemies within the aura take 1 Cold damage at the start of their turn for the next 2 rounds."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "The Glacial Burrower is a titanic behemoth of frozen fury capable of unleashing blizzard-like gusts that freeze all in their wake. With seismic force, it burrows beneath the surface to emerge with sudden violence, delivering devastating blows that freeze the very blood in its victims' veins. Facing the Glacial Burrower is an arduous test of agility and endurance, as explorers brave its frozen domain and attempt to outwit its relentless underground advances."
+    },
+    {
+      "page": 187,
+      "name": "Gorehoof",
+      "TYPE": "Humanoid",
+      "NUMBER": 1,
+      "MIND": 30,
+      "ENDURANCE": 70,
+      "BODY": 80,
+      "HEALTH": 30,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 65,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Penetrating (2), Ruthlessness (1), Frightening",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D10 damage",
+            "+1 Armor (all Hit Locations)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Cleaver Cleave: Gorehoof swings his massive cleaver in a wide arc, targeting all creatures within the room. Each target must make a Dodge check or take D4 Slashing damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Savage Charge (Physical): Gorehoof charges forward in a straight line, trampling over any obstacles. He then makes a melee attack against a single target at the end of the charge, dealing 3D6 Bludgeoning damage."
+        },
+        {
+          "D6": 3,
+          "Action": "Bloodlust Frenzy: Gorehoof enters a frenzied state, gaining Advantage on melee attack rolls. He deals an additional D6 damage with his attacks, but he also becomes Vulnerable to all damage until the start of his next turn."
+        },
+        {
+          "D6": 4,
+          "Action": "Rallying Roar: Gorehoof lets out a thunderous roar, increasing his rage and ignoring his wounds. He regains 2D4 Health."
+        },
+        {
+          "D6": 5,
+          "Action": "Endurance Surge: Gorehoof's unwavering endurance allows him to shrug off pain and injuries. He becomes Resistant to Bludgeoning, Piercing, and Slashing damage for 2 rounds."
+        },
+        {
+          "D6": 6,
+          "Action": "Dominating Presence: Gorehoof exudes an aura of dominance. All characters within the room must succeed on a Resolve check or be Frightened (20)."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "Gorehoof is the leader of clan Karth, bestial goatmen that pillage and kill with absolute savagery. Standing three meters tall and always wielding a cleaver almost as large as him, Gorehoof revels in violence and death. His black fur, often covered in fresh blood, and large horns make him instantly recognizable, even when he’s leading the clan into battle. With an almost infinite capability to endure punishment, Gorehoof revels in combat and never retreats, pursuing his victims relentlessly."
+    },
+    {
+      "page": 188,
+      "name": "Infernal Archon",
+      "TYPE": "Demon",
+      "NUMBER": 1,
+      "MIND": 50,
+      "ENDURANCE": 40,
+      "BODY": 50,
+      "HEALTH": 20,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Ruthlessness (1)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+5 Health",
+            "+D8 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Inferno Eruption (Magical): The Infernal Archon calls upon its mastery of fire, causing flames to erupt. Creatures must make a Dodge check, taking 2D6 Fire damage on a failed check, or half as much damage on a successful one."
+        },
+        {
+          "D6": 2,
+          "Action": "Shadow Veil: The Infernal Archon shrouds itself in shifting shadows, rendering it heavily obscured and granting it Advantage on any defensive checks until the end of its next turn."
+        },
+        {
+          "D6": 3,
+          "Action": "Demonic Conjuration: The Infernal Archon summons D4 Lesser Demons to aid in battle. They act immediately after it in Initiative order. Only a maximum of 4 Lesser Demons can be present at any given time."
+        },
+        {
+          "D6": 4,
+          "Action": "Infernal Barrage (Magical): The Infernal Archon conjures molten projectiles and hurls them at a target, who must make a successful Dodge check or take D4+2 Fire damage."
+        },
+        {
+          "D6": 5,
+          "Action": "Shadow Rift (Magical): The Infernal Archon opens a rift to a realm of shadow and fire, spreading dark flames across the area. All characters must make a Dodge check or receive 3D4 Fire damage."
+        },
+        {
+          "D6": 6,
+          "Action": "Vortex of Annihilation (Magical): The Infernal Archon combines fire and shadow to create a swirling vortex of destruction. A sphere of chaotic energy appears, forcing all characters to make a Spellward check or suffer 2D4 Fire damage."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "The Infernal Archon’s very presence ignites the air, unleashing waves of scorching heat that sear the senses and smother hope. It often summons forth demonic cohorts to aid him in battle, and hurls infernal projectiles that immolate everything in their path. Challenging the Infernal Archon is almost equal to confronting an inferno given life where shadows seek to engulf all in a tempest of destruction."
+    },
+    {
+      "page": 189,
+      "name": "Lesser Demon",
+      "TYPE": "Demon",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 20,
+      "HEALTH": 2,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 30,
+      "SPOILS": "–",
+      "TRAIT": "Restored by Fire damage",
+      "ACTION": "Demonic Slash (Physical): The Lesser Demon lashes with its claws at a target, dealing D4 Slashing damage.",
+      "_note": "Ten wrog ma tylko jedna, stala Akcje (bez tabeli D6) - taka sama akcja przy kazdym rzucie."
+    },
+    {
+      "page": 191,
+      "name": "Infernal Tormentor",
+      "TYPE": "Demon",
+      "NUMBER": 1,
+      "MIND": 70,
+      "ENDURANCE": 50,
+      "BODY": 60,
+      "HEALTH": 30,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 60,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Penetrating (2), Frightening, Ruthlessness (1), Swift",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D6 damage",
+            "+1 Armor (all Hit Locations)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Inferno Rain (Magical): The Infernal Tormentor conjures a storm of molten projectiles that rain down upon all characters. Each creature in the room must make a Dodge check, taking 2D4 Infernal damage on a failed check, or half as much on a successful one."
+        },
+        {
+          "D6": 2,
+          "Action": "Burning Grasp (Physical): The Infernal Tormentor reaches out with its fiery claws, making a melee attack that deals D8 Infernal damage. The target must make an Athletics check or be grappled by the Tormentor's burning grasp, becoming Restrained. The target takes 1 Fire damage at the start of each of its turns while grappled."
+        },
+        {
+          "D6": 3,
+          "Action": "Infernal Shapechange: The Infernal Tormentor shifts its form, becoming Immune to Fire damage and Resistant to Bludgeoning, Piercing, and Slashing damage for 2 rounds."
+        },
+        {
+          "D6": 4,
+          "Action": "Fiery Eruption (Magical): The Infernal Tormentor releases a burst of fiery energy, creating a cone of searing flames in front of it. Each creature in the room must make a Dodge check, taking 3D4 Fire damage on a failed check, or half as much on a successful one."
+        },
+        {
+          "D6": 5,
+          "Action": "Infernal Wrath (Physical): The Infernal Tormentor channels its rage into a single devastating attack. On a hit, the target takes 2D6 Infernal damage and is knocked Prone."
+        },
+        {
+          "D6": 6,
+          "Action": "Hellfire Nova (Magical): The Infernal Tormentor unleashes a nova of hellfire, engulfing everything within the room. Each creature must make a Dodge check, taking D8 Fire + D4 Infernal damage on a failed check, or half as much on a successful one."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "The Infernal Tormentor is a malevolent entity of raging flames and smoldering fury that stands as an embodiment of the infernal planes. With an ever-shifting form that mirror the intensity of its inner fire, this Overseer scorches the battlefield with searing fire-based assaults, conjuring molten projectiles that rain down upon foes. Its unbridled fury allows it to unleash devastating melee strikes that cleave through armor and courage alike."
+    },
+    {
+      "page": 193,
+      "name": "Pyroclasmic Possessor",
+      "TYPE": "Demon",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 40,
+      "HEALTH": 20,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 60,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Ruthlessness (2)",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+5 Health",
+            "+D8 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Infernal Possession (Magical): The Pyroclasmic Possessor targets a creature, who must succeed on a Resolve check or be possessed for 2 rounds. While possessed, the creature's actions are controlled by the Pyroclasmic Possessor, who will force the creature to attack its allies, or itself if there aren’t any. The creature can repeat the Resolve check at the end of each of its turns, ending the possession on a success."
+        },
+        {
+          "D6": 2,
+          "Action": "Eruption of Flame (Magical): The Pyroclasmic Possessor conjures a burst of flame that erupts. Creatures in the area must make a Dodge check, taking D6 Fire damage on a failed check, or half as much damage on a successful one."
+        },
+        {
+          "D6": 3,
+          "Action": "Molten Projectiles (Magical): The Pyroclasmic Possessor hurls molten projectiles at up to three targets. Each target must make a Dodge check or suffer 2D6 Fire damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Possessed Blaze: The Pyroclasmic Possessor envelops itself in a swirling aura of fire for 2 rounds. Creatures that are engaged in combat with it gain the Burning condition."
+        },
+        {
+          "D6": 5,
+          "Action": "Burning Urge: The Pyroclasmic Possessor issues a fiery command that reverberates across the necropolis. Make a Tension Die check."
+        },
+        {
+          "D6": 6,
+          "Action": "Inferno's Grasp: The Pyroclasmic Possessor reaches out with its fiery spectral form to grasp a target. The target must pass an Athletics check or take 2D4 Fire damage and be Restrained by the Pyroclasmic Possessor until the end of its next turn."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "This entity of fiery possession and smoldering dominance manifests as a malevolent spirit woven from the very flames of the abyss. Its spectral form is wreathed in incendiary energies that engulf the surroundings, leaving scorched footprints in its wake. Its most frightening ability is its power to invade the minds of its victims, compelling them to enact its destructive will, while conjuring molten projectiles that erupt from the very earth. The Pyroclasmic Possessor will force those who face it to wrestle the scalding fires that threaten to consume all in a pyroclasmic inferno."
+    },
+    {
+      "page": 195,
+      "name": "Veilshifter",
+      "TYPE": "Astral",
+      "NUMBER": 1,
+      "MIND": 70,
+      "ENDURANCE": 40,
+      "BODY": 30,
+      "HEALTH": 25,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Ruthlessness (1), Swift",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+5 Health",
+            "+D6 damage"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+5 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Illusory Mirage: The Veilshifter creates illusory duplicates of itself and its surroundings. It becomes heavily obscured, and all attacks targeting it have Disadvantage until the end of its next turn."
+        },
+        {
+          "D6": 2,
+          "Action": "Ethereal Distortion (Magical): The Veilshifter distorts reality around it, creating a shifting landscape of illusions, causing all creatures in the area to become Sickened (20) for D4 rounds."
+        },
+        {
+          "D6": 3,
+          "Action": "Reality Flux (Magical): The Veilshifter manipulates reality, causing a torrent of illusions to clash upon a target, dealing 2D6 Arcane damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Doppelganger Surge: The Veilshifter summons illusory doppelgangers that support it in combat. Two doppelgangers appear near the Veilshifter and use its Illusory Mirage action immediately on themselves. These doppelgangers last until they’ve been struck once, and only act once per round each. In their turn, a doppelganger makes a Physical attack against a target, dealing 2D4 Psychic damage if landing a strike. Only 4 doppelgangers can be active at a time."
+        },
+        {
+          "D6": 5,
+          "Action": "Dreamscape Shift (Magical): The Veilshifter warps the battlefield into an illusory dreamscape, altering the terrain. All creatures in the area must succeed on an Athletics check or fall Prone."
+        },
+        {
+          "D6": 6,
+          "Action": "Mystic Gaze (Magical): The Veilshifter gazes at a target, causing it to perceive illusory but very harmful threats, suffering 4D6 Arcane damage."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "Veilshifter, the Illusory Archon, is a terrifying creature that commands illusions and weaves intricate webs of deceit. Its form is ever-changing, a kaleidoscope of images that confound the senses, and its mastery over illusory arts casts doubt upon the very fabric of truth. Its manipulation of reality can transform the battlefield into a surreal dreamscape, summoning ephemeral doppelgangers that mimic its abilities, creating a challenge for those who face it, as they attempt to decipher the real from the unreal."
+    },
+    {
+      "page": 197,
+      "name": "Venomcloud Siren",
+      "TYPE": "Demon, Elemental",
+      "NUMBER": 1,
+      "MIND": 50,
+      "ENDURANCE": 60,
+      "BODY": 40,
+      "HEALTH": 20,
+      "HIT LOCATION": "Serpentoid ( Head)",
+      "ARMOR": "1 (All Hit Locations)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Penetrating (2), Ruthlessness (1), Elemental Affinity: Poison",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D10 damage",
+            "+1 Armor (all Hit Locations)"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Toxic Cloud: The Venomcloud Siren releases a cloud of toxic gas, forcing all creatures in the room to make an Endurance check or take 2D6 Poison damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Serpentine Strike (Physical): The Venomcloud Siren's serpentine body lashes out, targeting a single creature and dealing D6 Piercing damage to them. The target must pass an Endurance check or become Poisoned (1)."
+        },
+        {
+          "D6": 3,
+          "Action": "Venomous Projectiles (Magical): The Venomcloud Siren conjures venomous projectiles and launches them at up to three targets. Each hit target takes 2D6 Poison damage."
+        },
+        {
+          "D6": 4,
+          "Action": "Ensnaring Thorns (Magical): The Venomcloud Siren gestures, causing thorny vines to erupt from the ground. Creatures in the area must make an Athletics check or be Restrained by the thorns."
+        },
+        {
+          "D6": 5,
+          "Action": "Dreadful Siren Song (Magical): The Venomcloud Siren sings a haunting melody that fills the hearts of her enemies with dread. All creatures within the room must make a Resolve check or become Frightened (20)."
+        },
+        {
+          "D6": 6,
+          "Action": "Toxic Infusion: The Venomcloud Siren empowers herself with toxic magic. Her next successful attack deals an extra 2D6 Poison damage."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "The Venomcloud Siren is an eerie enchantress with a domain over the deadliest of toxins known to man. Her haunting presence is marked by billowing clouds of virulent gas that choke the air, and her serpentine movements conjure venomous projectiles that strike with deadly precision. She leaves a trail of creeping vines and thorns in her wake that ensnare the unwary, leaving them to quickly rot away and nurture life in the necropolis."
+    },
+    {
+      "page": 199,
+      "name": "Zephyrous Shadow",
+      "TYPE": "Demon, Elemental",
+      "NUMBER": 1,
+      "MIND": 70,
+      "ENDURANCE": 50,
+      "BODY": 40,
+      "HEALTH": 20,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 50,
+      "MAGIC RESISTANCE": 50,
+      "SPOILS": "1 roll on the Valuable table, 1 roll on the Precious table",
+      "TRAIT": "Penetrating (2), Savage, Ruthlessness (1), Swift, Elemental Affinity: Lightning",
+      "LEVEL ADAPTATION": [
+        {
+          "min_level": 5,
+          "changes": [
+            "+D10 damage"
+          ]
+        },
+        {
+          "min_level": 10,
+          "changes": [
+            "+10 Health",
+            "+D6 damage",
+            "+10 Combat Skill"
+          ]
+        }
+      ],
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Thunderbolt Barrage (Magical): The Zephyrous Shadow calls upon the power of lightning to unleash a barrage of electrifying bolts. Each creature in the room must make a Dodge check, taking 2D6 Lightning damage on a failed check, or half as much on a successful one."
+        },
+        {
+          "D6": 2,
+          "Action": "Shadow Cloak: The Zephyrous Shadow melds into the shadows, becoming nearly invisible until the start of its next turn. Attacks made against it have Disadvantage, and it becomes Resistant to all damage except Arcane damage."
+        },
+        {
+          "D6": 3,
+          "Action": "Stormshroud: The Zephyrous Shadow shrouds itself with lightning. For the next 2 rounds, all creatures that attack it suffer 2 Lightning damage. This Action does not stack, but rolling it again resets it duration."
+        },
+        {
+          "D6": 4,
+          "Action": "Disruptive Curse (Magical): The Zephyrous Shadow casts a disruptive curse upon a target in the room. For the next 2 rounds, the target is Cursed, and must pass a Resolve check each time it attacks, or do so with Disadvantage."
+        },
+        {
+          "D6": 5,
+          "Action": "Tempestuous Assault (Physical): The Zephyrous Shadow charges with electrified momentum, making a melee attack against a target that deals D6+2 Force damage on a hit."
+        },
+        {
+          "D6": 6,
+          "Action": "Galeforce Surge (Magical): The Zephyrous Shadow channels the winds and lightning into a devastating surge. Each creature in the room must make a Dodge check, taking 3D4 Force damage on a failed check, or half as much on a successful one."
+        }
+      ],
+      "OVERSEER": true,
+      "DESCRIPTION": "The Zephyrous Shadow is an enigmatic force woven from the very threads of lightning and shadow. This Overseer sends bolts of electric fury crackling through the air, casting curses that shroud its victims in disorienting darkness, and showing its dominion over the atmospheric energies that allow it to cast lightning-infused projectiles. Confronting the Zephyrous Shadow demands an absolute mastery of arms and the ability to unravel its elusive, thunderous tactics."
+    },
+    {
+      "page": 200,
+      "name": "Arcane Companion",
+      "TYPE": "Astral",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 40,
+      "BODY": 30,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 80,
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Arcane Bolt (Magical): The Arcane Companion unleashes a bolt of aether at a target, dealing D6+1 Arcane damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 5,
+          "Action": "Ethereal Surge (Magical): The Arcane Companion channels ethereal energy into a focused blast directed at a target, dealing 2D4 Arcane damage, and the target must succeed on an Endurance check or be Blinded until the end of their next turn."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "A barely sentient amalgam of aetheric energies that hovers a few centimeters above ground at all times, Arcane Companions are a common sight across all battlefields where Arcanists are involved."
+    },
+    {
+      "page": 201,
+      "name": "Fire Elemental",
+      "TYPE": "Elemental",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 60,
+      "BODY": 40,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 60,
+      "DESCRIPTION": "The most common of elementals originating from the Plane of Fire, Fire Elementals are nonetheless powerful creatures, moreso when directed by a cunning magician.",
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Ember Blast (Physical): The Fire Elemental fires a blast of flames at a target, dealing D4 Fire damage on a hit. Additionally, the target must succeed on a Body check to avoid receiving the Burning condition."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 5,
+          "Action": "Firestorm (Magical): The Fire Elemental summons a firestorm that encompasses the whole room. All creatures in the area take D4 Fire damage."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ]
+    },
+    {
+      "page": 201,
+      "name": "Frost Elemental",
+      "TYPE": "Elemental",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 60,
+      "BODY": 40,
+      "HEALTH": 12,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 60,
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Frostbite (Magical): The Frost Elemental reaches out with a spear of ice, dealing D6 Cold damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 5,
+          "Action": "Blizzard's Embrace (Magical): The Frost Elemental summons a swirling blizzard, dealing D4 Cold damage to all targets. Additionally, creatures that fail the Spellward check are Restrained."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "A powerful creature made of spiritual cold, capable of bringing a devastating amount of power upon the enemies of the Frostweaver who summoned it forth."
+    },
+    {
+      "page": 202,
+      "name": "Skeleton",
+      "TYPE": "Undead",
+      "NUMBER": 1,
+      "MIND": 40,
+      "ENDURANCE": 20,
+      "BODY": 20,
+      "HEALTH": 4,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "–",
+      "COMBAT SKILL": 30,
+      "MAGIC RESISTANCE": 20,
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Rabid Slash (Physical): The Skeleton swings its weapon with little precision, dealing D4 Slashing damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 5,
+          "Action": "Ethereal Grasp (Magical): The Skeleton reaches out with its hand, attempting to touch the essence of a target's life force. If the target fails the Magic Resistance check they take D4 Necrotic damage, and the Skeleton regains 1 Health."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "These animated remnants form the backbone of many an army, and are the favored minions of gravecallers and necromancers all across the known world."
+    },
+    {
+      "page": 203,
+      "name": "Wight",
+      "TYPE": "Undead",
+      "NUMBER": 1,
+      "MIND": 60,
+      "ENDURANCE": 10,
+      "BODY": 10,
+      "HEALTH": 10,
+      "HIT LOCATION": "Humanoid ( Head)",
+      "ARMOR": "2 (Chest)",
+      "COMBAT SKILL": 40,
+      "MAGIC RESISTANCE": 60,
+      "D6_ACTIONS": [
+        {
+          "D6": 1,
+          "Action": "Deathly Slash (Physical): The Wight extends one of its ethereal limbs, striking with a swipe of pure death energy. This attack deals D6 Necrotic damage."
+        },
+        {
+          "D6": 2,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 3,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 4,
+          "Action": "Same as 1"
+        },
+        {
+          "D6": 5,
+          "Action": "Embrace of Death: The Wight wraps itself around a target in a deathly embrace. The target must make an Endurance check or take D4+1 Necrotic damage."
+        },
+        {
+          "D6": 6,
+          "Action": "Same as 5"
+        }
+      ],
+      "DESCRIPTION": "Wights are undead creatures twisted by necromancy and driven by a relentless hunger for the souls of the living. It appears as a gaunt, withered figure, its flesh pale and stretched tightly over its bones, as if caught in an eternal state of rot just before complete decay. Whatever they were in life, they are powerful warriors in undead, and a common sight in any necromantic army."
+    }
+  ]
+}

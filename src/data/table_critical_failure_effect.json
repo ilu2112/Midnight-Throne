@@ -1,0 +1,82 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Critical Failure Effect",
+  "pages": [
+    71,
+    72,
+    73
+  ],
+  "columns": [
+    "CHECK",
+    "CRITICAL SUCCESS EFFECT",
+    "CRITICAL FAILURE EFFECT"
+  ],
+  "num_rows": 13,
+  "rows": [
+    {
+      "CHECK": "Acrobatics",
+      "CRITICAL SUCCESS EFFECT": "Daring Maneuver: The character performs a daring acrobatic maneuver. They gain a +30 bonus to their next action due to the momentum and adrenaline rush from the successful maneuver. This bonus lasts for one round.",
+      "CRITICAL FAILURE EFFECT": "Catastrophic Tumble: The character loses control during an acrobatic attempt and suffers a severe fall, taking D6 Bludgeoning damage from the fall. Additionally, they are Prone."
+    },
+    {
+      "CHECK": "Athletics",
+      "CRITICAL SUCCESS EFFECT": "Herculean Feat: The character performs an incredible display of physical prowess, exceeding all expectations. Their next successful attack is a Critical Strike, or the next door/container they encounter is smashed open automatically (whichever happens first).",
+      "CRITICAL FAILURE EFFECT": "Overexertion: The character pushes themselves too hard during an athletic endeavor, resulting in a mishap. They gain D4 Exhaustion."
+    },
+    {
+      "CHECK": "Dodge",
+      "CRITICAL SUCCESS EFFECT": "Elusive Maneuver: The character displays exceptional agility and awareness, narrowly avoiding an attack. They gain a +20 bonus to their Dodge Skill for the next round.",
+      "CRITICAL FAILURE EFFECT": "Clumsy Misstep: The character loses their footing or makes a critical error in judgment, making them an easier target. They receive double damage from the source they’re trying to avoid."
+    },
+    {
+      "CHECK": "Endurance",
+      "CRITICAL SUCCESS EFFECT": "Unwavering Resilience: The character demonstrates exceptional fortitude and resilience in the face of hardship. They recover 1 Health and lose D4 Exhaustion.",
+      "CRITICAL FAILURE EFFECT": "Overwhelmed by Strain: The character succumbs to the physical stress of the situation, suffering a temporary setback. They gain D4 Exhaustion."
+    },
+    {
+      "CHECK": "Initiative",
+      "CRITICAL SUCCESS EFFECT": "Snap Reaction: You act at lightning speed, allowing you to take advantage of your opponent. Perform your next attack with Advantage.",
+      "CRITICAL FAILURE EFFECT": "Taken by Surprise: You are unaware of your surroundings and lose your first turn as a result."
+    },
+    {
+      "CHECK": "Medicine",
+      "CRITICAL SUCCESS EFFECT": "Miraculous Recovery: The character demonstrates exceptional medical skill and knowledge, achieving an improbable outcome. They recover D10 Toughness.",
+      "CRITICAL FAILURE EFFECT": "Harmful Treatment: The character makes a critical error in diagnosis or treatment, potentially worsening the patient's condition. They suffer 2D6 Bludgeoning damage."
+    },
+    {
+      "CHECK": "Perception",
+      "CRITICAL SUCCESS EFFECT": "Heightened Awareness: The character notices hidden details or gains exceptional situational awareness. They gain Advantage on their next Perception check.",
+      "CRITICAL FAILURE EFFECT": "Blind Spot: The character completely misses a crucial detail or misinterprets a situation. They have Disadvantage on their next Perception check."
+    },
+    {
+      "CHECK": "Resolve",
+      "CRITICAL SUCCESS EFFECT": "Unwavering Will: The character displays exceptional mental fortitude and resilience, resisting the pressures of the situation. They recover D4+1 Sanity.",
+      "CRITICAL FAILURE EFFECT": "Mental Lapse: The character succumbs to the mental pressure of the situation, making them vulnerable to further influence or manipulation. They lose D4 Sanity."
+    },
+    {
+      "CHECK": "Reason",
+      "CRITICAL SUCCESS EFFECT": "Brilliant Deduction: The character demonstrates exceptional logic and critical thinking, making a breakthrough in their understanding. They immediately identify a magic item in their possession, without spending an Attunement Crystal.",
+      "CRITICAL FAILURE EFFECT": "Mental Block: The character suffers a temporary lapse in logic or reasoning, hindering their ability to think clearly and causing them to wander aimlessly. Increase the Lair/Domain Exit Die by 1 stage."
+    },
+    {
+      "CHECK": "Scavenging",
+      "CRITICAL SUCCESS EFFECT": "Good Find: A Critical Success roll when making a Scavenging check allows you to add +5 to the roll on the Scavenging table (if you choose).",
+      "CRITICAL FAILURE EFFECT": "Noisy Search: You’ve made a lot of noise while searching the room, attracting some unwanted attention. Roll on the Combat Encounters table on page 133."
+    },
+    {
+      "CHECK": "Spellward",
+      "CRITICAL SUCCESS EFFECT": "Unbreakable Will: The character demonstrates exceptional resistance to magical influence, defying the effects of the spell or Magical attack. They become Resistant to damage from magic for the next D4 rounds.",
+      "CRITICAL FAILURE EFFECT": "Magical Vulnerability: The character succumbs to the full force of the magical influence, experiencing the worst possible outcome of the spell or attack. They receive double damage from the spell, or its consequences last twice as long."
+    },
+    {
+      "CHECK": "Stealth",
+      "CRITICAL SUCCESS EFFECT": "Ghost in the Shadows: The character moves with exceptional stealth, becoming nearly invisible to anyone in the vicinity. If they perform an attack in the next round, it strikes automatically.",
+      "CRITICAL FAILURE EFFECT": "Flimsy Footing: The character makes a critical error in their movement or actions, alerting their pursuers. They have Disadvantage on any action they perform in the next round, due to being surprised."
+    },
+    {
+      "CHECK": "Thievery",
+      "CRITICAL SUCCESS EFFECT": "Masterful Thief: The character executes their thieving act with exceptional skill and precision, exceeding expectations. They receive Advantage on their next Thievery check.",
+      "CRITICAL FAILURE EFFECT": "Bungled Attempt: The character makes a critical error during their thieving attempt, leading to complications. They have accidentally triggered a trap they had somehow missed. Roll on the Traps table (page 119)."
+    }
+  ]
+}

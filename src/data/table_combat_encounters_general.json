@@ -1,0 +1,21 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Combat Encounters General",
+  "page": 133,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "COMBAT ENCOUNTERS - GENERAL"
+  ],
+  "num_rows": 2,
+  "rows": [
+    {
+      "D6": "1-3",
+      "COMBAT ENCOUNTERS - GENERAL": "Combat Encounters - Table A"
+    },
+    {
+      "D6": "4-6",
+      "COMBAT ENCOUNTERS - GENERAL": "Combat Encounters - Table B"
+    }
+  ]
+}

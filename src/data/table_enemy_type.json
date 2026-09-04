@@ -1,0 +1,49 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Enemy Type",
+  "pages": [129, 130, 131, 225],
+  "columns": ["D8", "ENEMY TYPE", "EFFECT"],
+  "num_rows": 8,
+  "rows": [
+    {
+      "D8": 1,
+      "ENEMY TYPE": "Animal",
+      "EFFECT": "No unique resistances or vulnerabilities, though some individual species might have their own."
+    },
+    {
+      "D8": 2,
+      "ENEMY TYPE": "Astral",
+      "EFFECT": "Immune to the Bleeding, Poisoned, Sickened, and Frightened conditions."
+    },
+    {
+      "D8": 3,
+      "ENEMY TYPE": "Plant",
+      "EFFECT": "Vulnerable to Fire damage. Immune to the Frightened and Blinded conditions."
+    },
+    {
+      "D8": 4,
+      "ENEMY TYPE": "Demon",
+      "EFFECT": "Restored by Infernal damage. Vulnerable to Holy damage. Immune to the Poisoned condition."
+    },
+    {
+      "D8": 5,
+      "ENEMY TYPE": "Elemental",
+      "EFFECT": "Restored by damage matching their elemental affinity (e.g. a Fire Elemental is Restored by Fire damage). Immune to the Bleeding, Sickened, and Poisoned conditions."
+    },
+    {
+      "D8": 6,
+      "ENEMY TYPE": "Undead",
+      "EFFECT": "Vulnerable to Holy damage. Restored by Necrotic damage. Immune to the Bleeding, Sickened, Poisoned, and Frightened conditions."
+    },
+    {
+      "D8": 7,
+      "ENEMY TYPE": "Humanoid",
+      "EFFECT": "No unique resistances or vulnerabilities."
+    },
+    {
+      "D8": 8,
+      "ENEMY TYPE": "Construct",
+      "EFFECT": "Immune to the Charmed, Poisoned, Bleeding, Sickened, Frightened, and Sleeping conditions."
+    }
+  ]
+}

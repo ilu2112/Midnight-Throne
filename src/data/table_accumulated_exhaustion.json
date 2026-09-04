@@ -1,0 +1,29 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Accumulated Exhaustion",
+  "page": 90,
+  "table_index_on_page": 1,
+  "columns": [
+    "ACCUMULATED EXHAUSTION",
+    "EFFECT"
+  ],
+  "num_rows": 4,
+  "rows": [
+    {
+      "ACCUMULATED EXHAUSTION": "0-10",
+      "EFFECT": "No effects, other than some heavy breathing and sweating."
+    },
+    {
+      "ACCUMULATED EXHAUSTION": "11-15",
+      "EFFECT": "You heal half of the amount of Wounds from all sources."
+    },
+    {
+      "ACCUMULATED EXHAUSTION": "16-20",
+      "EFFECT": "You have Disadvantage on all checks."
+    },
+    {
+      "ACCUMULATED EXHAUSTION": "21+",
+      "EFFECT": "You die, your body no longer capable of enduring the accumulated stress and fatigue."
+    }
+  ]
+}

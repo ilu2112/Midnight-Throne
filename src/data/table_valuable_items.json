@@ -1,0 +1,29 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Valuable Items",
+  "page": 213,
+  "table_index_on_page": 3,
+  "columns": [
+    "D20",
+    "VALUABLE ITEMS"
+  ],
+  "num_rows": 4,
+  "rows": [
+    {
+      "D20": "1-5",
+      "VALUABLE ITEMS": "Random Potion"
+    },
+    {
+      "D20": "6-12",
+      "VALUABLE ITEMS": "Attunement Crystal"
+    },
+    {
+      "D20": "13-16",
+      "VALUABLE ITEMS": "Fragment"
+    },
+    {
+      "D20": "17-20",
+      "VALUABLE ITEMS": "Magic Item"
+    }
+  ]
+}

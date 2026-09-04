@@ -1,0 +1,93 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Gloves Magic Properties",
+  "page": 229,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "GLOVES MAGIC PROPERTIES"
+  ],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "GLOVES MAGIC PROPERTIES": "Roll on the Damage Type table. This item grants you damage reduction based on its rarity: +1 Uncommon, +2 Rare, +3 Epic."
+    },
+    {
+      "D20": 2,
+      "GLOVES MAGIC PROPERTIES": "This item grants you Spellward based on its rarity: +10 Uncommon, +20 Rare, +30 Epic."
+    },
+    {
+      "D20": 3,
+      "GLOVES MAGIC PROPERTIES": "This Armor grants you Resolve based on the Glove's rarity: +10 Uncommon, +20 Rare, +30 Epic."
+    },
+    {
+      "D20": 4,
+      "GLOVES MAGIC PROPERTIES": "Increase a Skill of your choosing by 20."
+    },
+    {
+      "D20": 5,
+      "GLOVES MAGIC PROPERTIES": "Every time you were to gain Exhaustion, reduce the amount gained by 1, to a minimum of 1."
+    },
+    {
+      "D20": 6,
+      "GLOVES MAGIC PROPERTIES": "You have Advantage on Athletics checks."
+    },
+    {
+      "D20": 7,
+      "GLOVES MAGIC PROPERTIES": "Increase your Unarmed Combat & Fist Weapons Skill by 30."
+    },
+    {
+      "D20": 8,
+      "GLOVES MAGIC PROPERTIES": "Reroll any failed Thievery checks while attempting to open a lock. This can be done once per door."
+    },
+    {
+      "D20": 9,
+      "GLOVES MAGIC PROPERTIES": "Reroll any failed Thievery checks while attempting to dismantle a trap. This can be done once per trap."
+    },
+    {
+      "D20": 10,
+      "GLOVES MAGIC PROPERTIES": "Once per Encounter, you can make a special punch attack that deals 2D6+2 Bludgeoning damage. This is a Free Action that requires an Unarmed Combat & Fist Weapons check."
+    },
+    {
+      "D20": 11,
+      "GLOVES MAGIC PROPERTIES": "You have Advantage on Scavenge checks."
+    },
+    {
+      "D20": 12,
+      "GLOVES MAGIC PROPERTIES": "After rolling on the Scavenging table (page 116), you can choose to adjust the die roll by up to D4."
+    },
+    {
+      "D20": 13,
+      "GLOVES MAGIC PROPERTIES": "Increase the amount of Armor provided by vambraces you wear by 1."
+    },
+    {
+      "D20": 14,
+      "GLOVES MAGIC PROPERTIES": "Increase your attack Skill by 10 when attempting to Parry an attack."
+    },
+    {
+      "D20": 15,
+      "GLOVES MAGIC PROPERTIES": "Increase your max Aether by D10."
+    },
+    {
+      "D20": 16,
+      "GLOVES MAGIC PROPERTIES": "Once per Encounter you can use an Ability that has an Aether cost without spending any Aether."
+    },
+    {
+      "D20": 17,
+      "GLOVES MAGIC PROPERTIES": "Your weapon attacks deal +1 damage."
+    },
+    {
+      "D20": 18,
+      "GLOVES MAGIC PROPERTIES": "Roll on the Damage Type table. You can choose to deal that damage type with your weapon attacks."
+    },
+    {
+      "D20": 19,
+      "GLOVES MAGIC PROPERTIES": "Heal 1 Wound each time you defeat an opponent."
+    },
+    {
+      "D20": 20,
+      "GLOVES MAGIC PROPERTIES": "Increase your max Toughness by D10."
+    }
+  ]
+}

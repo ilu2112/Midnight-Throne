@@ -1,0 +1,313 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Events",
+  "pages": [
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115
+  ],
+  "columns": [
+    "D100",
+    "EVENTS"
+  ],
+  "num_rows": 73,
+  "rows": [
+    {
+      "D100": "1-10",
+      "EVENTS": "There’s a trap in this room. Roll on the Traps table and follow the procedures described on page 117."
+    },
+    {
+      "D100": "11-20",
+      "EVENTS": "There’s something of value here. Roll on the Spoils table (page 213)."
+    },
+    {
+      "D100": "21-30",
+      "EVENTS": "You’ve found a Trader. Check page 127 to learn more about them."
+    },
+    {
+      "D100": 31,
+      "EVENTS": "Altar of Sacrifice - Dyxemis. This altar is dedicated to the Vaelorian God of Pain. Sacrifice 1 Health to gain +5 max Toughness for the next D10+2 rooms/corridors."
+    },
+    {
+      "D100": 32,
+      "EVENTS": "Altar of Sacrifice - Voteus. This altar is dedicated to the Vaelorian Goddess of War. Sacrifice 1 Health to gain +10 to all attack checks for the next D10+2 rooms/corridors."
+    },
+    {
+      "D100": 33,
+      "EVENTS": "Altar of Sacrifice - Udall. This altar is dedicated to the Vaelorian Goddess of Fury. Sacrifice 1 Health to add +D4 Fire damage to your Damage Pool for the next D10+2 rooms/corridors."
+    },
+    {
+      "D100": 34,
+      "EVENTS": "Altar of Sacrifice - Koias. This altar is dedicated to the Vaelorian God of Magic. Sacrifice 1 Health to gain +5 max Aether for the next D10+2 rooms/corridors."
+    },
+    {
+      "D100": 35,
+      "EVENTS": "Altar of Sacrifice - Keasis. This altar is dedicated to the Vaelorian Goddess of Peace. Sacrifice 1 Health to recover D4 Sanity."
+    },
+    {
+      "D100": 36,
+      "EVENTS": "The ground and ceiling above you shake and tremble, and you are showered in dust and pebbles. Make a successful Endurance check to avoid gaining 2 Exhaustion."
+    },
+    {
+      "D100": 37,
+      "EVENTS": "A nagging voice rises within you, making you question why are you bothering carrying all those coins when you have no use for them down here. Make a successful Resolve check or lose D100₵."
+    },
+    {
+      "D100": 38,
+      "EVENTS": "You enter a room completely full of human bones, a veritable wall of femurs and skulls. Make a Resolve check to avoid losing 1 Sanity. Unfortunately, the pile seems to be much more unstable than you initially thought: make a Dodge check. If you pass it, you gain 10 XP and can make a roll on the Spoils table, as you uncover something of value beneath the bones. If you fail, you receive 2D6 Bludgeoning damage."
+    },
+    {
+      "D100": 39,
+      "EVENTS": "You find strange markings on the walls and floors. Make a Reason check: if you pass it you gain 10 XP, as you understand better the nature of this place and its inhabitants. If you fail, you’re so distracted by the markings that you fail to realize that you’re being attacked. Roll on the Combat Encounter table, the enemy has surprised you!"
+    },
+    {
+      "D100": 40,
+      "EVENTS": "It seems like a massacre took place here very recently, as the mangled remains of several people can be seen spread across the room. Each time you enter this room you must make a Resolve check to avoid losing 2 Sanity, but you can attempt to Scavenge it twice."
+    },
+    {
+      "D100": 41,
+      "EVENTS": "Much to your surprise, you find an old man sitting inside this room. He seems to be a beggar that has probably fallen into Ker Nethalas by accident. Make a Reason check: if you pass it, you manage to give some indications to the man that will hopefully help him, and he thanks you by giving you something of value; roll on the Spoils table. If you fail, you didn’t notice his strange behavior and the weird bulge on his chest. The man explodes in front of your eyes as a Necropede bursts out of him and attacks you!"
+    },
+    {
+      "D100": 42,
+      "EVENTS": "This seems to be an old smuggler’s hideout, as the room is full of boxes, most of them empty. Make an Athletics check to attempt to open one of the boxes; if you pass it you can make a roll on the Spoils table."
+    },
+    {
+      "D100": 43,
+      "EVENTS": "A mangled body sits against one of the room’s walls. Make a Perception check: if you pass it, you find a charm among what’s left of the body. The charm allows you to add +D4 Fire damage to your Damage Pool when attached to your weapon, but its effects only last a single room."
+    },
+    {
+      "D100": 44,
+      "EVENTS": "A constant stream of blood pours from one of the walls in this room. As you attempt to learn what’s going on, make a Reason check: if you pass it, you don’t really understand it any better but you earn 10 XP. If you fail you’ve managed to accidentally touch the blood, which seems to be extremely acidic. You receive 2D4 Acid damage."
+    },
+    {
+      "D100": 45,
+      "EVENTS": "You find a body that has been clearly drained of blood slumped against the wall. Make a Perception check as you examine the body: you find something of value, roll on the Spoils table. Unfortunately, you must also make a Dodge check, as the body suddenly lurches at you, before darting into the dark. If you fail, you are scratched and are Bleeding (1)."
+    },
+    {
+      "D100": 46,
+      "EVENTS": "You come across a terribly wounded and mutilated man, somehow still alive. If you choose to help him, make a Medicine check and remove 1x Bandage. If you succeed the check you earn 20 XP. If you can't help or simply decide to ignore the man and move on, you lose 1 Sanity."
+    },
+    {
+      "D100": 47,
+      "EVENTS": "A terrible sigil is painted in blood across the room’s floor. Your vision swims even by simply glancing at it, but you still feel curious about it. If you insist on deciphering the sigil, make a Reason check: if you pass it you earn 20 XP, but if you fail you automatically lose D4 Sanity, without a Resolve check."
+    },
+    {
+      "D100": 48,
+      "EVENTS": "A dark, ominous pool of water is at the center of this room. You think you see a glimmer at the bottom… If you attempt to reach down and see what you find, make an Acrobatics check, as you carefully balance on the pool’s edge. If you pass it, you manage to pull out something of value: roll on the Spoils table. If you fail, you slip and fall inside. Roll on the Growing Darkness table."
+    },
+    {
+      "D100": 49,
+      "EVENTS": "A large hole on one of the room’s walls seems to be almost inviting you to take a look inside it… If you choose to do so, make an Athletics check, as you stretch your arm as deep inside as you can. If you pass it, you manage to pull out something interesting: make a roll on the Spoils table. If you fail, something attempts to pull you in! You receive 2D6 Slashing damage before you manage to free yourself."
+    },
+    {
+      "D100": 50,
+      "EVENTS": "The sudden toll of a bell fills the room and your mind. With a scream, you cover your ears and attempt to resist the psychic assault of the bell, which is nowhere to be seen. Make a Resolve check: if you pass, you gain 20 XP, as you manage to control the attack. If you fail choose one: roll on the Growing Darkness table, or roll on the Madness table."
+    },
+    {
+      "D100": 51,
+      "EVENTS": "This room has been recently turned into a makeshift mausoleum. At the center of it, a sarcophagus, covered with melted candles, has clearly been dragged to where it stands now. If you choose to desecrate the tomb, you lose 1 Sanity but can make a roll on the Spoils table. If you choose to take a moment of respite and say a quick prayer for whoever is buried here, you regain D4 Sanity."
+    },
+    {
+      "D100": 52,
+      "EVENTS": "A twisted effigy made from the remains of countless people has been erected here. A dark energy draws you closer to it, but you can try to resist. Make a Resolve check: if successful you earn 10 XP, if you fail you feel the urge to somehow contribute to this monument of death, deeply cutting your arm and pouring blood over it. You receive 3D4 Slashing damage."
+    },
+    {
+      "D100": 53,
+      "EVENTS": "As you enter the room, the smell of death invades your nostrils, making you choke. A trio of recently killed men hang from chains, their faces purple and bloated. If you spend time taking them down and trying to give their bodies the rest they deserve, you gain 2 Exhaustion but recover D4 Sanity. If you ignore the corpses and move on, roll on the Growing Darkness table."
+    },
+    {
+      "D100": 54,
+      "EVENTS": "You hear voices whispering in your ear, ghosts from the Vaelorian Ascendancy sharing forbidden secrets. Make a Reason check: if you pass it, you earn 10 XP, if you fail you lose 1 Sanity, as your mind cannot handle their dark secrets."
+    },
+    {
+      "D100": 55,
+      "EVENTS": "The room is littered with funerary vases. You can Scavenge up to 3 times here."
+    },
+    {
+      "D100": 56,
+      "EVENTS": "As you step into this chamber, you are trapped in reverie. You see your own death, clear as day, and a wave of anguish assaults you. You must pass a Resolve check or lose D6 Sanity, but the next time your Health reaches 0 you can ignore the source of damage instead."
+    },
+    {
+      "D100": 57,
+      "EVENTS": "The moment you enter this room, you feel a terrible cold take a hold of your body. If you pass an Endurance check, you can add D8 Cold damage to your Damage Pool for your next melee attack."
+    },
+    {
+      "D100": 58,
+      "EVENTS": "In front of you a terrible statue depicting what must have been a member of the Vaelorian nobility appears to intensely stare at you, judging your worthiness. You feel repulsed by it instantly. If you accept its judgment, you must pass a Resolve check. If you do so, you are rewarded: roll twice on the Spoils table. If you decide to bash the statue you can remove the effects of a single active Growing Darkness Event."
+    },
+    {
+      "D100": 59,
+      "EVENTS": "A quiet, seemingly out of place fountain still pours water into a stone vase in a corner of this chamber. You sit for a few minutes, and take a moment to refresh yourself. You lose D4 Exhaustion."
+    },
+    {
+      "D100": 60,
+      "EVENTS": "Strange, ghostly flames seem to move randomly across this room. Each time you enter it, you must pass a Dodge check or be struck by the flames, losing 1 Sanity."
+    },
+    {
+      "D100": 61,
+      "EVENTS": "This room has a pile of scrolls that seem to have survived the passage of time. If you sit a while and read them you can make a Reason check. If you pass it, you learn a weakness of this Domain’s Overseer, allowing you to Stun them in the first round of combat against them."
+    },
+    {
+      "D100": 62,
+      "EVENTS": "The room is covered in mosaics depicting fencing stances and techniques. Maybe there’s something to learn here… Make a Reason check, if you pass it, increase your Bladed Weapons Skill by 1."
+    },
+    {
+      "D100": 63,
+      "EVENTS": "A furious specter appears in front of you, cursing you in the ancient Vaelorian tongue. Make a Resolve check: if you pass, you earn 10 XP, as you learn from the harrowing experience. If you fail, you lose 1 Sanity and gain 1 Exhaustion."
+    },
+    {
+      "D100": 64,
+      "EVENTS": "This room seems to be the remains of a tomb robber’s camp. Make a Perception check: if you pass it, you find D4 Torches and D10 Crafting Supplies."
+    },
+    {
+      "D100": 65,
+      "EVENTS": "You come across a terrible altar to a nameless deity. If you choose to defile it, make an Athletics check: if you pass it, you can eliminate the effects of a Growing Darkness event. If you fail, you’ve made too much noise, attracting trouble! Make a Combat Encounter table roll."
+    },
+    {
+      "D100": 66,
+      "EVENTS": "As you are about to enter the room, you hear the rustling of feet being dragged, growls echoing in the halls: the undead, hundreds of them! There’s no way you can defeat this many… Make a Stealth check: if you pass, you hide in the shadows as they move along, and you earn 20 XP. If you fail, you’ve made some noise and attracted the attention of a few of them. You must discard an item from your Belt and throw it to distract them away. If you have no Belt, you must throw whatever you’re carrying in your hand (i.e. weapon, Torch, Lamp, etc.)."
+    },
+    {
+      "D100": 67,
+      "EVENTS": "A feeling of holiness pervades this chamber, emanating from a single sigil embedded on the wall. Reset the Tension Die back to D8."
+    },
+    {
+      "D100": 68,
+      "EVENTS": "This chamber is set up as a meditation spot. If you choose, you can kneel and try to settle your mind. Make a Resolve check: if you pass it, you recover D4 Sanity, if you fail you lose 1 Sanity."
+    },
+    {
+      "D100": 69,
+      "EVENTS": "As you enter the room, you are confronted with an angry spirit. “Give me what you stole from me!”, it hisses at you. Make a Resolve check: if you pass it, you gain 10 XP, as you manage to resist the spirit’s demands. If you fail, the spirit passes through you, stealing D100₵."
+    },
+    {
+      "D100": 70,
+      "EVENTS": "The moment you enter this chamber, you are assaulted by a spirit of darkness, trying to possess you. Make a Resolve check: if you succeed, you manage to fend off the entity and you gain 20 XP in the process. If you fail, the spirit corrupts you and you feel overwhelmed by misery. Each time you enter a new room you lose 1 Sanity, unless you sacrifice (i.e. destroy) a magic item in your possession. Once you destroy a magic item the curse disappears."
+    },
+    {
+      "D100": 71,
+      "EVENTS": "Strange devices you don’t really understand are firmly planted around this room. Unfortunately, they seem to form some sort of magical circuit, since each time you cross between them you suffer a shock. Perform an Acrobatics check to skip above them to avoid receiving 2D6 Force damage each time you enter this room."
+    },
+    {
+      "D100": 72,
+      "EVENTS": "A pile of refuse covers the corner of the room. There might be something useful there? Make a Perception check, if successful you find something interesting: roll on the Spoils table."
+    },
+    {
+      "D100": 73,
+      "EVENTS": "You have walked into some sort of summoning, as a lone warlock performs a forbidden ritual within a circle. Everything inside of you is screaming at you to interrupt the ritual… Perform a Stealth check to sneak behind the warlock and take them out. If you succeed, you manage to eliminate them before they can even realize what’s going on; you recover D4 Sanity. If you fail, the warlock hears you and quickly casts some sort of spell on you. You wake up hours later, alive but confused. Increase your Exhaustion by 2 and roll on the Growing Darkness table."
+    },
+    {
+      "D100": 74,
+      "EVENTS": "The room is full of broken glass vials and flasks containing all sorts of alchemical substances, as well as the tools and equipment usually found in an alchemy lab. Make a Perception check: if you pass it, you find D4 Potions. If you fail, you still find an intact one."
+    },
+    {
+      "D100": 75,
+      "EVENTS": "Sprawled across the room’s floor you can see what seems to be the contents of someone’s bag. Huddled in a corner, you find the very recent corpse of the bag’s owner. Make a Perception check: if you pass it, roll on the Spoils table. If you fail, you don’t realize that whatever killed the person in this room has come back! Roll on the Combat Encounters table."
+    },
+    {
+      "D100": 76,
+      "EVENTS": "A section of one of the walls in this room seems to be made of moving pieces. Each piece has a different diagram, and you could swear they form a pattern, but they’re not correctly placed… Make a Reason check, if you manage you solve the puzzle, revealing a small section of the wall that contains 2D100₵."
+    },
+    {
+      "D100": 77,
+      "EVENTS": "A hole in the floor’s room is completely filled with viscera. You can stick your arm into it and search for something of value. Make a Perception check: if you pass it you can make a roll on the Spoils table. If you fail, you don’t find anything and lose 1 Sanity."
+    },
+    {
+      "D100": 78,
+      "EVENTS": "This large room appears to have been some sort of holding cell at some point. A rusty metal gate still blocks a corner of the room, and you can see some remains on the other side. If you attempt to open the gate make an Athletics check: if you succeed you find the desiccated corpse of a forgotten prisoner, and something of value. Make a roll on the Spoils table."
+    },
+    {
+      "D100": 79,
+      "EVENTS": "Some strange herbs grow from the corner of this dilapidated room. Make a Medicine check to determine if they have any medicinal properties: if you pass, you gain a dose of herbs that when consumed heal you 2D6 Wounds."
+    },
+    {
+      "D100": 80,
+      "EVENTS": "The room is covered in thick mud, and you immediately sink down to your knees. You must make an Athletics check to cross it: for each time you fail, you gain 1 Exhaustion."
+    },
+    {
+      "D100": 81,
+      "EVENTS": "A strange set of sigils cover the floor of this room. Convinced of the fact that they must hold some sort of key to understanding this place, you start studying them. Make a Reason check: if you pass, you can ignore the next roll on the Growing Darkness table. If you fail, you trigger some sort of failsafe and suffer 2D6 Arcane damage."
+    },
+    {
+      "D100": 82,
+      "EVENTS": "A swarm of small but ravenous vampire bats rush at you the second you enter this chamber. Make a successful Dodge check to avoid being bitten and scratched. If you fail you receive 2D4 Slashing damage. You must also pass an Endurance check or contract the Rot (see page 87 for more details on the Rot)."
+    },
+    {
+      "D100": 83,
+      "EVENTS": "When you enter this room, you feel the recognizable presence of a deity, forcing you to fall to your knees due to the spiritual pressure. Like a hammer crashing down on you, you hear a voice in your head, saying “You’ve done well, my son. Be cleansed”. You are sure about it, that was Hesie, Goddess of Purity. You recover D6 Sanity."
+    },
+    {
+      "D100": 84,
+      "EVENTS": "The second you step in this room you are assaulted by an invisible force that slams against you. Make a check with your weapon Skill of choice; if you succeed, you manage to fend off the assault and earn 10 XP. If you fail, you suffer D12 Bludgeoning damage."
+    },
+    {
+      "D100": 85,
+      "EVENTS": "A fountain with the shape of a demonic head pours water into a hole in the ground. If you choose to drink from it, you suffer 2D6 Infernal damage, but recover D6 Sanity."
+    },
+    {
+      "D100": 86,
+      "EVENTS": "This room has two doors, one to the left and one to the right (aside from the one you just entered through), despite what you rolled on the Room & Corridor Shape table. The door to the left leads you towards the Overseer’s lair: reduce the Lair Die by one stage. The one on the right leads you to a strange fountain with black waters pouring from it. If you decide to drink from it, you automatically trigger a roll on the Growing Darkness table, but recover D10 Toughness."
+    },
+    {
+      "D100": 87,
+      "EVENTS": "A pond that seems to have formed naturally after centuries of water dripping down from one of the sides fills this room. Inside it, you could swear you see something shining… Make an Athletics check: if you pass it, you manage to stretch enough without falling inside the pond, recovering 3D20₵. If you fail, you suddenly see your own reflection on the dark surface of the water twist into a hideous creature. You lose 1 Sanity."
+    },
+    {
+      "D100": 88,
+      "EVENTS": "A waterfall is furiously roaring in this chamber, water falling from up high in the darkness above. Make a Perception check: if you pass it, you manage to scurry out of the room before a group of enemies sneak up on you under the cover of the waterfall’s noise. If you fail, you’re attacked by surprise: roll on the Combat Encounters table."
+    },
+    {
+      "D100": 89,
+      "EVENTS": "A strange vine grows between the cracks in this room. Hanging from it are a few dark and plump berries. If you decide to eat them, roll D6: 1-3 you recover 5 Exhaustion, 4-6 you are poisoned, receiving 2D4 Poison damage."
+    },
+    {
+      "D100": 90,
+      "EVENTS": "As you step into this room you feel the crunch of broken bones beneath your feet. The place is completely littered with human remains, piled all around you. Make an Acrobatics check: if you fail, you’ve slipped on a femur and crashed into a pile of skulls, receiving D10 Bludgeoning damage. If you pass, you uncover something of value: roll on the Spoils table."
+    },
+    {
+      "D100": 91,
+      "EVENTS": "A strange, clearly arcane artifact vibrates and shakes at the center of this room. The size of a cart, it emits heat and light and feels and looks highly unstable, as if it were about to blow up. If you attempt to somehow deactivate it, make a Reason check: if you pass, the artifact stops shaking and emitting heat until it becomes inert; you earn 10 XP. If you fail or ignore the device, the next time a Growing Darkness event is triggered, ignore the result. Instead, the whole necropolis shakes as you can hear a loud explosion and debris falls on you, dealing 5D4 Bludgeoning damage."
+    },
+    {
+      "D100": 92,
+      "EVENTS": "Among the rubble and filth that covers this room, you find what looks like some sort of journal. It appears to belong to someone who was trapped down here as well, many decades ago. Maybe you can learn something about this place by studying it… Make a Reason check: if you succeed, you can ignore the next Growing Darkness event."
+    },
+    {
+      "D100": 93,
+      "EVENTS": "A crude map has been drawn on the wall of this room. Make a Reason check: if you pass, you can fully generate the next three rooms now, without having to directly walk into them."
+    },
+    {
+      "D100": 94,
+      "EVENTS": "A glowing sphere of what looks like aether-infused blood floats atop a pedestal in the center of this chamber. It calmly levitates there, and it doesn’t feel dangerous… If you touch it, the blood seeps into you: you gain +D10 temporary Aether, but immediately lose the Initiative in your next combat."
+    },
+    {
+      "D100": 95,
+      "EVENTS": "A large bronze chain hangs from the ceiling of this room. Upon closer inspection, it looks like it disappears into a small orifice, both up in the ceiling and on the floor, making you think that this is some sort of pulling contraption. If you decide to pull the chain, make an Athletics check: if you pass, you gain 20 XP, as you slowly but surely manage to make the chain move. If you fail, cackling laughter is heard booming in the room… The next Combat Encounter has its Combat Skill increased by +20."
+    },
+    {
+      "D100": 96,
+      "EVENTS": "A skeletal figure is slumped against the wall, and seems to have scribbled something on it. Make a Reason check: if you pass it, you manage to decipher the message. It’s a warning of what comes ahead, allowing you to start the next Combat Encounter with +20 Initiative."
+    },
+    {
+      "D100": 97,
+      "EVENTS": "As you’re crossing this empty room, you feel something grabbing at your ankle. Before you can react violently, you look down and see a human hand sticking out from a slit of the stone floor. There’s someone down there… and they want to propose something to you. If you accept their strange deal, you lose D4 maximum Sanity but gain D4 maximum Toughness."
+    },
+    {
+      "D100": 98,
+      "EVENTS": "This narrow chamber is filled with sharp iron pieces that stick from all surfaces, their purpose completely unknown to you. In order to cross the room safely, you must pass an Acrobatics check: if you fail, you are Bleeding (1)."
+    },
+    {
+      "D100": 99,
+      "EVENTS": "The room must be passing near some sort of volcanic chamber, because the heat here is completely unbearable. You gain D6 Exhaustion."
+    },
+    {
+      "D100": 100,
+      "EVENTS": "The ancient spirit of a Vaelorian necrolord appears in front of you, rushing towards you as it grabs your head from both sides. Make a Resolve check: if you pass it, you gain 100 XP, as it fills your mind with forbidden knowledge. If you fail, your mind can’t take it, and you must roll on the Madness table."
+    }
+  ]
+}

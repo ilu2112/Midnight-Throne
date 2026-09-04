@@ -1,0 +1,84 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Damage Type",
+  "page": 225,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "DAMAGE TYPE",
+    "DESCRIPTION"
+  ],
+  "num_rows": 14,
+  "rows": [
+    {
+      "D20": 1,
+      "DAMAGE TYPE": "Acid",
+      "DESCRIPTION": "Being damaged by Acid causes the Hit Location to lose 1 Armor until repaired at Camp."
+    },
+    {
+      "D20": "2-3",
+      "DAMAGE TYPE": "Arcane",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": "4-5",
+      "DAMAGE TYPE": "Bludgeoning",
+      "DESCRIPTION": "Ignores 1 point of Armor."
+    },
+    {
+      "D20": 6,
+      "DAMAGE TYPE": "Cold",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": "7-8",
+      "DAMAGE TYPE": "Force",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": 9,
+      "DAMAGE TYPE": "Fire",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": 10,
+      "DAMAGE TYPE": "Holy",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": 11,
+      "DAMAGE TYPE": "Infernal",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": 12,
+      "DAMAGE TYPE": "Lightning",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": "13-14",
+      "DAMAGE TYPE": "Necrotic",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": "15-16",
+      "DAMAGE TYPE": "Piercing",
+      "DESCRIPTION": "Deals +2 additional damage when the attacker's check is a Critical Strike (this additional damage is not doubled by the Critical Strike itself)."
+    },
+    {
+      "D20": 17,
+      "DAMAGE TYPE": "Poison",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": 18,
+      "DAMAGE TYPE": "Psychic",
+      "DESCRIPTION": "Ignores all Armor."
+    },
+    {
+      "D20": "19-20",
+      "DAMAGE TYPE": "Slashing",
+      "DESCRIPTION": "When an attack dealing 3 or less damage (after Armor) is applied, it deals an additional +1."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Armor Magic Properties",
+  "page": 226,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "ARMOR MAGIC PROPERTIES"
+  ],
+  "num_rows": 17,
+  "rows": [
+    {
+      "D20": "1-2",
+      "ARMOR MAGIC PROPERTIES": "Increase your Endurance by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": "3-4",
+      "ARMOR MAGIC PROPERTIES": "Increase your Resolve by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": "5-6",
+      "ARMOR MAGIC PROPERTIES": "Increase your Spellward by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": 7,
+      "ARMOR MAGIC PROPERTIES": "Reduce your max Aether by 5, but increase your max Toughness by 10."
+    },
+    {
+      "D20": 8,
+      "ARMOR MAGIC PROPERTIES": "Reduce your max Toughness by 5, but increase your max Aether by 10."
+    },
+    {
+      "D20": 9,
+      "ARMOR MAGIC PROPERTIES": "Roll on the Damage Type table. You are Resistant to that damage type."
+    },
+    {
+      "D20": 10,
+      "ARMOR MAGIC PROPERTIES": "Increase your Dodge by 20."
+    },
+    {
+      "D20": 11,
+      "ARMOR MAGIC PROPERTIES": "Opponents have their Combat Skill reduced by 10 when attacking you."
+    },
+    {
+      "D20": 12,
+      "ARMOR MAGIC PROPERTIES": "Enemies that damage you suffer 1 Piercing damage that cannot be avoided in any way."
+    },
+    {
+      "D20": 13,
+      "ARMOR MAGIC PROPERTIES": "This Armor works as a lightsource."
+    },
+    {
+      "D20": 14,
+      "ARMOR MAGIC PROPERTIES": "Increase your carrying capacity by 10."
+    },
+    {
+      "D20": 15,
+      "ARMOR MAGIC PROPERTIES": "Reroll any check once per Camp Rest."
+    },
+    {
+      "D20": 16,
+      "ARMOR MAGIC PROPERTIES": "Heal one target once per Camp Rest. The amount of Wounds healed depends on this item’s rarity: D10+2 Uncommon, D10+3 Rare, D10+4 Epic. This is a Standard Action."
+    },
+    {
+      "D20": 17,
+      "ARMOR MAGIC PROPERTIES": "After defeating a Combat Encounter, roll D6: a result of 1-3 means that you immediately recover D4 Toughness."
+    },
+    {
+      "D20": 18,
+      "ARMOR MAGIC PROPERTIES": "You’re Immune to Stunned."
+    },
+    {
+      "D20": 19,
+      "ARMOR MAGIC PROPERTIES": "Once per Camp Rest you can make vines sprout out of the Armor, leaving a target Restrained."
+    },
+    {
+      "D20": 20,
+      "ARMOR MAGIC PROPERTIES": "Once per Domain you can become your own shadow for D6+1 rounds. You can only be damaged by Arcane damage while in your shadow form."
+    }
+  ]
+}

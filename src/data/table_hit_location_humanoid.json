@@ -1,0 +1,41 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Hit Location Humanoid",
+  "page": 80,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "HIT LOCATION - HUMANOID"
+  ],
+  "num_rows": 7,
+  "rows": [
+    {
+      "D20": "1-3",
+      "HIT LOCATION - HUMANOID": "Right Leg"
+    },
+    {
+      "D20": "4-6",
+      "HIT LOCATION - HUMANOID": "Left Leg"
+    },
+    {
+      "D20": "7-9",
+      "HIT LOCATION - HUMANOID": "Abdomen"
+    },
+    {
+      "D20": "10-12",
+      "HIT LOCATION - HUMANOID": "Chest"
+    },
+    {
+      "D20": "13-15",
+      "HIT LOCATION - HUMANOID": "Left Arm"
+    },
+    {
+      "D20": "16-18",
+      "HIT LOCATION - HUMANOID": "Right Arm"
+    },
+    {
+      "D20": "19-20",
+      "HIT LOCATION - HUMANOID": "Head"
+    }
+  ]
+}

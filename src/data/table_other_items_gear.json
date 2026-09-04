@@ -1,0 +1,111 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Other Items Gear",
+  "page": 212,
+  "table_index_on_page": 1,
+  "columns": [
+    "ITEM",
+    "COST",
+    "WEIGHT",
+    "DESCRIPTION"
+  ],
+  "num_rows": 16,
+  "rows": [
+    {
+      "ITEM": "Backpack",
+      "COST": 500,
+      "WEIGHT": "Normal",
+      "DESCRIPTION": "Increases carrying capacity by 20 item slots. Can only equip 1."
+    },
+    {
+      "ITEM": "Bandage",
+      "COST": 10,
+      "WEIGHT": "Light",
+      "DESCRIPTION": "Heals D4 Toughness with a successful Medicine check. Consumable."
+    },
+    {
+      "ITEM": "Bedroll",
+      "COST": 200,
+      "WEIGHT": "Heavy",
+      "DESCRIPTION": "Grants +1 to the Camp Check."
+    },
+    {
+      "ITEM": "Belt",
+      "COST": "1,000",
+      "WEIGHT": "Normal",
+      "DESCRIPTION": "Allows you to have up to 4 items available in your Belt quickslots."
+    },
+    {
+      "ITEM": "Belt Lamp",
+      "COST": "1,500",
+      "WEIGHT": "Normal",
+      "DESCRIPTION": "Can be attached to a Belt, taking one of the slots. Requires Lamp Oil."
+    },
+    {
+      "ITEM": "Candle",
+      "COST": 2,
+      "WEIGHT": "Light",
+      "DESCRIPTION": "Serves as a lightsource, but only lasts 10 rooms. Consumable."
+    },
+    {
+      "ITEM": "Crowbar",
+      "COST": 50,
+      "WEIGHT": "Normal",
+      "DESCRIPTION": "+10 Athletics when attempting to break down a container or door."
+    },
+    {
+      "ITEM": "Flare",
+      "COST": 20,
+      "WEIGHT": "Light",
+      "DESCRIPTION": "This alchemical concoction reacts when in contact with the air, illuminating a room. Throwing a flare into a room or corridor serves as a lightsource. Consumable."
+    },
+    {
+      "ITEM": "Lamp",
+      "COST": 200,
+      "WEIGHT": "Normal",
+      "DESCRIPTION": "Serves as a lightsource. Requires Lamp Oil."
+    },
+    {
+      "ITEM": "Lamp Oil",
+      "COST": 5,
+      "WEIGHT": "Light",
+      "DESCRIPTION": "Fuel for a Lamp. Consumable."
+    },
+    {
+      "ITEM": "Lockpick",
+      "COST": 5,
+      "WEIGHT": "Light",
+      "DESCRIPTION": "Required to open locks. A Lockpick breaks per each failed attempt at lockpicking with the use of the Thievery Skill. Consumable."
+    },
+    {
+      "ITEM": "Pouch",
+      "COST": 100,
+      "WEIGHT": "Normal",
+      "DESCRIPTION": "Increases carrying capacity by 5 item slots. Can only equip 3 at once."
+    },
+    {
+      "ITEM": "Ration",
+      "COST": 5,
+      "WEIGHT": "Light",
+      "DESCRIPTION": "Consumable."
+    },
+    {
+      "ITEM": "Ritual Ingredient",
+      "COST": 10,
+      "WEIGHT": "Light",
+      "DESCRIPTION": "Required by Ritualists. Consumable."
+    },
+    {
+      "ITEM": "Thieves’ Toolkit",
+      "COST": 200,
+      "WEIGHT": "Normal",
+      "DESCRIPTION": "Required to disarm traps. +5 to Thievery."
+    },
+    {
+      "ITEM": "Torch",
+      "COST": 10,
+      "WEIGHT": "Light",
+      "DESCRIPTION": "Serves as a lightsource. Consumable."
+    }
+  ]
+}

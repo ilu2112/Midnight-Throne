@@ -1,0 +1,95 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Corridor Description",
+  "pages": [
+    100,
+    101
+  ],
+  "columns": [
+    "D20",
+    "CORRIDOR DESCRIPTION"
+  ],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "CORRIDOR DESCRIPTION": "The air is heavy with ancient dust, and the walls are lined with cobwebs. The faint echoes of distant footsteps can be heard."
+    },
+    {
+      "D20": 2,
+      "CORRIDOR DESCRIPTION": "Flickering torches cast eerie shadows on the stone walls. The air is damp, and the occasional drip of water can be heard."
+    },
+    {
+      "D20": 3,
+      "CORRIDOR DESCRIPTION": "The tunnel is barely wide enough for a single person to pass through. The walls are lined with ancient burial niches, some of which have been disturbed. You’re not sure if from within or without…"
+    },
+    {
+      "D20": 4,
+      "CORRIDOR DESCRIPTION": "Thick moss covers the damp stone walls, giving the corridor an eerie green glow. The sound of water dripping echoes throughout."
+    },
+    {
+      "D20": 5,
+      "CORRIDOR DESCRIPTION": "The passage is partially blocked by a cave-in, with rubble and debris scattered across the floor. Dim light filters through cracks in the ceiling."
+    },
+    {
+      "D20": 6,
+      "CORRIDOR DESCRIPTION": "The walls are adorned with elaborate tomb reliefs and carved epitaphs. The air feels heavy with the presence of the long-departed."
+    },
+    {
+      "D20": 7,
+      "CORRIDOR DESCRIPTION": "The narrow stone hall twists and turns, disappearing into darkness. The hall seems to have a slight downwards inclination, and it feels worn and slippery."
+    },
+    {
+      "D20": 8,
+      "CORRIDOR DESCRIPTION": "The air here is stale, and the sound of rats scurrying can be heard in the distance."
+    },
+    {
+      "D20": 9,
+      "CORRIDOR DESCRIPTION": "An eerie silence fills this corridor, broken only by the faint whispers of long-dead spirits. The air is heavy with an otherworldly stillness."
+    },
+    {
+      "D20": 10,
+      "CORRIDOR DESCRIPTION": "Strange luminescent fungi cover the walls, casting an ethereal glow. The tunnel twists and turns, creating an unsettling sense of disorientation."
+    },
+    {
+      "D20": 11,
+      "CORRIDOR DESCRIPTION": "This wide corridor is lined with towering statues and ornate sarcophagi. Faded tapestries hang from the ceiling, telling stories of ancient rulers."
+    },
+    {
+      "D20": 12,
+      "CORRIDOR DESCRIPTION": "The tunnel is partially submerged in water, with small ripples disturbing its still surface. The faint odor of decay permeates the air."
+    },
+    {
+      "D20": 13,
+      "CORRIDOR DESCRIPTION": "A hidden alcove branches off from the main passage, housing a forgotten altar or a small shrine. Dust-covered offerings lie undisturbed."
+    },
+    {
+      "D20": 14,
+      "CORRIDOR DESCRIPTION": "Strange symbols are etched onto the walls of this hall, possibly indicating directions."
+    },
+    {
+      "D20": 15,
+      "CORRIDOR DESCRIPTION": "The walls of this tunnel bear scorch marks, evidence of past fire or magical explosions. The air carries a faint smell of burnt wood and stone."
+    },
+    {
+      "D20": 16,
+      "CORRIDOR DESCRIPTION": "Time and decay have taken their toll on this corridor, with crumbling walls and ceilings. It feels unstable and prone to collapse."
+    },
+    {
+      "D20": 17,
+      "CORRIDOR DESCRIPTION": "Faint whispers and hushed voices fill the air, voices carried through time."
+    },
+    {
+      "D20": 18,
+      "CORRIDOR DESCRIPTION": "The stench of decay is overpowering in this tunnel, infested with ravenous vermin that lurk in the shadows."
+    },
+    {
+      "D20": 19,
+      "CORRIDOR DESCRIPTION": "Intricate carvings adorn the walls, depicting scenes of ancient rituals and funerary rites. The air is heavy with a sense of solemnity and reverence."
+    },
+    {
+      "D20": 20,
+      "CORRIDOR DESCRIPTION": "The corridor seems to shimmer with an otherworldly glow. Transparent figures of long-dead souls can be seen drifting through the walls, oblivious to the living."
+    }
+  ]
+}

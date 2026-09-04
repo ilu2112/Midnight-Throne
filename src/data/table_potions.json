@@ -1,0 +1,81 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Potions",
+  "page": 221,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "POTIONS"
+  ],
+  "num_rows": 17,
+  "rows": [
+    {
+      "D20": 1,
+      "POTIONS": "Aether. You immediately recover 5 Aether."
+    },
+    {
+      "D20": 2,
+      "POTIONS": "Antidote. Immediately removes the Poisoned condition."
+    },
+    {
+      "D20": 3,
+      "POTIONS": "Coagulate. Immediately removes the Bleeding condition."
+    },
+    {
+      "D20": 4,
+      "POTIONS": "Courage. Immediately removes the Frightened condition."
+    },
+    {
+      "D20": 5,
+      "POTIONS": "Flaming. When applied to a weapon, increase your Damage Pool by +D4 Fire damage during 5 rounds."
+    },
+    {
+      "D20": 6,
+      "POTIONS": "Frenzy. For the next D6 rounds you deal +2D6 damage, but you’re unable to defend in any way."
+    },
+    {
+      "D20": "7-8",
+      "POTIONS": "Heal. You immediately heal D6+2 Wounds."
+    },
+    {
+      "D20": 9,
+      "POTIONS": "Regeneration. Heal D10+5 Wounds, at a rate of 1 Wound/round."
+    },
+    {
+      "D20": 10,
+      "POTIONS": "Poison. When applied to a weapon, the next successful attack applies the Poisoned (1) condition."
+    },
+    {
+      "D20": 11,
+      "POTIONS": "Purge. Immediately removes the Cursed and Sickened conditions."
+    },
+    {
+      "D20": "12-13",
+      "POTIONS": "Rest. Reduce your Exhaustion by D4."
+    },
+    {
+      "D20": 14,
+      "POTIONS": "Satiation. Counts as a Ration."
+    },
+    {
+      "D20": 15,
+      "POTIONS": "Mindfulness. Heal 1 Sanity."
+    },
+    {
+      "D20": "16-17",
+      "POTIONS": "Speed. Grants 1 free Standard Action."
+    },
+    {
+      "D20": 18,
+      "POTIONS": "Stoneskin. For the next D10 rooms you have +1 Armor, but your Dodge and Acrobatics Skills are reduced by 10."
+    },
+    {
+      "D20": 19,
+      "POTIONS": "Strength. Increase your Endurance and Athletics by +10 for the next D10 rooms."
+    },
+    {
+      "D20": 20,
+      "POTIONS": "Vitality. Grants D10 Temporary Toughness. Taking more than one of these while still under the effects of a previous one causes D10 Acid damage."
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Relics",
+  "pages": [234, 235, 236, 237, 238, 239],
+  "columns": ["D20", "RELICS", "ITEM TYPE", "EFFECT"],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "RELICS": "Aegis of the Eternal Sentinel",
+      "ITEM TYPE": "Shield (Full)",
+      "EFFECT": ["Increases your Parry by +20", "Once per room you can ignore all damage from a single source"]
+    },
+    {
+      "D20": 2,
+      "RELICS": "Band of Knowledge",
+      "ITEM TYPE": "Ring",
+      "EFFECT": ["After a Camp Rest, choose a Skill: it gains +50 until your next Camp Rest. These points may not be reallocated until your next Camp Rest"]
+    },
+    {
+      "D20": 3,
+      "RELICS": "Diadem of Aetheric Power",
+      "ITEM TYPE": "Head Piece",
+      "EFFECT": ["+10 max Aether", "All Abilities that deal damage deal an additional +D4 damage"]
+    },
+    {
+      "D20": 4,
+      "RELICS": "Draught of Vitality",
+      "ITEM TYPE": "Consumable",
+      "EFFECT": ["Permanently increases your Health by +D4"]
+    },
+    {
+      "D20": 5,
+      "RELICS": "Echo of Resurgence",
+      "ITEM TYPE": "Trinket",
+      "EFFECT": ["If one blow were to kill you, ignore all damage and heal D10 Health instead. The Echo of Resurgence shatters afterwards"]
+    },
+    {
+      "D20": 6,
+      "RELICS": "Elixir of Arcane Ascendance",
+      "ITEM TYPE": "Consumable",
+      "EFFECT": ["Permanently increases your Aether by D4"]
+    },
+    {
+      "D20": 7,
+      "RELICS": "Ethereal Requiem Blade",
+      "ITEM TYPE": "Saber",
+      "EFFECT": ["Attacks with this weapon ignore Armor", "You can never drop this weapon unwillingly", "Recover 1 Sanity after a successful Combat Encounter"]
+    },
+    {
+      "D20": 8,
+      "RELICS": "Gloomheart Seed",
+      "ITEM TYPE": "Consumable",
+      "EFFECT": ["+1 Ability Point"]
+    },
+    {
+      "D20": 9,
+      "RELICS": "Gloves of the Blazing Phoenix",
+      "ITEM TYPE": "Gloves",
+      "EFFECT": ["You're Resistant to Fire damage", "Once per Camp Rest you can use the Flamecaster's Tier 4 Summon Fire Elemental Ability. The elemental disappears when you exit the room"]
+    },
+    {
+      "D20": 10,
+      "RELICS": "Inferno Plate",
+      "ITEM TYPE": "Plate (Torso)",
+      "EFFECT": ["This piece of armor bursts into flames when you engage in combat, dealing 1 Fire damage per round to all opponents"]
+    },
+    {
+      "D20": 11,
+      "RELICS": "Mace of Eclipse",
+      "ITEM TYPE": "Mace",
+      "EFFECT": ["+2 Force damage", "Any creature struck by this mace must pass an Endurance check or be Dazed (1)"]
+    },
+    {
+      "D20": 12,
+      "RELICS": "Mindward Elixir",
+      "ITEM TYPE": "Consumable",
+      "EFFECT": ["Permanently increases your Sanity by D4"]
+    },
+    {
+      "D20": 13,
+      "RELICS": "Potion of Forgotten Fate",
+      "ITEM TYPE": "Consumable",
+      "EFFECT": ["Upon drinking this Potion, you automatically lose access to one of your two starting Masteries. You are free to pick a new one, assigning the same number of Ability Points that were assigned to the forgotten Mastery"]
+    },
+    {
+      "D20": 14,
+      "RELICS": "Ring of Arcane Tempest",
+      "ITEM TYPE": "Ring",
+      "EFFECT": ["Allows the character to blast a wave of aetheric energies that deal 2D10 Arcane damage to all opponents in the room. This effect can be activated once per Camp Rest"]
+    },
+    {
+      "D20": 15,
+      "RELICS": "Ring of Ethereal Grasp",
+      "ITEM TYPE": "Ring",
+      "EFFECT": ["Grants the character 5 Aether that can only be spent on summoning Minions"]
+    },
+    {
+      "D20": 16,
+      "RELICS": "Ring of Subjugated Servitude",
+      "ITEM TYPE": "Ring",
+      "EFFECT": ["Increases the Health of Tier 1 Minions by Level/2"]
+    },
+    {
+      "D20": 17,
+      "RELICS": "Third Eye of Emaricus",
+      "ITEM TYPE": "Trinket",
+      "EFFECT": ["You have Advantage on all Perception and Scavenging checks", "You can never be surprised"]
+    },
+    {
+      "D20": 18,
+      "RELICS": "Vitalbane Cinch",
+      "ITEM TYPE": "Belt",
+      "EFFECT": ["Increase your Health by 5", "You gain access to the Hexmancer's Tier 4 Ability Drain Lifeforce"]
+    },
+    {
+      "D20": 19,
+      "RELICS": "Voidclasp Gauntlets",
+      "ITEM TYPE": "Fist weapon",
+      "EFFECT": ["Target receives a minimum of 1 damage every time you successfully strike them, regardless of Armor or resistances", "Once per Combat Encounter you may spend a Reaction to turn your opponent's attack against them, leaving you unharmed"]
+    },
+    {
+      "D20": 20,
+      "RELICS": "Wyrmfang",
+      "ITEM TYPE": "Spear",
+      "EFFECT": ["+D6 Lightning damage", "Reduce the opponent's Attack Skill by 5 each time you deal damage to them"]
+    }
+  ]
+}

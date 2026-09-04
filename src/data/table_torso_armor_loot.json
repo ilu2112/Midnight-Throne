@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Torso Armor Loot",
+  "page": 223,
+  "table_index_on_page": 4,
+  "columns": [
+    "D100",
+    "TORSO ARMOR (PAGE 211)"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D100": "01-10",
+      "TORSO ARMOR (PAGE 211)": "Heavy Cloth"
+    },
+    {
+      "D100": "11-20",
+      "TORSO ARMOR (PAGE 211)": "Soft Leather"
+    },
+    {
+      "D100": "21-30",
+      "TORSO ARMOR (PAGE 211)": "Hide Scale"
+    },
+    {
+      "D100": "31-40",
+      "TORSO ARMOR (PAGE 211)": "Laminar"
+    },
+    {
+      "D100": "41-50",
+      "TORSO ARMOR (PAGE 211)": "Rigid Leather"
+    },
+    {
+      "D100": "51-60",
+      "TORSO ARMOR (PAGE 211)": "Metal Scale"
+    },
+    {
+      "D100": "61-70",
+      "TORSO ARMOR (PAGE 211)": "Mail"
+    },
+    {
+      "D100": "71-80",
+      "TORSO ARMOR (PAGE 211)": "Brigandine"
+    },
+    {
+      "D100": "81-90",
+      "TORSO ARMOR (PAGE 211)": "Plate"
+    },
+    {
+      "D100": "91-100",
+      "TORSO ARMOR (PAGE 211)": "Magic Armor (re-roll if not applicable)"
+    }
+  ]
+}

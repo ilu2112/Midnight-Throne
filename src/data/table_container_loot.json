@@ -1,0 +1,85 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Container Loot",
+  "page": 220,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "CONTAINER LOOT"
+  ],
+  "num_rows": 18,
+  "rows": [
+    {
+      "D20": "1-2",
+      "CONTAINER LOOT": "Rotten foodstuff and clothing"
+    },
+    {
+      "D20": 3,
+      "CONTAINER LOOT": "D4 Crafting Supplies"
+    },
+    {
+      "D20": 4,
+      "CONTAINER LOOT": "D4 Candles"
+    },
+    {
+      "D20": 5,
+      "CONTAINER LOOT": "Lore Book"
+    },
+    {
+      "D20": "6-7",
+      "CONTAINER LOOT": "Gems & Jewelry"
+    },
+    {
+      "D20": 8,
+      "CONTAINER LOOT": "Pouch"
+    },
+    {
+      "D20": 9,
+      "CONTAINER LOOT": "D4 Flares"
+    },
+    {
+      "D20": 10,
+      "CONTAINER LOOT": "D10 Ritual Components"
+    },
+    {
+      "D20": 11,
+      "CONTAINER LOOT": "Blank Diary"
+    },
+    {
+      "D20": 12,
+      "CONTAINER LOOT": "Borestian Stone"
+    },
+    {
+      "D20": 13,
+      "CONTAINER LOOT": "Heart Fragment of Amal-Tul"
+    },
+    {
+      "D20": 14,
+      "CONTAINER LOOT": "Mace of Obliteration"
+    },
+    {
+      "D20": 15,
+      "CONTAINER LOOT": "Ring of Mental Peace"
+    },
+    {
+      "D20": 16,
+      "CONTAINER LOOT": "Vial of Potency - Aether"
+    },
+    {
+      "D20": 17,
+      "CONTAINER LOOT": "Vial of Potency - Endurance"
+    },
+    {
+      "D20": 18,
+      "CONTAINER LOOT": "Vial of Potency - Health"
+    },
+    {
+      "D20": 19,
+      "CONTAINER LOOT": "Vial of Potency - Spellward"
+    },
+    {
+      "D20": 20,
+      "CONTAINER LOOT": "Vial of Potency - Sanity"
+    }
+  ]
+}

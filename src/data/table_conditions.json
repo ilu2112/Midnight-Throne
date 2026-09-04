@@ -1,0 +1,73 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Conditions",
+  "pages": [87, 88, 89],
+  "columns": ["CONDITION", "EFFECT"],
+  "num_rows": 16,
+  "rows": [
+    {
+      "CONDITION": "Bleeding",
+      "EFFECT": "A Bleeding creature suffers an amount of damage equal to X every round until the condition is removed. This is a cumulative condition. In order to get rid of it, you must spend 1x Bandage and pass a successful Medicine check (out of combat only). When out of combat, Bleeding deals 1 Health damage per room. Bleeding damage ignores all Armor."
+    },
+    {
+      "CONDITION": "Blinded",
+      "EFFECT": "A Blinded creature has Disadvantage on all Skill checks, with the exception of Reason checks. While Blinded, you can only make basic melee attacks and cannot target Hit Locations or use Mastery Abilities."
+    },
+    {
+      "CONDITION": "Burning",
+      "EFFECT": "A Burning creature receives 1 Fire damage until the condition is removed. To remove it, the creature must spend 1 Standard Action (while in combat), or increase their Exhaustion by 2 (while out of combat). When out of combat, Burning deals 1 Health damage per room. Burning damage ignores all Armor. This is not a cumulative condition."
+    },
+    {
+      "CONDITION": "Charmed",
+      "EFFECT": "A Charmed creature cannot attack the charmer or use harmful abilities on the charmer."
+    },
+    {
+      "CONDITION": "Concealed",
+      "EFFECT": "Attacking a Concealed target requires a successful Perception or Mind check. Characters may gain this condition out of combat, and benefit from it in and out of combat. Attacking or being harmed breaks this condition."
+    },
+    {
+      "CONDITION": "Cursed",
+      "EFFECT": "A Cursed creature is plagued by an effect detailed on the curse's description until the curse is removed somehow. This is a cumulative condition (if applicable)."
+    },
+    {
+      "CONDITION": "Dazed",
+      "EFFECT": "A Dazed creature cannot initiate attacks during a number of rounds equal to X. If a creature is Dazed again while still suffering from the condition, the duration stacks."
+    },
+    {
+      "CONDITION": "Freezing",
+      "EFFECT": "The afflicted has -10 to all Skills and acts last during combat. They must pass an Endurance check after the first round to recover; if failed, re-attempt each round until success (this does not count as an action). Out of combat, a Freezing character worsens every 5 rooms, first falling into hypothermia (-50 to all actions), then death after 10 rooms. The player can attempt an Endurance check once per room, removing the condition on success."
+    },
+    {
+      "CONDITION": "Frightened",
+      "EFFECT": "The creature reduces all physical attack Skills used against the source of their fear by an amount equal to XX. At the end of each of the afflicted's turns, the value of their Frightened condition decreases by 10, until it reaches 0. This is a cumulative condition."
+    },
+    {
+      "CONDITION": "Paralyzed",
+      "EFFECT": "A Paralyzed creature is incapacitated and can't move or speak. Attacks made against the creature hit automatically and require no Skill check."
+    },
+    {
+      "CONDITION": "Poisoned",
+      "EFFECT": "A Poisoned creature suffers an amount of damage equal to X every round until the condition is removed or resisted. The round after the condition takes hold, a Poisoned creature can attempt to resist its effects during their turn by passing an Endurance check as a Free Action. This is a cumulative condition. When out of combat, Poisoned deals 1 Poison damage directly to your Health per room, ignoring all Armor. Out of combat, it can be removed by spending 1x Bandage and passing a successful Medicine check."
+    },
+    {
+      "CONDITION": "Prone",
+      "EFFECT": "As a Free Action, a Prone creature can get back up during their turn, but their opponent(s) get to immediately roll on the Defensive Move table. Attacks against a Prone creature are done with Advantage, and a Prone creature can attack from that position with Disadvantage, but can only make basic melee attacks and cannot target Hit Locations or use Mastery Abilities."
+    },
+    {
+      "CONDITION": "Restrained",
+      "EFFECT": "The afflicted is incapable of moving, and all Acrobatics, weapon Skills, Dodge and Athletics/Body checks suffer a -20 penalty. In their turn, the Restrained creature can attempt an Athletics/Body check as a Free Action to remove this condition, or spend a Standard Action instead to receive a +20 to that check."
+    },
+    {
+      "CONDITION": "Sickened",
+      "EFFECT": "A Sickened creature suffers a negative modifier to all checks equal to XX until the condition ends. This is a cumulative condition."
+    },
+    {
+      "CONDITION": "Sleeping",
+      "EFFECT": "The creature immediately falls Prone, and any attack against it hits automatically. The creature wakes up immediately upon being hit."
+    },
+    {
+      "CONDITION": "Stunned",
+      "EFFECT": "A Stunned character cannot act for a number of rounds equal to X. They cannot actively defend from Physical attacks, but the attacker must still pass an attack check. If a creature is Stunned again while still suffering from the condition, the duration stacks."
+    }
+  ]
+}

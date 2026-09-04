@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Overseer Influence",
+  "page": 100,
+  "table_index_on_page": 1,
+  "columns": [
+    "D10",
+    "OVERSEER INFLUENCE"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D10": 1,
+      "OVERSEER INFLUENCE": "Tough: Immune to Critical Strikes."
+    },
+    {
+      "D10": 2,
+      "OVERSEER INFLUENCE": "Vital: +D6 Health per each 5 Levels."
+    },
+    {
+      "D10": 3,
+      "OVERSEER INFLUENCE": "Frenzied: +1 damage."
+    },
+    {
+      "D10": 4,
+      "OVERSEER INFLUENCE": "Skilled: +10 Combat Skill."
+    },
+    {
+      "D10": 5,
+      "OVERSEER INFLUENCE": "Magebane: +10 Magic Resistance."
+    },
+    {
+      "D10": 6,
+      "OVERSEER INFLUENCE": "Resistant: Resistant to 1 random type of damage. Roll on the Damage Type table on page 225."
+    },
+    {
+      "D10": 7,
+      "OVERSEER INFLUENCE": "Corrupting: Each time the creature deals 5+ damage on a single attack, the target must make a Resolve check or lose 1 Sanity."
+    },
+    {
+      "D10": 8,
+      "OVERSEER INFLUENCE": "Unstable: Deals 1 Arcane damage when killed."
+    },
+    {
+      "D10": 9,
+      "OVERSEER INFLUENCE": "Alert: +20 Mind."
+    },
+    {
+      "D10": 10,
+      "OVERSEER INFLUENCE": "Piercing: Gains the Penetrating (1) Trait. This can stack with other instances of the same Trait."
+    }
+  ]
+}

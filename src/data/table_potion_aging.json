@@ -1,0 +1,41 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Potion Aging",
+  "page": 126,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "POTION AGING"
+  ],
+  "num_rows": 7,
+  "rows": [
+    {
+      "D20": "1-2",
+      "POTION AGING": "The Potion has turned into a poison. Make a successful Endurance check or become Poisoned (1)."
+    },
+    {
+      "D20": "3-4",
+      "POTION AGING": "The Potion has become extremely unstable, and it explodes the second you open it. You suffer 2D4 Force damage."
+    },
+    {
+      "D20": "5-6",
+      "POTION AGING": "The Potion has lost all its potency. No effect after drinking it."
+    },
+    {
+      "D20": "7-10",
+      "POTION AGING": "The Potion has lost some potency. Its effects only last 50% of what they’re supposed to, and have their efficacy halved."
+    },
+    {
+      "D20": "11-17",
+      "POTION AGING": "The Potion works as intended."
+    },
+    {
+      "D20": "18-19",
+      "POTION AGING": "The Potion has been refined by time. Its effects last 50% longer and have their efficacy doubled."
+    },
+    {
+      "D20": 20,
+      "POTION AGING": "The Potion has been completely enhanced, making its effects permanent."
+    }
+  ]
+}

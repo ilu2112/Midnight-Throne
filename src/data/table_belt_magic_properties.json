@@ -1,0 +1,81 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Belt Magic Properties",
+  "page": 227,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "BELT MAGIC PROPERTIES"
+  ],
+  "num_rows": 17,
+  "rows": [
+    {
+      "D20": "1-2",
+      "BELT MAGIC PROPERTIES": "Increase your Endurance by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": "3-4",
+      "BELT MAGIC PROPERTIES": "Increase your Resolve by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": "5-6",
+      "BELT MAGIC PROPERTIES": "Increase your Spellward by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": 7,
+      "BELT MAGIC PROPERTIES": "Roll on the Damage Type table. This item grants you damage reduction for that damage type based on its rarity: +1 Uncommon, +2 Rare, +3 Epic."
+    },
+    {
+      "D20": 8,
+      "BELT MAGIC PROPERTIES": "Roll on the Damage Type table. You are Resistant to that damage type."
+    },
+    {
+      "D20": 9,
+      "BELT MAGIC PROPERTIES": "Increase your carrying capacity by 10."
+    },
+    {
+      "D20": 10,
+      "BELT MAGIC PROPERTIES": "Reroll any check once per Camp Rest."
+    },
+    {
+      "D20": 11,
+      "BELT MAGIC PROPERTIES": "Items stored in this Belt are Immune to damage caused by Belt checks."
+    },
+    {
+      "D20": 12,
+      "BELT MAGIC PROPERTIES": "After defeating a Combat Encounter, roll D6: a result of 1-3 means that you immediately recover D4 Toughness."
+    },
+    {
+      "D20": 13,
+      "BELT MAGIC PROPERTIES": "Increase a Skill of your choosing by 20 while wearing this Belt."
+    },
+    {
+      "D20": 14,
+      "BELT MAGIC PROPERTIES": "Increase the amount of Health you recover after Setting Camp by D4."
+    },
+    {
+      "D20": 15,
+      "BELT MAGIC PROPERTIES": "Increase the amount of Sanity you recover after Setting Camp by D4."
+    },
+    {
+      "D20": 16,
+      "BELT MAGIC PROPERTIES": "Ignore the effects of a single Madness you’re currently affected by."
+    },
+    {
+      "D20": 17,
+      "BELT MAGIC PROPERTIES": "Reroll any failed Thievery checks while attempting to open a lock."
+    },
+    {
+      "D20": 18,
+      "BELT MAGIC PROPERTIES": "Reroll any failed Thievery checks while attempting to dismantle a trap."
+    },
+    {
+      "D20": 19,
+      "BELT MAGIC PROPERTIES": "This Belt works as a lightsource."
+    },
+    {
+      "D20": 20,
+      "BELT MAGIC PROPERTIES": "Once per Rest you can recover D10 Wounds."
+    }
+  ]
+}

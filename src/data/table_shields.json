@@ -1,0 +1,39 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Shields",
+  "page": 210,
+  "table_index_on_page": 1,
+  "columns": [
+    "SHIELD",
+    "COST",
+    "PARRY BONUS",
+    "INTEGRITY"
+  ],
+  "num_rows": 4,
+  "rows": [
+    {
+      "SHIELD": "Target",
+      "COST": 20,
+      "PARRY BONUS": 5,
+      "INTEGRITY": "D6"
+    },
+    {
+      "SHIELD": "Normal",
+      "COST": 40,
+      "PARRY BONUS": 10,
+      "INTEGRITY": "D8"
+    },
+    {
+      "SHIELD": "Full",
+      "COST": 60,
+      "PARRY BONUS": 15,
+      "INTEGRITY": "D8"
+    },
+    {
+      "SHIELD": "Wall",
+      "COST": 100,
+      "PARRY BONUS": 20,
+      "INTEGRITY": "D8"
+    }
+  ]
+}

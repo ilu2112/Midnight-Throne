@@ -1,0 +1,29 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Shields Loot",
+  "page": 223,
+  "table_index_on_page": 3,
+  "columns": [
+    "D100",
+    "SHIELDS (PAGE 210)"
+  ],
+  "num_rows": 4,
+  "rows": [
+    {
+      "D100": "01-25",
+      "SHIELDS (PAGE 210)": "Target"
+    },
+    {
+      "D100": "26-50",
+      "SHIELDS (PAGE 210)": "Normal"
+    },
+    {
+      "D100": "51-75",
+      "SHIELDS (PAGE 210)": "Full"
+    },
+    {
+      "D100": "76-100",
+      "SHIELDS (PAGE 210)": "Wall"
+    }
+  ]
+}

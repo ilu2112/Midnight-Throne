@@ -1,0 +1,419 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Room Description",
+  "pages": [
+    102,
+    103,
+    104,
+    105,
+    106,
+    107
+  ],
+  "columns": [
+    "D100",
+    "ROOM DESCRIPTION"
+  ],
+  "num_rows": 100,
+  "rows": [
+    {
+      "D100": 1,
+      "ROOM DESCRIPTION": "Rusty iron shackles hang from the walls, and the floor is littered with the remains of those who suffered unspeakable agony."
+    },
+    {
+      "D100": 2,
+      "ROOM DESCRIPTION": "This regal hall is filled with shattered marble thrones, a reminder of the empire's fallen rulers and the broken legacy they left behind."
+    },
+    {
+      "D100": 3,
+      "ROOM DESCRIPTION": "Eerie whispers fill the air in this dimly lit crypt, and the tormented spirits of the empire's cursed citizens still roam restlessly."
+    },
+    {
+      "D100": 4,
+      "ROOM DESCRIPTION": "The stone altar in the center of the room is covered in dried blood, leaving no doubt about what type of dark rituals once took place here."
+    },
+    {
+      "D100": 5,
+      "ROOM DESCRIPTION": "A vast network of burial niches houses the remains of countless forgotten souls, their existence erased from history."
+    },
+    {
+      "D100": 6,
+      "ROOM DESCRIPTION": "Chains of all sizes hang from the ceiling, the clinking sound echoing like a haunting melody in this hall of imprisonment."
+    },
+    {
+      "D100": 7,
+      "ROOM DESCRIPTION": "Sculptures of mournful figures adorn the walls, each seemingly caught in an eternal state of sorrow and despair."
+    },
+    {
+      "D100": 8,
+      "ROOM DESCRIPTION": "The room is perpetually shrouded in darkness, and even torches struggle to dispel the oppressive gloom."
+    },
+    {
+      "D100": 9,
+      "ROOM DESCRIPTION": "Tombstones and coffins line the walls, bearing the names of lovers separated by death, forever longing for each other's embrace."
+    },
+    {
+      "D100": 10,
+      "ROOM DESCRIPTION": "Useless trinkets and baubles lie scattered about, remnants of the once-great Vaelorian Ascendancy now reduced to trash."
+    },
+    {
+      "D100": 11,
+      "ROOM DESCRIPTION": "This room seems to have been blasted by a source of water for millennia, since all the surfaces are smooth and slippery."
+    },
+    {
+      "D100": 12,
+      "ROOM DESCRIPTION": "An opulent throne sits empty in the center of this otherwise unremarkable chamber, surrounded by dust and decay."
+    },
+    {
+      "D100": 13,
+      "ROOM DESCRIPTION": "Echoes of anguished cries reverberate through this room, as if the walls themselves are weeping for the tragedies that unfolded within."
+    },
+    {
+      "D100": 14,
+      "ROOM DESCRIPTION": "Foul, withered plants and skeletal trees twist and reach for sunlight that will never touch them again."
+    },
+    {
+      "D100": 15,
+      "ROOM DESCRIPTION": "A pitch-black room that gives the illusion of extending infinitely downwards, leaving those who enter with an overwhelming sense of dread."
+    },
+    {
+      "D100": 16,
+      "ROOM DESCRIPTION": "This crypt room holds the remains of those punished by the Vaelorian Ascendancy, their souls forever trapped in this place."
+    },
+    {
+      "D100": 17,
+      "ROOM DESCRIPTION": "A massive, ominous statue looms over the room, depicting a malevolent deity once worshiped by the Ascendancy."
+    },
+    {
+      "D100": 18,
+      "ROOM DESCRIPTION": "Ghostly apparitions drift through these halls, their faint whispers offering cryptic warnings and messages."
+    },
+    {
+      "D100": 19,
+      "ROOM DESCRIPTION": "An ancient stone altar dominates the room, surrounded by blood-stained grooves where countless offerings met their end."
+    },
+    {
+      "D100": 20,
+      "ROOM DESCRIPTION": "This room houses the remains of traitors and turncoats, eternally damned for their betrayal of the empire."
+    },
+    {
+      "D100": 21,
+      "ROOM DESCRIPTION": "Dark, arcane symbols cover the walls, hinting at the dark rituals once conducted within these unhallowed grounds."
+    },
+    {
+      "D100": 22,
+      "ROOM DESCRIPTION": "The bones of the empire's forgotten citizens are piled high in this macabre display of death's inevitability."
+    },
+    {
+      "D100": 23,
+      "ROOM DESCRIPTION": "The eerie sound of water dripping reverberates in this otherwise unremarkable room."
+    },
+    {
+      "D100": 24,
+      "ROOM DESCRIPTION": "Any sound uttered within this hall fades into nothingness, as if the room devours all noise."
+    },
+    {
+      "D100": 25,
+      "ROOM DESCRIPTION": "Broken vials, shattered beakers, and rotting experiments reveal an alchemist's ill-fated pursuit of forbidden knowledge."
+    },
+    {
+      "D100": 26,
+      "ROOM DESCRIPTION": "Ancient scrolls and tomes rest on dust-covered shelves. Touching any of them quickly turns them into piles of dust."
+    },
+    {
+      "D100": 27,
+      "ROOM DESCRIPTION": "The stench of death hangs heavy in this room. Judging by some carvings, the Vaelorians disposed of their enemies in mass graves right here."
+    },
+    {
+      "D100": 28,
+      "ROOM DESCRIPTION": "A morbid altar stands before a statue of a martyr who endured unimaginable pain in the name of faith."
+    },
+    {
+      "D100": 29,
+      "ROOM DESCRIPTION": "The remains of a once-grand spire lie in ruin, a monument to a forgotten hero of the Vaelorian Ascendancy."
+    },
+    {
+      "D100": 30,
+      "ROOM DESCRIPTION": "As you enter this room, haunting visions and terrifying illusions assault you. They're gone before you even realize."
+    },
+    {
+      "D100": 31,
+      "ROOM DESCRIPTION": "Dark rituals once performed here have left an indelible mark on the walls, perpetually tainted by the essence of necromancy."
+    },
+    {
+      "D100": 32,
+      "ROOM DESCRIPTION": "The shadows of tormented souls replay their darkest moments in an eternal loop, forever haunted by their past actions."
+    },
+    {
+      "D100": 33,
+      "ROOM DESCRIPTION": "Ancient weapons and armor line the walls, too old and brittle to be of any use to you."
+    },
+    {
+      "D100": 34,
+      "ROOM DESCRIPTION": "The walls bear ghostly imprints of anguished faces, as if the room captures the final moments of those who met a tragic end."
+    },
+    {
+      "D100": 35,
+      "ROOM DESCRIPTION": "Shadows here move independently from their sources, dancing across the walls like malevolent spirits."
+    },
+    {
+      "D100": 36,
+      "ROOM DESCRIPTION": "A still, black pool reflects the darkest aspects of your soul, showing the horrors hidden within."
+    },
+    {
+      "D100": 37,
+      "ROOM DESCRIPTION": "Mirrors shattered into jagged pieces create a disorienting effect, distorting reality and reflecting haunting images."
+    },
+    {
+      "D100": 38,
+      "ROOM DESCRIPTION": "An eerie aura permeates this room, where the Vaelorians once sought answers from a cryptic oracle."
+    },
+    {
+      "D100": 39,
+      "ROOM DESCRIPTION": "Statues of macabre figures surround a central platform. You are unsure about its purpose, but it was clearly ceremonial."
+    },
+    {
+      "D100": 40,
+      "ROOM DESCRIPTION": "A large crack in the room’s floor reveals a deep, dark abyss."
+    },
+    {
+      "D100": 41,
+      "ROOM DESCRIPTION": "This room holds within it an unholy shrine dedicated to forgotten gods."
+    },
+    {
+      "D100": 42,
+      "ROOM DESCRIPTION": "No sound can be heard in this room, not even the slightest whisper, creating an unsettling atmosphere of absolute quiet."
+    },
+    {
+      "D100": 43,
+      "ROOM DESCRIPTION": "This seems to be the final resting place of an emperor who history has forgotten, his name erased from all records."
+    },
+    {
+      "D100": 44,
+      "ROOM DESCRIPTION": "Broken chandeliers hang from the ceiling, and the tattered banners on the walls now lay in ruin."
+    },
+    {
+      "D100": 45,
+      "ROOM DESCRIPTION": "Heat emanates from this room, and you can see the glow of lava in a corner, the viscous material dripping from a crack on the wall."
+    },
+    {
+      "D100": 46,
+      "ROOM DESCRIPTION": "An eerie, dim light filters through an enchanted glass ceiling, casting an otherworldly twilight over the room that makes you miss the sky."
+    },
+    {
+      "D100": 47,
+      "ROOM DESCRIPTION": "Mirrors made from dark, reflective obsidian distort your reflection, your lightsource casting haunting shadows."
+    },
+    {
+      "D100": 48,
+      "ROOM DESCRIPTION": "Shrines to deities long abandoned by worshippers now stand in silence. You see a few forgotten prayer tablets discarded around."
+    },
+    {
+      "D100": 49,
+      "ROOM DESCRIPTION": "Ancient telescopes and stargazing instruments remain untouched, though the stars they once observed have long changed."
+    },
+    {
+      "D100": 50,
+      "ROOM DESCRIPTION": "A once-powerful empress was buried here, her now empty sarcophagus beautifully adorned with gilded glyphs."
+    },
+    {
+      "D100": 51,
+      "ROOM DESCRIPTION": "The room is plagued by an unnatural, freezing chill that numbs the bones as soon as you enter."
+    },
+    {
+      "D100": 52,
+      "ROOM DESCRIPTION": "Broken vials and failed experiments litter the room as reminders of desperate and deadly alchemical pursuits."
+    },
+    {
+      "D100": 53,
+      "ROOM DESCRIPTION": "An overgrown courtyard now serves as a graveyard, with tombstones dotting the otherwise placid location."
+    },
+    {
+      "D100": 54,
+      "ROOM DESCRIPTION": "Twisted and grotesque sculptures rest on pedestals, each representing the artist's descent into madness."
+    },
+    {
+      "D100": 55,
+      "ROOM DESCRIPTION": "This is a large hallway that probably housed some sort of stables."
+    },
+    {
+      "D100": 56,
+      "ROOM DESCRIPTION": "Taxidermy displays of long-extinct creatures and monstrous beasts line the walls, their glass eyes seemingly alive."
+    },
+    {
+      "D100": 57,
+      "ROOM DESCRIPTION": "The faint sounds of mournful music fill the air, but you cannot pinpoint its source."
+    },
+    {
+      "D100": 58,
+      "ROOM DESCRIPTION": "This chamber once housed the living quarters of a family of servants. Faint children’s drawings can be seen on the walls."
+    },
+    {
+      "D100": 59,
+      "ROOM DESCRIPTION": "This room houses a shrine dedicated to a lunar deity. Its worshipers once performed heinous acts under the cursed moon's glow."
+    },
+    {
+      "D100": 60,
+      "ROOM DESCRIPTION": "A large crypt, where the sound of mourning and weeping echoes endlessly."
+    },
+    {
+      "D100": 61,
+      "ROOM DESCRIPTION": "A chamber once dedicated to studying the stars, now abandoned and covered in dust."
+    },
+    {
+      "D100": 62,
+      "ROOM DESCRIPTION": "This area appears to once have been some sort of food storage, judging by the piles of petrified vegetables and grain."
+    },
+    {
+      "D100": 63,
+      "ROOM DESCRIPTION": "Plans for grand structures, some never built, now rest here with the remains of their creator."
+    },
+    {
+      "D100": 64,
+      "ROOM DESCRIPTION": "Statues of once-lovely nymphs are now twisted and grotesque, surrounded by thorns and brambles."
+    },
+    {
+      "D100": 65,
+      "ROOM DESCRIPTION": "This once-imposing chamber is now decayed and crumbling, but you can imagine its former glory with little effort."
+    },
+    {
+      "D100": 66,
+      "ROOM DESCRIPTION": "A series of arcane symbols that you’ve never encountered before cover the walls of this chamber."
+    },
+    {
+      "D100": 67,
+      "ROOM DESCRIPTION": "Phantom wails fill the air, as the spirits of the dead lament their tragic fates."
+    },
+    {
+      "D100": 68,
+      "ROOM DESCRIPTION": "An ancient, corrupted forge where weapons were crafted from the souls of the fallen."
+    },
+    {
+      "D100": 69,
+      "ROOM DESCRIPTION": "The statues of weeping angels line this hall. You notice that all their faces are eternally frozen in grief."
+    },
+    {
+      "D100": 70,
+      "ROOM DESCRIPTION": "The resting place of an heir to the empire, whose lineage has been lost to history."
+    },
+    {
+      "D100": 71,
+      "ROOM DESCRIPTION": "The walls are adorned with eerie petrified faces that seem to whisper secrets to those who listen."
+    },
+    {
+      "D100": 72,
+      "ROOM DESCRIPTION": "This chamber is made entirely of black stone, and any light that enters is quickly swallowed by its darkness."
+    },
+    {
+      "D100": 73,
+      "ROOM DESCRIPTION": "An ornate stone chalice sits on an altar. It appears to have been fused to it by some extreme heat."
+    },
+    {
+      "D100": 74,
+      "ROOM DESCRIPTION": "This room’s walls are covered with the tattered remains of ancient heraldic banners."
+    },
+    {
+      "D100": 75,
+      "ROOM DESCRIPTION": "At the center of this room, a seemingly bottomless pit drops into the darkness. It's easy to imagine a sinister reason for it, but it was probably just used as a latrine."
+    },
+    {
+      "D100": 76,
+      "ROOM DESCRIPTION": "An otherworldly mist fills the room, giving glimpses of fleeting, forgotten scenes from the past."
+    },
+    {
+      "D100": 77,
+      "ROOM DESCRIPTION": "A cursed oracle once dwelt here, their prophecies leading to doom and despair for those who sought answers."
+    },
+    {
+      "D100": 78,
+      "ROOM DESCRIPTION": "A dark and foreboding courtyard where twisted shadows play tricks on the mind."
+    },
+    {
+      "D100": 79,
+      "ROOM DESCRIPTION": "The room is filled with the remains of lovers forever entwined in death, their skeletal hands locked in an eternal embrace."
+    },
+    {
+      "D100": 80,
+      "ROOM DESCRIPTION": "An otherworldly chamber where the boundaries between dimensions blur, allowing glimpses into distant realms."
+    },
+    {
+      "D100": 81,
+      "ROOM DESCRIPTION": "Horrifying paintings and sculptures depict scenes of unimaginable suffering and torment."
+    },
+    {
+      "D100": 82,
+      "ROOM DESCRIPTION": "This room has a well on a corner, but the water within it is clearly tainted with an eerie glow."
+    },
+    {
+      "D100": 83,
+      "ROOM DESCRIPTION": "This chamber is completely covered in fungi and mold of all kinds, making every step feel as if you’re walking on a thick rug."
+    },
+    {
+      "D100": 84,
+      "ROOM DESCRIPTION": "Small, empty cells line the walls of this room."
+    },
+    {
+      "D100": 85,
+      "ROOM DESCRIPTION": "The walls are adorned with macabre paintings depicting brutal executions and violent sacrifices."
+    },
+    {
+      "D100": 86,
+      "ROOM DESCRIPTION": "Sealed off for centuries, this room contains unspeakable horrors that were best left undisturbed."
+    },
+    {
+      "D100": 87,
+      "ROOM DESCRIPTION": "A fountain still trickling water is at the center of the room, a peaceful, almost out of place view."
+    },
+    {
+      "D100": 88,
+      "ROOM DESCRIPTION": "Disorienting illusions assault you momentarily as you step into this room, showing you images of your past."
+    },
+    {
+      "D100": 89,
+      "ROOM DESCRIPTION": "This room was once a treasure vault filled with riches, but it has long since been ransacked."
+    },
+    {
+      "D100": 90,
+      "ROOM DESCRIPTION": "A once-lavish parlor now lies in ruin, its grandeur replaced by decay and the stench of death."
+    },
+    {
+      "D100": 91,
+      "ROOM DESCRIPTION": "Rotten piles of furniture and rusted utensils are all you can see in this room."
+    },
+    {
+      "D100": 92,
+      "ROOM DESCRIPTION": "The walls are covered in soot and fire marks, clearly indicating that a great fire took place here."
+    },
+    {
+      "D100": 93,
+      "ROOM DESCRIPTION": "This room is completely empty, except for a thick layer of dust. A set of human footprints can be seen across the room."
+    },
+    {
+      "D100": 94,
+      "ROOM DESCRIPTION": "As you enter this hall you feel an overwhelming sense of hopelessness, as if all optimism is slowly being drained from your heart."
+    },
+    {
+      "D100": 95,
+      "ROOM DESCRIPTION": "A chamber adorned with gold and jewels. A closer look reveals them to be just paint and glass."
+    },
+    {
+      "D100": 96,
+      "ROOM DESCRIPTION": "A once-revered shrine now stands in darkness, forgotten by all but malevolent entities."
+    },
+    {
+      "D100": 97,
+      "ROOM DESCRIPTION": "Statues of ancient warriors stand guard. For some reason, their once-pristine surfaces are now marred by crimson stains."
+    },
+    {
+      "D100": 98,
+      "ROOM DESCRIPTION": "Old iron ingots are piled in a corner of this room, each one of them marked with the seal of an ancient house."
+    },
+    {
+      "D100": 99,
+      "ROOM DESCRIPTION": "An unnatural wind seems to be constantly coming out of this room, violently flapping your clothes and gear around you."
+    },
+    {
+      "D100": 100,
+      "ROOM DESCRIPTION": "An unquenchable, ghostly flame flickers and dances, casting eerie shadows on the walls, forever burning but never consuming."
+    }
+  ]
+}

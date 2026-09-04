@@ -1,0 +1,64 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Traps",
+  "page": 119,
+  "table_index_on_page": 1,
+  "columns": [
+    "D10",
+    "SKILL CHECK TO AVOID",
+    "TRAP EFFECT"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D10": 1,
+      "SKILL CHECK TO AVOID": "Dodge",
+      "TRAP EFFECT": "Arrows shoot from a hidden spot, dealing 2D6 Piercing damage to the character who triggered it."
+    },
+    {
+      "D10": 2,
+      "SKILL CHECK TO AVOID": "Dodge",
+      "TRAP EFFECT": "The character steps on a hidden bear trap. They suffer 2D6 Piercing damage."
+    },
+    {
+      "D10": 3,
+      "SKILL CHECK TO AVOID": "Dodge",
+      "TRAP EFFECT": "A net trap suddenly traps the character, who becomes Restrained. Each attempt at liberating themselves increases their Exhaustion by 1, unless helped by another character. After D6 attempts, the net breaks by itself, but the hard landing causes 2D8 Bludgeoning damage."
+    },
+    {
+      "D10": 4,
+      "SKILL CHECK TO AVOID": "Dodge",
+      "TRAP EFFECT": "A salvo of small, poisoned darts strike the character, who becomes Poisoned (1) unless they pass an Endurance check. The darts also deal 2D4 Piercing damage."
+    },
+    {
+      "D10": 5,
+      "SKILL CHECK TO AVOID": "Acrobatics",
+      "TRAP EFFECT": "The character falls into a hole, disguised by a trap door. The hole is full of spikes, dealing 3D4 Piercing damage."
+    },
+    {
+      "D10": 6,
+      "SKILL CHECK TO AVOID": "Dodge",
+      "TRAP EFFECT": "A swinging blade strikes the character, dealing D12 Slashing damage."
+    },
+    {
+      "D10": 7,
+      "SKILL CHECK TO AVOID": "Athletics",
+      "TRAP EFFECT": "Noxious gas is released, filling the chamber. All creatures must pass an Endurance check or immediately receive 2D4+4 Poison Damage."
+    },
+    {
+      "D10": 8,
+      "SKILL CHECK TO AVOID": "Acrobatics",
+      "TRAP EFFECT": "A ball of fire fills the room, dealing 2D6 Fire damage to all creatures in the room."
+    },
+    {
+      "D10": 9,
+      "SKILL CHECK TO AVOID": "Dodge",
+      "TRAP EFFECT": "An alarm of some sort (mechanical, magical, other) attracts the attention of one of the place’s inhabitants. Roll on the Combat Encounter table."
+    },
+    {
+      "D10": 10,
+      "SKILL CHECK TO AVOID": "Athletics",
+      "TRAP EFFECT": "A rush of water fills the room, threatening to drag all creatures in it, and slam them against the walls, dealing 3D4 Bludgeoning damage."
+    }
+  ]
+}

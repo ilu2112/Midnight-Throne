@@ -1,0 +1,137 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Random Weapon",
+  "page": 222,
+  "table_index_on_page": 3,
+  "columns": [
+    "D100",
+    "RANDOM WEAPON"
+  ],
+  "num_rows": 31,
+  "rows": [
+    {
+      "D100": "01-04",
+      "RANDOM WEAPON": "Bardiche"
+    },
+    {
+      "D100": "05-08",
+      "RANDOM WEAPON": "Bastard Sword"
+    },
+    {
+      "D100": "09-12",
+      "RANDOM WEAPON": "Billhook"
+    },
+    {
+      "D100": "13-16",
+      "RANDOM WEAPON": "Cestus"
+    },
+    {
+      "D100": "17-20",
+      "RANDOM WEAPON": "Claw"
+    },
+    {
+      "D100": "21-24",
+      "RANDOM WEAPON": "Club"
+    },
+    {
+      "D100": "25-28",
+      "RANDOM WEAPON": "Dagger"
+    },
+    {
+      "D100": "29-31",
+      "RANDOM WEAPON": "Flail"
+    },
+    {
+      "D100": "32-34",
+      "RANDOM WEAPON": "Glaive"
+    },
+    {
+      "D100": "35-37",
+      "RANDOM WEAPON": "Great Axe"
+    },
+    {
+      "D100": "38-40",
+      "RANDOM WEAPON": "Greatclub"
+    },
+    {
+      "D100": "41-43",
+      "RANDOM WEAPON": "Great Sword"
+    },
+    {
+      "D100": "44-46",
+      "RANDOM WEAPON": "Halberd"
+    },
+    {
+      "D100": "47-49",
+      "RANDOM WEAPON": "Hatchet"
+    },
+    {
+      "D100": "50-52",
+      "RANDOM WEAPON": "Improvised Weapon"
+    },
+    {
+      "D100": "53-55",
+      "RANDOM WEAPON": "Knuckles"
+    },
+    {
+      "D100": "56-58",
+      "RANDOM WEAPON": "Light Hammer"
+    },
+    {
+      "D100": "59-61",
+      "RANDOM WEAPON": "Longsword"
+    },
+    {
+      "D100": "62-64",
+      "RANDOM WEAPON": "Mace"
+    },
+    {
+      "D100": "65-67",
+      "RANDOM WEAPON": "Maul"
+    },
+    {
+      "D100": "68-70",
+      "RANDOM WEAPON": "Morningstar"
+    },
+    {
+      "D100": "71-73",
+      "RANDOM WEAPON": "Pike"
+    },
+    {
+      "D100": "74-76",
+      "RANDOM WEAPON": "Quarterstaff"
+    },
+    {
+      "D100": "77-79",
+      "RANDOM WEAPON": "Rapier"
+    },
+    {
+      "D100": "80-82",
+      "RANDOM WEAPON": "Saber"
+    },
+    {
+      "D100": "83-85",
+      "RANDOM WEAPON": "Shortsword"
+    },
+    {
+      "D100": "86-88",
+      "RANDOM WEAPON": "Spear"
+    },
+    {
+      "D100": "89-91",
+      "RANDOM WEAPON": "Sword Gauntlet"
+    },
+    {
+      "D100": "92-94",
+      "RANDOM WEAPON": "Warhammer"
+    },
+    {
+      "D100": "95-97",
+      "RANDOM WEAPON": "War Pick"
+    },
+    {
+      "D100": "98-100",
+      "RANDOM WEAPON": "Magic weapon (re-roll if not applicable)"
+    }
+  ]
+}

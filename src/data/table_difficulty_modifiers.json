@@ -1,0 +1,49 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Difficulty Modifiers",
+  "page": 69,
+  "table_index_on_page": 1,
+  "columns": [
+    "D8",
+    "DIFFICULTY",
+    "MODIFIER"
+  ],
+  "num_rows": 7,
+  "rows": [
+    {
+      "D8": 1,
+      "DIFFICULTY": "Child’s play",
+      "MODIFIER": 30
+    },
+    {
+      "D8": 2,
+      "DIFFICULTY": "Effortless",
+      "MODIFIER": 20
+    },
+    {
+      "D8": 3,
+      "DIFFICULTY": "Easy",
+      "MODIFIER": 10
+    },
+    {
+      "D8": "4-5",
+      "DIFFICULTY": "Normal",
+      "MODIFIER": 0
+    },
+    {
+      "D8": 6,
+      "DIFFICULTY": "Demanding",
+      "MODIFIER": -10
+    },
+    {
+      "D8": 7,
+      "DIFFICULTY": "Hard",
+      "MODIFIER": -20
+    },
+    {
+      "D8": 8,
+      "DIFFICULTY": "Impossible",
+      "MODIFIER": -30
+    }
+  ]
+}

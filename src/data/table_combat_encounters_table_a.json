@@ -1,0 +1,93 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Combat Encounters A",
+  "page": 134,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "COMBAT ENCOUNTERS - TABLE A"
+  ],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "COMBAT ENCOUNTERS - TABLE A": "Abyssal Vexator"
+    },
+    {
+      "D20": 2,
+      "COMBAT ENCOUNTERS - TABLE A": "Amalgam"
+    },
+    {
+      "D20": 3,
+      "COMBAT ENCOUNTERS - TABLE A": "Armor Construct"
+    },
+    {
+      "D20": 4,
+      "COMBAT ENCOUNTERS - TABLE A": "Astral Beast"
+    },
+    {
+      "D20": 5,
+      "COMBAT ENCOUNTERS - TABLE A": "Bladewings"
+    },
+    {
+      "D20": 6,
+      "COMBAT ENCOUNTERS - TABLE A": "Blood Stalker"
+    },
+    {
+      "D20": 7,
+      "COMBAT ENCOUNTERS - TABLE A": "Bone Golem"
+    },
+    {
+      "D20": 8,
+      "COMBAT ENCOUNTERS - TABLE A": "Bone Spiders"
+    },
+    {
+      "D20": 9,
+      "COMBAT ENCOUNTERS - TABLE A": "Cavebound Leech"
+    },
+    {
+      "D20": 10,
+      "COMBAT ENCOUNTERS - TABLE A": "Corpse Ants"
+    },
+    {
+      "D20": 11,
+      "COMBAT ENCOUNTERS - TABLE A": "Death Sage"
+    },
+    {
+      "D20": 12,
+      "COMBAT ENCOUNTERS - TABLE A": "Desiccated Cryptguards"
+    },
+    {
+      "D20": 13,
+      "COMBAT ENCOUNTERS - TABLE A": "Dwerax"
+    },
+    {
+      "D20": 14,
+      "COMBAT ENCOUNTERS - TABLE A": "Fangvine"
+    },
+    {
+      "D20": 15,
+      "COMBAT ENCOUNTERS - TABLE A": "Flayed Knight"
+    },
+    {
+      "D20": 16,
+      "COMBAT ENCOUNTERS - TABLE A": "Fleshmelt Slime"
+    },
+    {
+      "D20": 17,
+      "COMBAT ENCOUNTERS - TABLE A": "Giant Spider"
+    },
+    {
+      "D20": 18,
+      "COMBAT ENCOUNTERS - TABLE A": "Hive Larvae"
+    },
+    {
+      "D20": 19,
+      "COMBAT ENCOUNTERS - TABLE A": "Hive Warrior"
+    },
+    {
+      "D20": 20,
+      "COMBAT ENCOUNTERS - TABLE A": "Hollow Shambler"
+    }
+  ]
+}

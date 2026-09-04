@@ -1,0 +1,21 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Hit Location Serpentoid",
+  "page": 81,
+  "table_index_on_page": 2,
+  "columns": [
+    "D20",
+    "HIT LOCATION - SERPENTOID"
+  ],
+  "num_rows": 2,
+  "rows": [
+    {
+      "D20": "1-17",
+      "HIT LOCATION - SERPENTOID": "Body"
+    },
+    {
+      "D20": "18-20",
+      "HIT LOCATION - SERPENTOID": "Head"
+    }
+  ]
+}

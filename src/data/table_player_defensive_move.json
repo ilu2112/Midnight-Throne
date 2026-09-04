@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Player Defensive Move",
+  "page": 78,
+  "table_index_on_page": 1,
+  "columns": [
+    "D10",
+    "PLAYER DEFENSIVE MOVE"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D10": 1,
+      "PLAYER DEFENSIVE MOVE": "Your next attack receives an additional +10 to the combat check."
+    },
+    {
+      "D10": 2,
+      "PLAYER DEFENSIVE MOVE": "Reduce your opponent’s Armor by -1 in a random Hit Location until the end of combat."
+    },
+    {
+      "D10": 3,
+      "PLAYER DEFENSIVE MOVE": "Your opponent receives the Bleeding (1) condition."
+    },
+    {
+      "D10": 4,
+      "PLAYER DEFENSIVE MOVE": "You are Immune to all conditions until your next turn, including the ones you are currently suffering from."
+    },
+    {
+      "D10": 5,
+      "PLAYER DEFENSIVE MOVE": "Your opponent immediately suffers 1 Piercing damage that ignores Armor."
+    },
+    {
+      "D10": 6,
+      "PLAYER DEFENSIVE MOVE": "Add +D6 to your Damage Pool for your next attack."
+    },
+    {
+      "D10": 7,
+      "PLAYER DEFENSIVE MOVE": "You gain Advantage on your next attack."
+    },
+    {
+      "D10": 8,
+      "PLAYER DEFENSIVE MOVE": "You press your advantage, reducing your opponent’s next defensive check by -20."
+    },
+    {
+      "D10": 9,
+      "PLAYER DEFENSIVE MOVE": "You get a moment of respite after fending off your opponent’s attack. Recover 2 Toughness."
+    },
+    {
+      "D10": 10,
+      "PLAYER DEFENSIVE MOVE": "Your next attack doesn’t suffer the usual Disadvantage to your attack Skill when targeting a specific body part."
+    }
+  ]
+}

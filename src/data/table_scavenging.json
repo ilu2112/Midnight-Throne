@@ -1,0 +1,45 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Scavenging",
+  "page": 116,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "SCAVENGING"
+  ],
+  "num_rows": 8,
+  "rows": [
+    {
+      "D20": 1,
+      "SCAVENGING": "You uncover some grisly remains. Make a successful Resolve check or lose 1 Sanity"
+    },
+    {
+      "D20": 2,
+      "SCAVENGING": "You find nothing of interest"
+    },
+    {
+      "D20": 3,
+      "SCAVENGING": "You discover D20₵"
+    },
+    {
+      "D20": "4-11",
+      "SCAVENGING": "You find D4 Crafting Supplies"
+    },
+    {
+      "D20": 12,
+      "SCAVENGING": "You discover 2D20₵"
+    },
+    {
+      "D20": "13-18",
+      "SCAVENGING": "You find D4 Cooking Ingredients"
+    },
+    {
+      "D20": 19,
+      "SCAVENGING": "You discover D100₵"
+    },
+    {
+      "D20": 20,
+      "SCAVENGING": "Roll on the Spoils table"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Hit Location Insectoid",
+  "page": 80,
+  "table_index_on_page": 2,
+  "columns": [
+    "D20",
+    "HIT LOCATION - INSECTOID"
+  ],
+  "num_rows": 9,
+  "rows": [
+    {
+      "D20": 1,
+      "HIT LOCATION - INSECTOID": "Right Rear Leg"
+    },
+    {
+      "D20": 2,
+      "HIT LOCATION - INSECTOID": "Left Rear Leg"
+    },
+    {
+      "D20": 3,
+      "HIT LOCATION - INSECTOID": "Right Middle Leg"
+    },
+    {
+      "D20": 4,
+      "HIT LOCATION - INSECTOID": "Left Middle Leg"
+    },
+    {
+      "D20": "5-9",
+      "HIT LOCATION - INSECTOID": "Abdomen"
+    },
+    {
+      "D20": "10-13",
+      "HIT LOCATION - INSECTOID": "Thorax"
+    },
+    {
+      "D20": 14,
+      "HIT LOCATION - INSECTOID": "Right Front Leg"
+    },
+    {
+      "D20": 15,
+      "HIT LOCATION - INSECTOID": "Left Front Leg"
+    },
+    {
+      "D20": "16-20",
+      "HIT LOCATION - INSECTOID": "Head"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Resources",
+  "page": 222,
+  "table_index_on_page": 2,
+  "columns": [
+    "D10",
+    "RESOURCES"
+  ],
+  "num_rows": 3,
+  "rows": [
+    {
+      "D10": "1-2",
+      "RESOURCES": "You find nothing of value"
+    },
+    {
+      "D10": "3-6",
+      "RESOURCES": "You find 1x Cooking Ingredients"
+    },
+    {
+      "D10": "7-10",
+      "RESOURCES": "You find 1x Crafting Supplies"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Is There A Door",
+  "page": 99,
+  "table_index_on_page": 1,
+  "columns": [
+    "D10",
+    "IS THERE A DOOR?"
+  ],
+  "num_rows": 2,
+  "rows": [
+    {
+      "D10": "1-5",
+      "IS THERE A DOOR?": "Yes"
+    },
+    {
+      "D10": "6-10",
+      "IS THERE A DOOR?": "No"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Precious Items",
+  "page": 213,
+  "table_index_on_page": 4,
+  "columns": [
+    "D20",
+    "PRECIOUS ITEMS"
+  ],
+  "num_rows": 2,
+  "rows": [
+    {
+      "D20": "1-15",
+      "PRECIOUS ITEMS": "Magic Item"
+    },
+    {
+      "D20": "16-20",
+      "PRECIOUS ITEMS": "Relic"
+    }
+  ]
+}

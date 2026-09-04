@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Player Fumbles",
+  "page": 84,
+  "table_index_on_page": 1,
+  "columns": [
+    "D10",
+    "PLAYER FUMBLES"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D10": 1,
+      "PLAYER FUMBLES": "You drop your weapon and must spend your next turn recovering it (or drawing a new one). If you are not wielding a weapon, your next attack suffers -20 instead."
+    },
+    {
+      "D10": 2,
+      "PLAYER FUMBLES": "You hurl your weapon with such strength that it gets stuck very deep in a wall or ground. As a Standard Action, you must perform a successful Athletics check to retrieve it. If you are not wielding a weapon, your next attack suffers -20 instead."
+    },
+    {
+      "D10": 3,
+      "PLAYER FUMBLES": "You hurl your weapon with such strength that it smashes against a stone, breaking non-magical weapons in half, but still repairable at Camp. Take your next turn to recover magical weapons. If not armed, your next attack is at -20."
+    },
+    {
+      "D10": 4,
+      "PLAYER FUMBLES": "A random item from your Belt breaks: make a Belt check. If you don’t have a Belt, you receive 1 Piercing damage."
+    },
+    {
+      "D10": 5,
+      "PLAYER FUMBLES": "You are suddenly feeling drained and lose D8 Aether. If you don’t have any Aether, you receive 1 Piercing damage."
+    },
+    {
+      "D10": 6,
+      "PLAYER FUMBLES": "You trip and fall, wasting this action. You are Prone and must use a Standard Action to get back up next round."
+    },
+    {
+      "D10": 7,
+      "PLAYER FUMBLES": "In the process of executing your attack you trip and slam your head. You are Prone and Dazed (2)."
+    },
+    {
+      "D10": 8,
+      "PLAYER FUMBLES": "Your attack hits a random ally instead of the intended target. If there are no allies, you strike yourself."
+    },
+    {
+      "D10": 9,
+      "PLAYER FUMBLES": "You manage to strike yourself with a normal attack."
+    },
+    {
+      "D10": 10,
+      "PLAYER FUMBLES": "You somehow manage to hurt yourself badly with your own weapon. You receive a Critical Strike."
+    }
+  ]
+}

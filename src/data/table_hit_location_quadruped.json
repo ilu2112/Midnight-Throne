@@ -1,0 +1,41 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Hit Location Quadruped",
+  "page": 81,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "HIT LOCATION - QUADRUPED"
+  ],
+  "num_rows": 7,
+  "rows": [
+    {
+      "D20": "1-3",
+      "HIT LOCATION - QUADRUPED": "Right Hind Leg"
+    },
+    {
+      "D20": "4-6",
+      "HIT LOCATION - QUADRUPED": "Left Hind Leg"
+    },
+    {
+      "D20": "7-9",
+      "HIT LOCATION - QUADRUPED": "Hindquarters"
+    },
+    {
+      "D20": "10-12",
+      "HIT LOCATION - QUADRUPED": "Forequarters"
+    },
+    {
+      "D20": "13-15",
+      "HIT LOCATION - QUADRUPED": "Right Front Leg"
+    },
+    {
+      "D20": "16-18",
+      "HIT LOCATION - QUADRUPED": "Left Front Leg"
+    },
+    {
+      "D20": "19-20",
+      "HIT LOCATION - QUADRUPED": "Head"
+    }
+  ]
+}

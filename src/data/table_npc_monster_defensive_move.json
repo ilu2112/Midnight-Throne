@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "NPC Monster Defensive Move",
+  "page": 78,
+  "table_index_on_page": 2,
+  "columns": [
+    "D10",
+    "NPC & MONSTER DEFENSIVE MOVE"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D10": 1,
+      "NPC & MONSTER DEFENSIVE MOVE": "The creature’s next attack receives an additional +10 to its Combat Skill. If it’s a magic action, the PC’s Spellward is reduced by -10 until the creature’s next turn."
+    },
+    {
+      "D10": 2,
+      "NPC & MONSTER DEFENSIVE MOVE": "Reduce the PC’s Armor by -1 in a random Hit Location until the end of combat."
+    },
+    {
+      "D10": 3,
+      "NPC & MONSTER DEFENSIVE MOVE": "The PC receives the Bleeding (1) condition."
+    },
+    {
+      "D10": 4,
+      "NPC & MONSTER DEFENSIVE MOVE": "The creature clears all negative conditions that it is currently suffering from, if any."
+    },
+    {
+      "D10": 5,
+      "NPC & MONSTER DEFENSIVE MOVE": "The PC receives 1 Piercing damage that ignores Armor."
+    },
+    {
+      "D10": 6,
+      "NPC & MONSTER DEFENSIVE MOVE": "The creature’s next damaging Action receives +D6 damage to its Damage Pool. If it’s not a damaging Action, then the PC’s Spellward is reduced by -10 until the creature’s next turn."
+    },
+    {
+      "D10": 7,
+      "NPC & MONSTER DEFENSIVE MOVE": "The creature gains Advantage on its next attack. If the attack is a Magical one, then the PC rolls its Spellward with Disadvantage."
+    },
+    {
+      "D10": 8,
+      "NPC & MONSTER DEFENSIVE MOVE": "The PC’s next Dodge, Parry, or Spellward check is reduced by -20."
+    },
+    {
+      "D10": 9,
+      "NPC & MONSTER DEFENSIVE MOVE": "The creature recovers D4 Health."
+    },
+    {
+      "D10": 10,
+      "NPC & MONSTER DEFENSIVE MOVE": "The creature gets a new turn immediately."
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Growing Darkness",
+  "pages": [
+    120,
+    121,
+    122
+  ],
+  "columns": [
+    "D100",
+    "GROWING DARKNESS"
+  ],
+  "num_rows": 35,
+  "rows": [
+    {
+      "D100": "01-02",
+      "GROWING DARKNESS": "A choir of howls fills the air. All Animal opponents receive +10 Combat Skill."
+    },
+    {
+      "D100": "03-04",
+      "GROWING DARKNESS": "The shadows grow longer around you. Make a Resolve check. If you fail, you lose 1 Sanity per each active Growing Darkness event."
+    },
+    {
+      "D100": "05-06",
+      "GROWING DARKNESS": "The gravity of your wounds resonates within your very being. If you aren’t fully healed, you receive D6 Psychic damage."
+    },
+    {
+      "D100": "07-08",
+      "GROWING DARKNESS": "You’re slowly losing your grip over your own mind. If your Sanity is not at its maximum, you automatically lose 1 Sanity."
+    },
+    {
+      "D100": "09-10",
+      "GROWING DARKNESS": "You feel your spirit drained. Reduce your max Aether by D4."
+    },
+    {
+      "D100": "11-12",
+      "GROWING DARKNESS": "The very air you breathe is conspiring against your survival. Reduce your max Toughness by D6."
+    },
+    {
+      "D100": "13-14",
+      "GROWING DARKNESS": "You hear a distant rumbling and feel a chilling gust of wind. All Elemental opponents receive +10 Combat Skill."
+    },
+    {
+      "D100": "15-16",
+      "GROWING DARKNESS": "Did you hear that? They’re coming for you. Whenever you Take a Breather you not only reduce the Tension Die by one stage, you must also immediately make a Tension Die check."
+    },
+    {
+      "D100": "17-18",
+      "GROWING DARKNESS": "Your hands are shaking too much. Reduce your Camp Check by -1."
+    },
+    {
+      "D100": "19-20",
+      "GROWING DARKNESS": "Regardless of how hard you try to concentrate, you just can’t. You can no longer Attune at Camp."
+    },
+    {
+      "D100": "21-22",
+      "GROWING DARKNESS": "Your spirit feels weaker. Reduce your Spellward by 5."
+    },
+    {
+      "D100": "23-24",
+      "GROWING DARKNESS": "There’s a shift in the astral currents. All Astral opponents receive +10 Combat Skill."
+    },
+    {
+      "D100": "25-26",
+      "GROWING DARKNESS": "You turned too suddenly and smashed your hip against a corner. Make a Belt check."
+    },
+    {
+      "D100": "27-28",
+      "GROWING DARKNESS": "This place… it knows, and it watches you. Make a Resolve check. If you fail, you lose D4 Sanity."
+    },
+    {
+      "D100": "29-30",
+      "GROWING DARKNESS": "You need a break. You can barely keep your eyes open. The next time you are attacked, your opponent surprises you."
+    },
+    {
+      "D100": "31-32",
+      "GROWING DARKNESS": "An oppressive, dark will sets its sights upon your party. Roll D6 for each Companion or Minion you have. A result of 1 means they are destroyed. If you have no Companions or Minions you suffer D8 Psychic damage."
+    },
+    {
+      "D100": "33-34",
+      "GROWING DARKNESS": "A crescendo of cries and screams suddenly fills the halls. Dismiss all other effects in play caused by Growing Darkness. For each effect dismissed this way you lose 1 Sanity and 1 Health."
+    },
+    {
+      "D100": "35-36",
+      "GROWING DARKNESS": "Vines and roots seem to suddenly grow all around you. All Plant opponents receive +10 Combat Skill."
+    },
+    {
+      "D100": "37-50",
+      "GROWING DARKNESS": "You are ambushed! Roll on the Combat Encounter table. Your opponents surprise you."
+    },
+    {
+      "D100": "51-52",
+      "GROWING DARKNESS": "All Demon opponents receive +10 Combat Skill."
+    },
+    {
+      "D100": "53-54",
+      "GROWING DARKNESS": "A suffocating mist surrounds you. Make an Endurance check to avoid receiving 3D4 Poison damage."
+    },
+    {
+      "D100": "55-56",
+      "GROWING DARKNESS": "A weakness seems to seep into your very bones. Whenever you receive damage from any source, you receive +1 damage."
+    },
+    {
+      "D100": "57-58",
+      "GROWING DARKNESS": "Confusion suddenly fills your mind, and you have trouble remembering your actions these last few days. Reduce a Skill of your choosing by 10."
+    },
+    {
+      "D100": "59-60",
+      "GROWING DARKNESS": "The ever-present chill of the grave becomes even more tangible. All Undead opponents receive +10 Combat Skill."
+    },
+    {
+      "D100": "61-62",
+      "GROWING DARKNESS": "Your mental wounds are starting to leave physical marks. Anytime you lose Sanity, make an Endurance check. If you fail, you suffer D6 Psychic damage."
+    },
+    {
+      "D100": "63-64",
+      "GROWING DARKNESS": "A swarm of Hellbats surrounds you. Make a successful check with your weapon Skill of choice; if you pass it you receive 10 XP, but if you fail you suffer D10 Slashing damage."
+    },
+    {
+      "D100": "65-66",
+      "GROWING DARKNESS": "You hear the faint sound of orders being shouted in the distance. All Humanoid opponents receive +10 Combat Skill."
+    },
+    {
+      "D100": "67-68",
+      "GROWING DARKNESS": "You blink a few times, snapping out of it; how long have you been staring at nothing? Reduce your lightsource by D4."
+    },
+    {
+      "D100": "69-70",
+      "GROWING DARKNESS": "The darkness seems to grow thicker and denser. Reduce your lightsource by 2 instead of 1 each time you enter a room."
+    },
+    {
+      "D100": "71-72",
+      "GROWING DARKNESS": "You are swarmed by the spirits of the angry dead. Make a Resolve check, if you pass it you earn 20 XP. If you fail you lose D4 Sanity."
+    },
+    {
+      "D100": "73-74",
+      "GROWING DARKNESS": "Your mind becomes dull and you have problems recalling things. All non-combat Skill checks increase their Difficulty and are considered Demanding (-10)."
+    },
+    {
+      "D100": "75-76",
+      "GROWING DARKNESS": "Your mind is suddenly assaulted from within. You suffer D6 Psychic damage per each Madness you have."
+    },
+    {
+      "D100": "77-78",
+      "GROWING DARKNESS": "The ground trembles, and it feels like each step you take is heavier. All Construct opponents receive +10 Combat Skill."
+    },
+    {
+      "D100": "79-80",
+      "GROWING DARKNESS": "The ground shakes and debris falls from above. Make a successful Dodge check or receive 3D6 Bludgeoning damage."
+    },
+    {
+      "D100": "81-100",
+      "GROWING DARKNESS": "An inhuman voice screams, whispers and yells; somehow, you know that’s an Overseer. Roll on the Overseer Influence table. All opponents from this Domain benefit from the result, but they also grant an extra +10 XP when defeated."
+    }
+  ]
+}

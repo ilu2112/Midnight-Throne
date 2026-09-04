@@ -1,0 +1,33 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Armor Greaves",
+  "page": 211,
+  "table_index_on_page": 3,
+  "columns": [
+    "TYPE",
+    "COST",
+    "PROTECTION",
+    "INTEGRITY"
+  ],
+  "num_rows": 3,
+  "rows": [
+    {
+      "TYPE": "Light",
+      "COST": 20,
+      "PROTECTION": 1,
+      "INTEGRITY": "D6"
+    },
+    {
+      "TYPE": "Medium",
+      "COST": 40,
+      "PROTECTION": 2,
+      "INTEGRITY": "D8"
+    },
+    {
+      "TYPE": "Heavy",
+      "COST": 60,
+      "PROTECTION": 3,
+      "INTEGRITY": "D10"
+    }
+  ]
+}

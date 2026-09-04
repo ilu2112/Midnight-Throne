@@ -1,0 +1,41 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Magic Item Type",
+  "page": 224,
+  "table_index_on_page": 1,
+  "columns": [
+    "D8",
+    "ITEM"
+  ],
+  "num_rows": 7,
+  "rows": [
+    {
+      "D8": 1,
+      "ITEM": "Weapon (roll on the Random Weapon table, page 222)"
+    },
+    {
+      "D8": 2,
+      "ITEM": "Armor (roll on the Random Armor table, page 223)"
+    },
+    {
+      "D8": 3,
+      "ITEM": "Belt"
+    },
+    {
+      "D8": 4,
+      "ITEM": "Boots"
+    },
+    {
+      "D8": 5,
+      "ITEM": "Gloves"
+    },
+    {
+      "D8": 6,
+      "ITEM": "Amulet"
+    },
+    {
+      "D8": "7-8",
+      "ITEM": "Ring"
+    }
+  ]
+}

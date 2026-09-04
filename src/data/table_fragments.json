@@ -1,0 +1,95 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Fragments",
+  "pages": [
+    214,
+    215
+  ],
+  "columns": [
+    "D20",
+    "FRAGMENTS"
+  ],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "FRAGMENTS": "A twisted dagger with a thorn-covered blade. When used to deal the fatal strike against an enemy (i.e. reducing them to 0 Health), the creature rises as a Skeleton (page 202) under your control."
+    },
+    {
+      "D20": 2,
+      "FRAGMENTS": "A tattered cloak that, when worn, shrouds the wearer in darkness. Grants invisibility for 5 rooms, or until you make an attack. You can ignore all Combat Encounters until then."
+    },
+    {
+      "D20": 3,
+      "FRAGMENTS": "A jagged mirror fragment that, when shattered, creates illusory duplicates of the user to distract enemies. +30 to Dodge for the next 4 rounds."
+    },
+    {
+      "D20": 4,
+      "FRAGMENTS": "A rusted chain that when wrapped around you grants your mind strength and resolve. +10 Temporary Sanity."
+    },
+    {
+      "D20": 5,
+      "FRAGMENTS": "A black heart-shaped amulet. When crushed (Free Action), it allows you to absorb damage meant for an ally, but the amulet crumbles to dust, leaving you unable to feel empathy for a week."
+    },
+    {
+      "D20": 6,
+      "FRAGMENTS": "A cracked monocle that, when worn, allows the user to inflict psychic pain on a target by locking eyes. As a Standard Action, make a Resolve check: if successful your target suffers 3D10 Psychic damage."
+    },
+    {
+      "D20": 7,
+      "FRAGMENTS": "A vial filled with sickly green liquid. When thrown, it bursts into corrosive flames that deal 3D6 Acid damage to all targets."
+    },
+    {
+      "D20": 8,
+      "FRAGMENTS": "A small, enchanted skull that grants the user the ability to see what’s ahead. Roll the contents of the next 3 rooms."
+    },
+    {
+      "D20": 9,
+      "FRAGMENTS": "Tattered bandages that, when wrapped around a wound, accelerate healing but carry a curse that causes the wounds to fester if not removed in time. Heal 2 Toughness/room. If kept for more than D6 rooms, you lose 1 Health/room."
+    },
+    {
+      "D20": 10,
+      "FRAGMENTS": "A blood-red potion that grants the user immense strength for a short time. Increase your next Athletics check by +50."
+    },
+    {
+      "D20": 11,
+      "FRAGMENTS": "A pendant adorned with a single raven's feather. When worn, it grants you +1 Standard Action during the next 4 rounds."
+    },
+    {
+      "D20": 12,
+      "FRAGMENTS": "A spiked gauntlet that, when worn, enhances your melee attacks with searing pain. For as long as you remain in this room your Unarmed Combat & Fist Weapons Skill is increased by 50 and you deal 2D6 Fire damage. Once you exit the room you receive 2D6 Fire damage."
+    },
+    {
+      "D20": 13,
+      "FRAGMENTS": "A vial of thick, black liquid that, when consumed, grants you immunity to Sanity loss for the next 4 rooms, but leaves you emotionally detached afterward."
+    },
+    {
+      "D20": 14,
+      "FRAGMENTS": "A delicate locket that, when opened, releases a swarm of spectral spiders that ensnare a target. A target of your choice becomes Restrained."
+    },
+    {
+      "D20": 15,
+      "FRAGMENTS": "A small, obsidian whistle that, when blown, summons a vengeful spirit to seek out and attack a designated target, immediately dealing 3D10 Psychic damage to it."
+    },
+    {
+      "D20": 16,
+      "FRAGMENTS": "A flask containing a swirling miasma. When opened, it releases a cloud of disease that afflicts enemies, dealing 3D4 Poison damage to all enemies."
+    },
+    {
+      "D20": 17,
+      "FRAGMENTS": "A broken harp that, when played, creates haunting melodies that charm enemies. A single target is Charmed."
+    },
+    {
+      "D20": 18,
+      "FRAGMENTS": "A tattered spellbook that allows you to use any Mastery Ability once. Roll on the Random Mastery table (page 222) to find out which Mastery it has access to, and pick one Ability."
+    },
+    {
+      "D20": 19,
+      "FRAGMENTS": "A Ring with a gorgeous amethyst that grants you 2D10 Temporary Toughness."
+    },
+    {
+      "D20": 20,
+      "FRAGMENTS": "A sinister hourglass that, when turned over, temporarily slows time for everyone except you. All enemies become Dazed (3)."
+    }
+  ]
+}

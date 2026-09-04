@@ -1,0 +1,93 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Combat Encounters B",
+  "page": 135,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "COMBAT ENCOUNTERS - TABLE B"
+  ],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "COMBAT ENCOUNTERS - TABLE B": "Living Moss"
+    },
+    {
+      "D20": 2,
+      "COMBAT ENCOUNTERS - TABLE B": "Necropede"
+    },
+    {
+      "D20": 3,
+      "COMBAT ENCOUNTERS - TABLE B": "Netherfiend"
+    },
+    {
+      "D20": 4,
+      "COMBAT ENCOUNTERS - TABLE B": "Plaguebringer"
+    },
+    {
+      "D20": 5,
+      "COMBAT ENCOUNTERS - TABLE B": "Pyreborn"
+    },
+    {
+      "D20": 6,
+      "COMBAT ENCOUNTERS - TABLE B": "Ratkin Marauders"
+    },
+    {
+      "D20": 7,
+      "COMBAT ENCOUNTERS - TABLE B": "Razorjaw"
+    },
+    {
+      "D20": 8,
+      "COMBAT ENCOUNTERS - TABLE B": "Reanimated Homunculus"
+    },
+    {
+      "D20": 9,
+      "COMBAT ENCOUNTERS - TABLE B": "Rotwalkers"
+    },
+    {
+      "D20": 10,
+      "COMBAT ENCOUNTERS - TABLE B": "Stone Warden"
+    },
+    {
+      "D20": 11,
+      "COMBAT ENCOUNTERS - TABLE B": "Swarmer"
+    },
+    {
+      "D20": 12,
+      "COMBAT ENCOUNTERS - TABLE B": "Tomb Crawler"
+    },
+    {
+      "D20": 13,
+      "COMBAT ENCOUNTERS - TABLE B": "Umbra Fiend"
+    },
+    {
+      "D20": 14,
+      "COMBAT ENCOUNTERS - TABLE B": "Unfettered Familiar"
+    },
+    {
+      "D20": 15,
+      "COMBAT ENCOUNTERS - TABLE B": "Vaelorian Magus"
+    },
+    {
+      "D20": 16,
+      "COMBAT ENCOUNTERS - TABLE B": "Vinekin"
+    },
+    {
+      "D20": 17,
+      "COMBAT ENCOUNTERS - TABLE B": "Voidweaver"
+    },
+    {
+      "D20": 18,
+      "COMBAT ENCOUNTERS - TABLE B": "Vorleg"
+    },
+    {
+      "D20": 19,
+      "COMBAT ENCOUNTERS - TABLE B": "Wraithskull"
+    },
+    {
+      "D20": 20,
+      "COMBAT ENCOUNTERS - TABLE B": "Wrath Elemental"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Masteries",
+  "page": 222,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "RANDOM MASTERY"
+  ],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "RANDOM MASTERY": "Abyssal Reaver"
+    },
+    {
+      "D20": 2,
+      "RANDOM MASTERY": "Arcanist"
+    },
+    {
+      "D20": 3,
+      "RANDOM MASTERY": "Brawler"
+    },
+    {
+      "D20": 4,
+      "RANDOM MASTERY": "Bulwark"
+    },
+    {
+      "D20": 5,
+      "RANDOM MASTERY": "Duskblade"
+    },
+    {
+      "D20": 6,
+      "RANDOM MASTERY": "Emissary"
+    },
+    {
+      "D20": 7,
+      "RANDOM MASTERY": "Flamecaster"
+    },
+    {
+      "D20": 8,
+      "RANDOM MASTERY": "Frostweaver"
+    },
+    {
+      "D20": 9,
+      "RANDOM MASTERY": "Gravecaller"
+    },
+    {
+      "D20": 10,
+      "RANDOM MASTERY": "Hexmancer"
+    },
+    {
+      "D20": 11,
+      "RANDOM MASTERY": "Icon Caller"
+    },
+    {
+      "D20": 12,
+      "RANDOM MASTERY": "Mindbinder"
+    },
+    {
+      "D20": 13,
+      "RANDOM MASTERY": "Ritualist"
+    },
+    {
+      "D20": 14,
+      "RANDOM MASTERY": "Stormbrand"
+    },
+    {
+      "D20": 15,
+      "RANDOM MASTERY": "Tracker"
+    },
+    {
+      "D20": 16,
+      "RANDOM MASTERY": "Umbra Phantom"
+    },
+    {
+      "D20": 17,
+      "RANDOM MASTERY": "Weapon Master"
+    },
+    {
+      "D20": 18,
+      "RANDOM MASTERY": "Wraith"
+    },
+    {
+      "D20": 19,
+      "RANDOM MASTERY": "Wrathspawn"
+    },
+    {
+      "D20": 20,
+      "RANDOM MASTERY": "Zealot"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Hit Location Winged Biped",
+  "page": 80,
+  "table_index_on_page": 4,
+  "columns": [
+    "D20",
+    "HIT LOCATION - WINGED BIPED"
+  ],
+  "num_rows": 9,
+  "rows": [
+    {
+      "D20": 1,
+      "HIT LOCATION - WINGED BIPED": "Right Leg"
+    },
+    {
+      "D20": 2,
+      "HIT LOCATION - WINGED BIPED": "Left Leg"
+    },
+    {
+      "D20": 3,
+      "HIT LOCATION - WINGED BIPED": "Abdomen"
+    },
+    {
+      "D20": 4,
+      "HIT LOCATION - WINGED BIPED": "Chest"
+    },
+    {
+      "D20": "5-9",
+      "HIT LOCATION - WINGED BIPED": "Right Wing"
+    },
+    {
+      "D20": "10-13",
+      "HIT LOCATION - WINGED BIPED": "Left Wing"
+    },
+    {
+      "D20": 14,
+      "HIT LOCATION - WINGED BIPED": "Right Arm"
+    },
+    {
+      "D20": 15,
+      "HIT LOCATION - WINGED BIPED": "Left Arm"
+    },
+    {
+      "D20": "16-20",
+      "HIT LOCATION - WINGED BIPED": "Head"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Overseer Roll",
+  "page": 179,
+  "table_index_on_page": 1,
+  "columns": [
+    "D10",
+    "OVERSEER"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D10": 1,
+      "OVERSEER": "Carnage Devourer"
+    },
+    {
+      "D10": 2,
+      "OVERSEER": "Dreadlord"
+    },
+    {
+      "D10": 3,
+      "OVERSEER": "Glacial Burrower"
+    },
+    {
+      "D10": 4,
+      "OVERSEER": "Gorehoof"
+    },
+    {
+      "D10": 5,
+      "OVERSEER": "Infernal Archon"
+    },
+    {
+      "D10": 6,
+      "OVERSEER": "Infernal Tormentor"
+    },
+    {
+      "D10": 7,
+      "OVERSEER": "Pyroclasmic Possessor"
+    },
+    {
+      "D10": 8,
+      "OVERSEER": "Veilshifter"
+    },
+    {
+      "D10": 9,
+      "OVERSEER": "Venomcloud Siren"
+    },
+    {
+      "D10": 10,
+      "OVERSEER": "Zephyrous Shadow"
+    }
+  ]
+}

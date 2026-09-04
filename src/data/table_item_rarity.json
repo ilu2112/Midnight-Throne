@@ -1,0 +1,25 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Item Rarity",
+  "page": 224,
+  "table_index_on_page": 2,
+  "columns": [
+    "D10",
+    "ITEM RARITY"
+  ],
+  "num_rows": 3,
+  "rows": [
+    {
+      "D10": "1-5",
+      "ITEM RARITY": "Uncommon: 1 Magic Property"
+    },
+    {
+      "D10": "6-8",
+      "ITEM RARITY": "Rare: 2 Magic Properties"
+    },
+    {
+      "D10": "9-10",
+      "ITEM RARITY": "Epic: 3 Magic Properties"
+    }
+  ]
+}

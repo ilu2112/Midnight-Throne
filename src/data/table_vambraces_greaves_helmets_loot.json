@@ -1,0 +1,25 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Vambraces Greaves Helmets Loot",
+  "page": 223,
+  "table_index_on_page": 2,
+  "columns": [
+    "D100",
+    "VAMBRACES, GREAVES & HELMETS (PAGES 210-211)"
+  ],
+  "num_rows": 3,
+  "rows": [
+    {
+      "D100": "01-33",
+      "VAMBRACES, GREAVES & HELMETS (PAGES 210-211)": "Light"
+    },
+    {
+      "D100": "34-66",
+      "VAMBRACES, GREAVES & HELMETS (PAGES 210-211)": "Medium"
+    },
+    {
+      "D100": "67-100",
+      "VAMBRACES, GREAVES & HELMETS (PAGES 210-211)": "Heavy"
+    }
+  ]
+}

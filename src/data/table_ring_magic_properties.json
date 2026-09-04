@@ -1,0 +1,93 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Ring Magic Properties",
+  "page": 230,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "RING MAGIC PROPERTIES"
+  ],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "RING MAGIC PROPERTIES": "Roll on the Damage Type table. This item grants you damage reduction based on its rarity: +1 Uncommon, +2 Rare, +3 Epic."
+    },
+    {
+      "D20": 2,
+      "RING MAGIC PROPERTIES": "Increase your Resistances by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": 3,
+      "RING MAGIC PROPERTIES": "Reroll any check once per Camp Rest."
+    },
+    {
+      "D20": 4,
+      "RING MAGIC PROPERTIES": "Increase a Skill of your choosing by 10."
+    },
+    {
+      "D20": 5,
+      "RING MAGIC PROPERTIES": "When you attempt to break down a door, you gain +20 Athletics."
+    },
+    {
+      "D20": 6,
+      "RING MAGIC PROPERTIES": "When Taking a Breather, you don’t reduce the Tension Die."
+    },
+    {
+      "D20": 7,
+      "RING MAGIC PROPERTIES": "Increase your maximum Sanity by 5."
+    },
+    {
+      "D20": 8,
+      "RING MAGIC PROPERTIES": "Reroll any failed Thievery checks while attempting to open a lock. This can be done once per door."
+    },
+    {
+      "D20": 9,
+      "RING MAGIC PROPERTIES": "Reroll any failed Thievery checks while attempting to dismantle a trap. This can be done once per trap."
+    },
+    {
+      "D20": 10,
+      "RING MAGIC PROPERTIES": "Increase your maximum Health by 5."
+    },
+    {
+      "D20": 11,
+      "RING MAGIC PROPERTIES": "Once per Rest you can heal D10 Wounds."
+    },
+    {
+      "D20": 12,
+      "RING MAGIC PROPERTIES": "After rolling on the Scavenging table (page 116), you can choose to adjust the die roll by up to D4."
+    },
+    {
+      "D20": 13,
+      "RING MAGIC PROPERTIES": "Increase the amount of Health you recover after Setting Camp by D4."
+    },
+    {
+      "D20": 14,
+      "RING MAGIC PROPERTIES": "Increase the amount of Sanity you recover after Setting Camp by D4."
+    },
+    {
+      "D20": 15,
+      "RING MAGIC PROPERTIES": "Ignore the effects of a single Madness you’re currently affected by."
+    },
+    {
+      "D20": 16,
+      "RING MAGIC PROPERTIES": "Increase your maximum Toughness by 5."
+    },
+    {
+      "D20": 17,
+      "RING MAGIC PROPERTIES": "Once per Encounter you can use an Ability that has an Aether cost without spending any Aether."
+    },
+    {
+      "D20": 18,
+      "RING MAGIC PROPERTIES": "You have Advantage on Scavenge checks."
+    },
+    {
+      "D20": 19,
+      "RING MAGIC PROPERTIES": "You can reroll your Growing Darkness rolls. The second roll is final."
+    },
+    {
+      "D20": 20,
+      "RING MAGIC PROPERTIES": "Ignore the effects of a Fumble once per Camp Rest."
+    }
+  ]
+}

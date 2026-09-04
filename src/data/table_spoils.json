@@ -1,0 +1,25 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Spoils",
+  "page": 213,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "SPOILS"
+  ],
+  "num_rows": 3,
+  "rows": [
+    {
+      "D6": "1-3",
+      "SPOILS": "Roll on the Mundane Items table"
+    },
+    {
+      "D6": "4-5",
+      "SPOILS": "Roll on the Valuable Items table"
+    },
+    {
+      "D6": 6,
+      "SPOILS": "Roll on the Precious Items table"
+    }
+  ]
+}

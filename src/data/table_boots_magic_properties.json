@@ -1,0 +1,81 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Boots Magic Properties",
+  "page": 228,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "BOOTS MAGIC PROPERTIES"
+  ],
+  "num_rows": 17,
+  "rows": [
+    {
+      "D20": "1-2",
+      "BOOTS MAGIC PROPERTIES": "Increase your Endurance by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": "3-4",
+      "BOOTS MAGIC PROPERTIES": "Increase your Resolve by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": "5-6",
+      "BOOTS MAGIC PROPERTIES": "Increase your Spellward by an amount based on this item’s rarity: +5 Uncommon, +10 Rare, +15 Epic."
+    },
+    {
+      "D20": 7,
+      "BOOTS MAGIC PROPERTIES": "You’re Immune to Stunned."
+    },
+    {
+      "D20": 8,
+      "BOOTS MAGIC PROPERTIES": "You’re Immune to Restrained."
+    },
+    {
+      "D20": 9,
+      "BOOTS MAGIC PROPERTIES": "Increase a Skill of your choosing by 20."
+    },
+    {
+      "D20": 10,
+      "BOOTS MAGIC PROPERTIES": "Roll on the Damage Type table. This item grants you damage reduction based on its rarity: +1 Uncommon, +2 Rare, +3 Epic."
+    },
+    {
+      "D20": 11,
+      "BOOTS MAGIC PROPERTIES": "Reroll any failed Thievery checks while attempting to open a lock."
+    },
+    {
+      "D20": 12,
+      "BOOTS MAGIC PROPERTIES": "Reroll any failed Thievery checks while attempting to dismantle a trap."
+    },
+    {
+      "D20": 13,
+      "BOOTS MAGIC PROPERTIES": "You have Advantage on Acrobatics checks."
+    },
+    {
+      "D20": 14,
+      "BOOTS MAGIC PROPERTIES": "You have Advantage on Stealth checks."
+    },
+    {
+      "D20": 15,
+      "BOOTS MAGIC PROPERTIES": "Ignore the effects of a Fumble once per Camp Rest."
+    },
+    {
+      "D20": 16,
+      "BOOTS MAGIC PROPERTIES": "After rolling on the Scavenging table (page 116), you can choose to adjust the die roll by up to D4."
+    },
+    {
+      "D20": 17,
+      "BOOTS MAGIC PROPERTIES": "Increase the amount of Armor provided by greaves you wear by +1."
+    },
+    {
+      "D20": 18,
+      "BOOTS MAGIC PROPERTIES": "Once per room you can reroll a failed Dodge check."
+    },
+    {
+      "D20": 19,
+      "BOOTS MAGIC PROPERTIES": "Once per Encounter, you can make a special kick attack that deals 2D6+2 Bludgeoning damage. This is a Free Action that requires an Unarmed Combat & Fist Weapons check."
+    },
+    {
+      "D20": 20,
+      "BOOTS MAGIC PROPERTIES": "You gain a free Reaction per round."
+    }
+  ]
+}

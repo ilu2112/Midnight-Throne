@@ -1,0 +1,79 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Armor Torso",
+  "page": 211,
+  "table_index_on_page": 1,
+  "columns": [
+    "TYPE",
+    "COST",
+    "PROTECTION",
+    "INTEGRITY",
+    "NOTES"
+  ],
+  "num_rows": 9,
+  "rows": [
+    {
+      "TYPE": "Heavy Cloth",
+      "COST": 40,
+      "PROTECTION": 1,
+      "INTEGRITY": "D6",
+      "NOTES": "Maneuverability: -5"
+    },
+    {
+      "TYPE": "Soft Leather",
+      "COST": 60,
+      "PROTECTION": 1,
+      "INTEGRITY": "D8",
+      "NOTES": "Maneuverability: -5"
+    },
+    {
+      "TYPE": "Hide Scale",
+      "COST": 75,
+      "PROTECTION": 2,
+      "INTEGRITY": "D8",
+      "NOTES": "Maneuverability: -10"
+    },
+    {
+      "TYPE": "Laminar",
+      "COST": 100,
+      "PROTECTION": 2,
+      "INTEGRITY": "D8",
+      "NOTES": "Maneuverability: -15"
+    },
+    {
+      "TYPE": "Rigid Leather",
+      "COST": 125,
+      "PROTECTION": 2,
+      "INTEGRITY": "D8",
+      "NOTES": "Maneuverability: -15"
+    },
+    {
+      "TYPE": "Mail",
+      "COST": 150,
+      "PROTECTION": 2,
+      "INTEGRITY": "D8",
+      "NOTES": "Maneuverability: -15"
+    },
+    {
+      "TYPE": "Metal Scale",
+      "COST": 150,
+      "PROTECTION": 2,
+      "INTEGRITY": "D10",
+      "NOTES": "Maneuverability: -20"
+    },
+    {
+      "TYPE": "Brigandine",
+      "COST": 175,
+      "PROTECTION": 3,
+      "INTEGRITY": "D10",
+      "NOTES": "Maneuverability: -20"
+    },
+    {
+      "TYPE": "Plate",
+      "COST": 200,
+      "PROTECTION": 3,
+      "INTEGRITY": "D12",
+      "NOTES": "Maneuverability: -20"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Gems Jewelry",
+  "page": 215,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "GEMS & JEWELRY"
+  ],
+  "num_rows": 6,
+  "rows": [
+    {
+      "D20": "1-2",
+      "GEMS & JEWELRY": "Ornamental - D100₵"
+    },
+    {
+      "D20": "3-6",
+      "GEMS & JEWELRY": "Semi-precious - 2D100₵"
+    },
+    {
+      "D20": "7-11",
+      "GEMS & JEWELRY": "Precious - 3D100₵"
+    },
+    {
+      "D20": "12-15",
+      "GEMS & JEWELRY": "Lavish - 4D100₵"
+    },
+    {
+      "D20": "16-18",
+      "GEMS & JEWELRY": "Sumptuous - 5D100₵"
+    },
+    {
+      "D20": "19-20",
+      "GEMS & JEWELRY": "Extravagant - 6D100₵"
+    }
+  ]
+}

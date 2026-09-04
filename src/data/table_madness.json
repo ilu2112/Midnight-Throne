@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Madness",
+  "page": 91,
+  "table_index_on_page": 1,
+  "columns": [
+    "D10",
+    "MADNESS"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D10": 1,
+      "MADNESS": "Your mind breaks, and you’re lost to the madness. Your character is, for all effects and purposes, dead."
+    },
+    {
+      "D10": 2,
+      "MADNESS": "Your mind is in shambles, and any amount of pressure will break it. All your future rolls on this table suffer -1. Cumulative."
+    },
+    {
+      "D10": 3,
+      "MADNESS": "You start developing physical reactions as a consequence of the state of your mind. Reduce your max Toughness by -1. Cumulative."
+    },
+    {
+      "D10": 4,
+      "MADNESS": "You know the darkness is coming for you… Each time you suffer any loss of Sanity, you lose an additional -1. Cumulative."
+    },
+    {
+      "D10": 5,
+      "MADNESS": "You’re scared of spending too much time in one place, and rush through the rooms as fast as you can. Scavenging becomes a Demanding (-10) task. Cumulative."
+    },
+    {
+      "D10": 6,
+      "MADNESS": "You feel like your mind is starting to give in to the darkness, offering less resistance. All Resolve checks are now a Demanding (-10) task. Cumulative."
+    },
+    {
+      "D10": 7,
+      "MADNESS": "You’re having trouble retaining all your memories and experiences. Each time you earn any amount of XP, you earn 10 less. Cumulative."
+    },
+    {
+      "D10": 8,
+      "MADNESS": "You’ve blocked out a traumatic experience, and with it, some of what you learned from it. Reduce a Skill of your choosing by 10. Cumulative."
+    },
+    {
+      "D10": 9,
+      "MADNESS": "You slap yourself with all your strength, quickly regaining your wits and snapping out of it. You receive 2D6 Bludgeoning damage that ignores Armor, but are otherwise fine."
+    },
+    {
+      "D10": 10,
+      "MADNESS": "The traumatic experiences you’ve gone through have taught you a lot about yourself. +100 XP."
+    }
+  ]
+}

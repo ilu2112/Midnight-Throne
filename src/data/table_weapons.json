@@ -1,0 +1,259 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Weapons",
+  "pages": [
+    208,
+    209
+  ],
+  "columns": [
+    "WEAPON",
+    "COST",
+    "DAMAGE",
+    "SKILL",
+    "SPEED",
+    "NOTES"
+  ],
+  "num_rows": 30,
+  "rows": [
+    {
+      "WEAPON": "Bardiche",
+      "COST": 15,
+      "DAMAGE": "Slashing",
+      "SKILL": "Shafted Weapons",
+      "SPEED": 0,
+      "NOTES": "Two-Handed, Quick"
+    },
+    {
+      "WEAPON": "Bastard Sword",
+      "COST": 30,
+      "DAMAGE": "Slashing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 0,
+      "NOTES": "Versatile, Parrying"
+    },
+    {
+      "WEAPON": "Billhook",
+      "COST": 10,
+      "DAMAGE": "Slashing",
+      "SKILL": "Shafted Weapons",
+      "SPEED": 0,
+      "NOTES": "Two-Handed, Simple"
+    },
+    {
+      "WEAPON": "Cestus",
+      "COST": 5,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Fist Weapons",
+      "SPEED": 5,
+      "NOTES": "Simple"
+    },
+    {
+      "WEAPON": "Claw",
+      "COST": 20,
+      "DAMAGE": "Slashing",
+      "SKILL": "Fist Weapons",
+      "SPEED": 0,
+      "NOTES": "Parrying, Quick"
+    },
+    {
+      "WEAPON": "Club",
+      "COST": 5,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 5,
+      "NOTES": "Simple"
+    },
+    {
+      "WEAPON": "Dagger",
+      "COST": 5,
+      "DAMAGE": "Piercing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 0,
+      "NOTES": "Parrying, Quick"
+    },
+    {
+      "WEAPON": "Flail",
+      "COST": 30,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 5,
+      "NOTES": "Powerful"
+    },
+    {
+      "WEAPON": "Glaive",
+      "COST": 15,
+      "DAMAGE": "Slashing",
+      "SKILL": "Shafted Weapons",
+      "SPEED": 5,
+      "NOTES": "Two-Handed"
+    },
+    {
+      "WEAPON": "Great Axe",
+      "COST": 50,
+      "DAMAGE": "Slashing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 5,
+      "NOTES": "Two-Handed"
+    },
+    {
+      "WEAPON": "Greatclub",
+      "COST": 20,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 5,
+      "NOTES": "Two-Handed"
+    },
+    {
+      "WEAPON": "Great Sword",
+      "COST": 80,
+      "DAMAGE": "Slashing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 0,
+      "NOTES": "Two-Handed, Parrying"
+    },
+    {
+      "WEAPON": "Halberd",
+      "COST": 15,
+      "DAMAGE": "Slashing",
+      "SKILL": "Shafted Weapons",
+      "SPEED": 5,
+      "NOTES": "Two-Handed"
+    },
+    {
+      "WEAPON": "Hatchet",
+      "COST": 5,
+      "DAMAGE": "Slashing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 5,
+      "NOTES": "Simple"
+    },
+    {
+      "WEAPON": "Improvised Weapon",
+      "COST": 1,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Shafted Weapons",
+      "SPEED": 5,
+      "NOTES": "Two-Handed"
+    },
+    {
+      "WEAPON": "Knuckles",
+      "COST": 5,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Fist Weapons",
+      "SPEED": 0,
+      "NOTES": "Simple, Quick"
+    },
+    {
+      "WEAPON": "Light Hammer",
+      "COST": 5,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 5,
+      "NOTES": "Defensive"
+    },
+    {
+      "WEAPON": "Longsword",
+      "COST": 20,
+      "DAMAGE": "Slashing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 0,
+      "NOTES": "Parrying, Versatile"
+    },
+    {
+      "WEAPON": "Maul",
+      "COST": 20,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 0,
+      "NOTES": "Two-Handed, Simple"
+    },
+    {
+      "WEAPON": "Mace",
+      "COST": 15,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 5,
+      "NOTES": "Simple"
+    },
+    {
+      "WEAPON": "Morningstar",
+      "COST": 15,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 5,
+      "NOTES": "Powerful"
+    },
+    {
+      "WEAPON": "Pike",
+      "COST": 10,
+      "DAMAGE": "Piercing",
+      "SKILL": "Shafted Weapons",
+      "SPEED": 5,
+      "NOTES": "Two-Handed"
+    },
+    {
+      "WEAPON": "Quarterstaff",
+      "COST": 5,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Shafted Weapons",
+      "SPEED": 0,
+      "NOTES": "Parrying, Two-Handed"
+    },
+    {
+      "WEAPON": "Rapier",
+      "COST": 30,
+      "DAMAGE": "Piercing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 0,
+      "NOTES": "Parrying, Quick"
+    },
+    {
+      "WEAPON": "Saber",
+      "COST": 20,
+      "DAMAGE": "Slashing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 5,
+      "NOTES": "Parrying"
+    },
+    {
+      "WEAPON": "Shortsword",
+      "COST": 15,
+      "DAMAGE": "Slashing",
+      "SKILL": "Bladed Weapons",
+      "SPEED": 0,
+      "NOTES": "Parrying, Defensive"
+    },
+    {
+      "WEAPON": "Spear",
+      "COST": 10,
+      "DAMAGE": "Piercing",
+      "SKILL": "Shafted Weapons",
+      "SPEED": 0,
+      "NOTES": "Defensive, Versatile"
+    },
+    {
+      "WEAPON": "Sword Gauntlet",
+      "COST": 10,
+      "DAMAGE": "Piercing",
+      "SKILL": "Fist Weapons",
+      "SPEED": 5,
+      "NOTES": "Defensive"
+    },
+    {
+      "WEAPON": "Warhammer",
+      "COST": 25,
+      "DAMAGE": "Bludgeoning",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 0,
+      "NOTES": "Powerful, Versatile"
+    },
+    {
+      "WEAPON": "War Pick",
+      "COST": 15,
+      "DAMAGE": "Piercing",
+      "SKILL": "Bludgeoning Weapons",
+      "SPEED": 5,
+      "NOTES": "Powerful"
+    }
+  ]
+}

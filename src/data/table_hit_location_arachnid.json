@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Hit Location Arachnid",
+  "page": 80,
+  "table_index_on_page": 3,
+  "columns": [
+    "D20",
+    "HIT LOCATION - ARACHNID"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D20": "1-2",
+      "HIT LOCATION - ARACHNID": "Right Rear Leg"
+    },
+    {
+      "D20": "3-4",
+      "HIT LOCATION - ARACHNID": "Left Rear Leg"
+    },
+    {
+      "D20": "5-6",
+      "HIT LOCATION - ARACHNID": "Mid Right Leg"
+    },
+    {
+      "D20": "7-8",
+      "HIT LOCATION - ARACHNID": "Mid Left Leg"
+    },
+    {
+      "D20": "9-10",
+      "HIT LOCATION - ARACHNID": "Fore Right Leg"
+    },
+    {
+      "D20": "11-12",
+      "HIT LOCATION - ARACHNID": "Fore Left Leg"
+    },
+    {
+      "D20": "13-14",
+      "HIT LOCATION - ARACHNID": "Abdomen"
+    },
+    {
+      "D20": "15-16",
+      "HIT LOCATION - ARACHNID": "Front Right Leg"
+    },
+    {
+      "D20": "17-18",
+      "HIT LOCATION - ARACHNID": "Front Left Leg"
+    },
+    {
+      "D20": "19-20",
+      "HIT LOCATION - ARACHNID": "Cephalothorax"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "NPC Monster Fumbles",
+  "page": 85,
+  "table_index_on_page": 1,
+  "columns": [
+    "D10",
+    "NPC & MONSTER FUMBLES"
+  ],
+  "num_rows": 10,
+  "rows": [
+    {
+      "D10": 1,
+      "NPC & MONSTER FUMBLES": "The creature’s next attack suffers -20. If it’s a Magical Action, the PC receives +20 to their Spellward."
+    },
+    {
+      "D10": 2,
+      "NPC & MONSTER FUMBLES": "The creature becomes confused by their own inability to strike the PC, becoming Stunned for the next round."
+    },
+    {
+      "D10": 3,
+      "NPC & MONSTER FUMBLES": "The creature is Restrained for the next D4 rounds due to some vegetation or refuse in its vicinity."
+    },
+    {
+      "D10": 4,
+      "NPC & MONSTER FUMBLES": "The creature exposes a weakness in its attack pattern, granting the PC Advantage on their defensive checks for the next 2 rounds."
+    },
+    {
+      "D10": 5,
+      "NPC & MONSTER FUMBLES": "The attack creates a huge cloud of lifted dust, causing the PC to be Concealed for D4 rounds (or until they make an attack)."
+    },
+    {
+      "D10": 6,
+      "NPC & MONSTER FUMBLES": "The creature trips and falls, wasting their action. It is Prone and must use its next turn to get back up."
+    },
+    {
+      "D10": 7,
+      "NPC & MONSTER FUMBLES": "In the process of executing its attack, the creature trips and slams its head. It is Prone and Stunned (2)."
+    },
+    {
+      "D10": 8,
+      "NPC & MONSTER FUMBLES": "The creature becomes Frightened (20)."
+    },
+    {
+      "D10": 9,
+      "NPC & MONSTER FUMBLES": "The creature manages to strike itself, receiving D6 Slashing damage."
+    },
+    {
+      "D10": 10,
+      "NPC & MONSTER FUMBLES": "The creature falls in an awkward position, becoming Prone and receiving 2D6 Bludgeoning damage. It must use its next turn to get back up."
+    }
+  ]
+}

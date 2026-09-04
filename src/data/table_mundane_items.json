@@ -1,0 +1,89 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Mundane Items",
+  "page": 213,
+  "table_index_on_page": 2,
+  "columns": [
+    "D100",
+    "MUNDANE ITEMS"
+  ],
+  "num_rows": 19,
+  "rows": [
+    {
+      "D100": "01-05",
+      "MUNDANE ITEMS": "D4 Crafting Supplies"
+    },
+    {
+      "D100": "06-10",
+      "MUNDANE ITEMS": "D4 Cooking Ingredients"
+    },
+    {
+      "D100": "11-15",
+      "MUNDANE ITEMS": "Backpack"
+    },
+    {
+      "D100": "16-20",
+      "MUNDANE ITEMS": "1x Bandage"
+    },
+    {
+      "D100": "21-25",
+      "MUNDANE ITEMS": "Bedroll"
+    },
+    {
+      "D100": "26-30",
+      "MUNDANE ITEMS": "Belt"
+    },
+    {
+      "D100": "31-35",
+      "MUNDANE ITEMS": "Belt Lamp"
+    },
+    {
+      "D100": "36-40",
+      "MUNDANE ITEMS": "1x Candle"
+    },
+    {
+      "D100": "41-45",
+      "MUNDANE ITEMS": "Lore Book"
+    },
+    {
+      "D100": "46-50",
+      "MUNDANE ITEMS": "Crowbar"
+    },
+    {
+      "D100": "51-55",
+      "MUNDANE ITEMS": "Flare"
+    },
+    {
+      "D100": "56-60",
+      "MUNDANE ITEMS": "Gems & Jewelry (roll on the table on page 215)"
+    },
+    {
+      "D100": "61-65",
+      "MUNDANE ITEMS": "Lamp"
+    },
+    {
+      "D100": "66-70",
+      "MUNDANE ITEMS": "1x Lamp Oil"
+    },
+    {
+      "D100": "71-75",
+      "MUNDANE ITEMS": "1x Lockpick"
+    },
+    {
+      "D100": "76-80",
+      "MUNDANE ITEMS": "Pouch"
+    },
+    {
+      "D100": "81-85",
+      "MUNDANE ITEMS": "Random Armor"
+    },
+    {
+      "D100": "86-90",
+      "MUNDANE ITEMS": "Random Weapon"
+    },
+    {
+      "D100": "91-100",
+      "MUNDANE ITEMS": "D4 Ritual Components"
+    }
+  ]
+}

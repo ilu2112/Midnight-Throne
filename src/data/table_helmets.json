@@ -1,0 +1,37 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Helmets",
+  "page": 210,
+  "table_index_on_page": 2,
+  "columns": [
+    "HELMET",
+    "COST",
+    "PROTECTION",
+    "INTEGRITY",
+    "NOTES"
+  ],
+  "num_rows": 3,
+  "rows": [
+    {
+      "HELMET": "Light",
+      "COST": 20,
+      "PROTECTION": 1,
+      "INTEGRITY": "D6",
+      "NOTES": "Perception: -5"
+    },
+    {
+      "HELMET": "Medium",
+      "COST": 40,
+      "PROTECTION": 2,
+      "INTEGRITY": "D8",
+      "NOTES": "Perception: -10"
+    },
+    {
+      "HELMET": "Heavy",
+      "COST": 60,
+      "PROTECTION": 3,
+      "INTEGRITY": "D10",
+      "NOTES": "Perception: -15"
+    }
+  ]
+}

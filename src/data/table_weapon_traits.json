@@ -1,0 +1,40 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Weapon Traits",
+  "page": 207,
+  "columns": [
+    "TRAIT",
+    "EFFECT"
+  ],
+  "num_rows": 7,
+  "rows": [
+    {
+      "TRAIT": "Defensive",
+      "EFFECT": "+10 Combat Skill when used defensively in combination with a shield."
+    },
+    {
+      "TRAIT": "Parrying",
+      "EFFECT": "Allows you to use your weapon Skill when defending against attacks."
+    },
+    {
+      "TRAIT": "Powerful",
+      "EFFECT": "This weapon is especially deadly, increasing damage by +1."
+    },
+    {
+      "TRAIT": "Quick",
+      "EFFECT": "This weapon grants the character +10 to Initiative checks."
+    },
+    {
+      "TRAIT": "Simple",
+      "EFFECT": "A weapon relatively easy to use, increasing the Combat Skill by +10."
+    },
+    {
+      "TRAIT": "Two-Handed",
+      "EFFECT": "A character must use two hands to wield this weapon, but its larger size increases damage by +2."
+    },
+    {
+      "TRAIT": "Versatile",
+      "EFFECT": "When wielded with two hands, this weapon deals +1 damage."
+    }
+  ]
+}

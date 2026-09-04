@@ -1,0 +1,93 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Weapon Magic Properties",
+  "page": 231,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "WEAPON MAGIC PROPERTIES"
+  ],
+  "num_rows": 20,
+  "rows": [
+    {
+      "D20": 1,
+      "WEAPON MAGIC PROPERTIES": "Roll on the Damage Type table. You add +D4 damage of that Type to your Damage Pool when attacking with this weapon."
+    },
+    {
+      "D20": 2,
+      "WEAPON MAGIC PROPERTIES": "+10 to Initiative checks."
+    },
+    {
+      "D20": 3,
+      "WEAPON MAGIC PROPERTIES": "Add +D6 damage to your Damage Pool when you deal a Critical Strike."
+    },
+    {
+      "D20": 4,
+      "WEAPON MAGIC PROPERTIES": "+1 damage of the same type the weapon deals."
+    },
+    {
+      "D20": 5,
+      "WEAPON MAGIC PROPERTIES": "When dropped, the weapon instantly returns to your hand."
+    },
+    {
+      "D20": 6,
+      "WEAPON MAGIC PROPERTIES": "Target gains Bleeding (1) each time you deal damage to them."
+    },
+    {
+      "D20": 7,
+      "WEAPON MAGIC PROPERTIES": "Target gains Poisoned (1) each time you deal damage to them."
+    },
+    {
+      "D20": 8,
+      "WEAPON MAGIC PROPERTIES": "Roll on the Random Enemy Type table. This weapon deals bonus damage against that type of enemy, depending on this weapon’s rarity: +1 Uncommon, +2 Rare, +3 Epic."
+    },
+    {
+      "D20": 9,
+      "WEAPON MAGIC PROPERTIES": "Once per room you can add a number of dice to your Damage Pool when attacking with your weapon, depending on the weapon’s rarity: +D6 Uncommon, +2D6 Rare, +3D6 Epic."
+    },
+    {
+      "D20": 10,
+      "WEAPON MAGIC PROPERTIES": "When you hit with this weapon and reduce the target to 0 Health, you gain D6 Temporary Toughness."
+    },
+    {
+      "D20": 11,
+      "WEAPON MAGIC PROPERTIES": "Once per room, you can unleash a burst of destructive Arcane energy from the weapon. Every enemy creature must pass a Magic Resistance check or take damage depending on the weapon’s rarity: D4 Uncommon, 2D4 Rare, 3D4 Epic. This is a Standard Action."
+    },
+    {
+      "D20": 12,
+      "WEAPON MAGIC PROPERTIES": "When you hit with this weapon and reduce the target to 0 Health, you gain D6 Temporary Aether."
+    },
+    {
+      "D20": 13,
+      "WEAPON MAGIC PROPERTIES": "During the next D4 rounds, all non-Critical Strike damage dealt with this weapon is doubled. All incoming damage is doubled as well. Activating this Property is a Free Action."
+    },
+    {
+      "D20": 14,
+      "WEAPON MAGIC PROPERTIES": "You add +D6 to your Damage Pool for your first attack in a room while wielding this weapon."
+    },
+    {
+      "D20": 15,
+      "WEAPON MAGIC PROPERTIES": "When you deal a Critical Strike with this weapon, you recover D10 Wounds."
+    },
+    {
+      "D20": 16,
+      "WEAPON MAGIC PROPERTIES": "When wielding this weapon, you deal a Critical Strike when rolling 66, regardless of your Skill score."
+    },
+    {
+      "D20": 17,
+      "WEAPON MAGIC PROPERTIES": "Deals +1 damage on your next attack if you received damage during this same turn."
+    },
+    {
+      "D20": 18,
+      "WEAPON MAGIC PROPERTIES": "You can choose to add D8 damage to your Damage Pool each time you deal damage with this weapon. If you do so, you receive the same amount of damage."
+    },
+    {
+      "D20": 19,
+      "WEAPON MAGIC PROPERTIES": "When you deal damage with this weapon, gain +10 Dodge until your next turn."
+    },
+    {
+      "D20": 20,
+      "WEAPON MAGIC PROPERTIES": "This weapon has +10 Speed."
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Personal Goals",
+  "pages": [
+    64,
+    65,
+    66,
+    67
+  ],
+  "columns": [
+    "PERSONAL GOAL",
+    "OBJECTIVE",
+    "REWARDS"
+  ],
+  "num_rows": 39,
+  "rows": [
+    {
+      "PERSONAL GOAL": "Acid Damage Expert",
+      "OBJECTIVE": "Deal 200 Acid damage",
+      "REWARDS": "Gain 1 Acid damage reduction"
+    },
+    {
+      "PERSONAL GOAL": "Air Damage Expert",
+      "OBJECTIVE": "Deal 200 Force damage",
+      "REWARDS": "Gain 1 Force damage reduction"
+    },
+    {
+      "PERSONAL GOAL": "Annihilator",
+      "OBJECTIVE": "Defeat 100 opponents",
+      "REWARDS": "+D4 Psychic damage to all attacks"
+    },
+    {
+      "PERSONAL GOAL": "Arcane Damage Expert",
+      "OBJECTIVE": "Deal 200 Arcane damage",
+      "REWARDS": "Increase all Arcane damage dealt by +1"
+    },
+    {
+      "PERSONAL GOAL": "Astral Bane",
+      "OBJECTIVE": "Defeat 50 Astral opponents",
+      "REWARDS": "Triple the damage dealt with a Critical Strike against Astral opponents"
+    },
+    {
+      "PERSONAL GOAL": "Beast Hunter",
+      "OBJECTIVE": "Defeat 50 Animal opponents",
+      "REWARDS": "Triple the damage dealt with a Critical Strike against Animal opponents"
+    },
+    {
+      "PERSONAL GOAL": "Bladed Weapon Master",
+      "OBJECTIVE": "Defeat 50 opponents with the Bladed Weapons Skill",
+      "REWARDS": "+1 damage while wielding a Bladed weapon"
+    },
+    {
+      "PERSONAL GOAL": "Bludgeoning Damage Expert",
+      "OBJECTIVE": "Deal 200 Bludgeoning damage",
+      "REWARDS": "Gain 1 Bludgeoning damage reduction"
+    },
+    {
+      "PERSONAL GOAL": "Bludgeoning Weapon Master",
+      "OBJECTIVE": "Defeat 50 opponents with the Bludgeoning Weapons Skill",
+      "REWARDS": "+1 damage while wielding a Bludgeoning weapon"
+    },
+    {
+      "PERSONAL GOAL": "Botanical Exterminator",
+      "OBJECTIVE": "Defeat 50 Plant opponents",
+      "REWARDS": "Triple the damage dealt with a Critical Strike against Plant opponents"
+    },
+    {
+      "PERSONAL GOAL": "Brawler",
+      "OBJECTIVE": "Defeat 50 opponents with the Unarmed Combat & Fist Weapons Skill",
+      "REWARDS": "+1 damage while wielding a fist weapon or completely unarmed"
+    },
+    {
+      "PERSONAL GOAL": "Cold Damage Expert",
+      "OBJECTIVE": "Deal 200 Cold damage",
+      "REWARDS": "Increase all Cold damage dealt by +1"
+    },
+    {
+      "PERSONAL GOAL": "Decapitate the Leadership",
+      "OBJECTIVE": "Defeat 20 Overseers",
+      "REWARDS": "When facing an Overseer, they are Stunned during the first combat round"
+    },
+    {
+      "PERSONAL GOAL": "Demon Bane",
+      "OBJECTIVE": "Defeat 50 Demon opponents",
+      "REWARDS": "Triple the damage dealt with a Critical Strike against Demon opponents"
+    },
+    {
+      "PERSONAL GOAL": "Elemental Vanquisher",
+      "OBJECTIVE": "Defeat 50 Elemental opponents",
+      "REWARDS": "Triple the damage dealt with a Critical Strike against Elemental opponents"
+    },
+    {
+      "PERSONAL GOAL": "Fire Damage Expert",
+      "OBJECTIVE": "Deal 200 Fire damage",
+      "REWARDS": "Increase all Fire damage dealt by +1"
+    },
+    {
+      "PERSONAL GOAL": "Hoarder",
+      "OBJECTIVE": "Obtain 5,000₵. You do not need to hold this amount all at once",
+      "REWARDS": "Traders will buy up to 5 items from you at full price"
+    },
+    {
+      "PERSONAL GOAL": "Holy Damage Expert",
+      "OBJECTIVE": "Deal 200 Holy damage",
+      "REWARDS": "Increase all Holy damage dealt by +1"
+    },
+    {
+      "PERSONAL GOAL": "Infernal Damage Expert",
+      "OBJECTIVE": "Deal 200 Infernal damage",
+      "REWARDS": "Increase all Infernal damage dealt by +1"
+    },
+    {
+      "PERSONAL GOAL": "Living Shadow",
+      "OBJECTIVE": "Surprise 50 opponents",
+      "REWARDS": "You gain the Living Shadow Perk"
+    },
+    {
+      "PERSONAL GOAL": "Marauder",
+      "OBJECTIVE": "Defeat 50 Humanoid opponents",
+      "REWARDS": "Triple the damage dealt with a Critical Strike against Humanoid opponents"
+    },
+    {
+      "PERSONAL GOAL": "Master Thief",
+      "OBJECTIVE": "Open 100 doors or containers with the help of your Thievery Skill",
+      "REWARDS": "You gain the Lucky Find Perk"
+    },
+    {
+      "PERSONAL GOAL": "Necrotic Damage Expert",
+      "OBJECTIVE": "Deal 200 Necrotic damage",
+      "REWARDS": "Increase all Necrotic damage dealt by +1"
+    },
+    {
+      "PERSONAL GOAL": "Overseer Overthrown",
+      "OBJECTIVE": "Defeat an Overseer",
+      "REWARDS": "You obtain an Amulet"
+    },
+    {
+      "PERSONAL GOAL": "Piercing Damage Expert",
+      "OBJECTIVE": "Deal 200 Piercing damage",
+      "REWARDS": "Gain 1 Piercing damage reduction"
+    },
+    {
+      "PERSONAL GOAL": "Poison Damage Expert",
+      "OBJECTIVE": "Deal 200 Poison damage",
+      "REWARDS": "Gain 1 Poison damage reduction"
+    },
+    {
+      "PERSONAL GOAL": "Precision Striker",
+      "OBJECTIVE": "Deal 50 Critical Strikes in combat",
+      "REWARDS": "You gain the Precision Striker Perk"
+    },
+    {
+      "PERSONAL GOAL": "Psychic Damage Expert",
+      "OBJECTIVE": "Deal 200 Psychic damage",
+      "REWARDS": "Increase all Psychic damage dealt by +1"
+    },
+    {
+      "PERSONAL GOAL": "Relic Hunter",
+      "OBJECTIVE": "Find a Relic",
+      "REWARDS": "100 XP"
+    },
+    {
+      "PERSONAL GOAL": "Scavenger",
+      "OBJECTIVE": "Successfully scavenge 100 rooms",
+      "REWARDS": "You gain the Scavenger Perk"
+    },
+    {
+      "PERSONAL GOAL": "Scholar",
+      "OBJECTIVE": "Successfully use the Reason Skill 100 times to solve Events",
+      "REWARDS": "You gain the Scholar Perk"
+    },
+    {
+      "PERSONAL GOAL": "Sentinel Smasher",
+      "OBJECTIVE": "Defeat 50 Construct opponents",
+      "REWARDS": "Triple the damage dealt with a Critical Strike against Construct opponents"
+    },
+    {
+      "PERSONAL GOAL": "Shafted Weapon Master",
+      "OBJECTIVE": "Defeat 50 opponents with the Shafted Weapons Skill",
+      "REWARDS": "+1 damage while wielding a Shafted weapon"
+    },
+    {
+      "PERSONAL GOAL": "Slashing Damage Expert",
+      "OBJECTIVE": "Deal 200 Slashing damage",
+      "REWARDS": "Gain 1 Slashing damage reduction"
+    },
+    {
+      "PERSONAL GOAL": "Stormkin",
+      "OBJECTIVE": "Deal 200 Lightning damage",
+      "REWARDS": "Increase all Lightning damage dealt by +1"
+    },
+    {
+      "PERSONAL GOAL": "Trap Buster",
+      "OBJECTIVE": "Successfully dismantle 50 traps",
+      "REWARDS": "You gain the Trap Buster Perk"
+    },
+    {
+      "PERSONAL GOAL": "Thrill Seeker",
+      "OBJECTIVE": "Trigger 20 Growing Darkness events",
+      "REWARDS": "Each time you must roll on the Growing Darkness table, you can choose to roll a second time and choose the result you prefer"
+    },
+    {
+      "PERSONAL GOAL": "Vaelorian Erudite",
+      "OBJECTIVE": "Loot 10 Lore Books",
+      "REWARDS": "Increase your maximum Aether by +D4"
+    },
+    {
+      "PERSONAL GOAL": "Wraithstalker",
+      "OBJECTIVE": "Defeat 50 Undead opponents",
+      "REWARDS": "Triple the damage dealt with a Critical Strike against Undead opponents"
+    }
+  ]
+}

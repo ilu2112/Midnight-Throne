@@ -1,0 +1,25 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Combat Encounters First Domain",
+  "page": 244,
+  "table_index_on_page": 1,
+  "columns": [
+    "D20",
+    "COMBAT ENCOUNTERS - FIRST DOMAIN"
+  ],
+  "num_rows": 3,
+  "rows": [
+    {
+      "D20": "1-7",
+      "COMBAT ENCOUNTERS - FIRST DOMAIN": "Blightfang Rats"
+    },
+    {
+      "D20": "8-14",
+      "COMBAT ENCOUNTERS - FIRST DOMAIN": "Skeletal Horrors"
+    },
+    {
+      "D20": "15-20",
+      "COMBAT ENCOUNTERS - FIRST DOMAIN": "Flesh Eater"
+    }
+  ]
+}

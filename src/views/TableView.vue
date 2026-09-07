@@ -9,6 +9,7 @@ import { weaponTraitSegments } from '../lib/weaponTraitTooltips'
 import { withConditionTooltips } from '../lib/conditionTooltips'
 import { starredTables } from '../lib/starred'
 import { fixedTooltip } from '../lib/fixedTooltip'
+import { dieSizeFromColumn, matchingIndices, primaryMatchIndex, useRollHighlight } from '../lib/rollHighlight'
 
 const vFixedTooltip = fixedTooltip
 const { isStarred, toggleStar } = starredTables
@@ -115,6 +116,31 @@ function toggleSort(col) {
     sortDir.value = 1
   }
 }
+
+// Whenever the floating DiceDock finishes a roll while this table happens to
+// be open, briefly highlight (and scroll to) whichever row that roll landed
+// on — see lib/rollHighlight.js. Only tables actually keyed by a die (first
+// column reads "D20", "D100", ...) have anything to highlight; a table like
+// Weapons or Conditions (first column TYPE/CONDITION/...) simply never
+// matches and this quietly does nothing.
+const rowEls = new Map()
+function setRowRef(i, el) {
+  if (el) rowEls.set(i, el)
+  else rowEls.delete(i)
+}
+
+const { highlighted } = useRollHighlight(
+  () => {
+    const dieSize = dieSizeFromColumn(table.value?.columns[0])
+    if (dieSize == null) return null
+    const col = table.value.columns[0]
+    return {
+      indices: matchingIndices(filteredRows.value, col, dieSize),
+      scrollTo: primaryMatchIndex(filteredRows.value, col, dieSize),
+    }
+  },
+  (i) => rowEls.get(i),
+)
 </script>
 
 <template>
@@ -155,7 +181,12 @@ function toggleSort(col) {
           </tr>
         </thead>
         <tbody>
-          <tr v-for="(row, i) in filteredRows" :key="i">
+          <tr
+            v-for="(row, i) in filteredRows"
+            :key="i"
+            :ref="(el) => setRowRef(i, el)"
+            :class="{ 'row-highlight': highlighted.has(i) }"
+          >
             <td v-for="(col, ci) in table.columns" :key="col">
               <img
                 v-if="isImagePath(row[col])"
@@ -176,7 +207,7 @@ function toggleSort(col) {
                   </template>
                 </li>
               </ul>
-              <span v-else :class="{ 'long-text': ci > 0 }">
+              <span v-else class="cell-text" :class="{ 'long-text': ci > 0 }">
                 <template v-for="(seg, si) in segmentsFor(row, col)" :key="si">
                   <router-link v-if="seg.to" :to="seg.to" class="cell-link">{{ seg.text }}</router-link>
                   <span v-else-if="seg.tooltip" v-fixed-tooltip class="trait-tip">
@@ -279,7 +310,19 @@ function toggleSort(col) {
   border: 1px solid var(--border);
   border-radius: 10px;
   overflow: auto;
-  max-height: 72vh;
+  /* Was 72vh, assuming the other 28vh covered .content's padding (top+
+     bottom) plus this view's own heading/search row above the table. That
+     budget was sized back when only HistoryDock reserved space (bottom
+     only, 2rem top + 5rem bottom = 7rem outside the table). Now DiceDock
+     also reserves space at the top (2rem → 5rem) and HistoryDock's own
+     bottom reservation grew too (5rem → 6rem, after the padding still
+     wasn't quite enough on real pages — see .content's comment in
+     App.vue), adding 4rem more reserved space total than the old 72vh
+     accounted for — shrunk by roughly that same proportion (measured
+     empirically at a 900px-tall viewport, the same way the original 72vh
+     was arrived at) so the page goes back to fitting one viewport with no
+     page-level scrollbar. */
+  max-height: 64.5vh;
 }
 
 th {
@@ -293,6 +336,24 @@ th {
    ends up narrow next to a much wider text column. */
 td:first-child {
   white-space: nowrap;
+}
+
+/* Briefly lit up by lib/rollHighlight.js when the floating DiceDock's roll
+   button finishes a roll that this table's first column recognizes as its
+   own die (see dieSizeFromColumn) and lands on this row. The transition
+   lives on the plain, unconditional rule (every td, all the time) rather
+   than only inside .row-highlight's own selector — declaring it just on the
+   highlighted state would only animate ADDING the background, since the
+   instant the class is removed the element falls back to a rule with no
+   transition property at all, snapping off instead of easing out. Here it
+   animates smoothly in both directions: instantly-ish on ("this just lit
+   up"), eased on off ~1s later. */
+td {
+  transition: background 0.4s ease;
+}
+
+tr.row-highlight td {
+  background: rgba(232, 164, 143, 0.16);
 }
 
 .sort-arrow {
@@ -348,22 +409,32 @@ td:first-child {
 }
 
 .cell-list li {
-  line-height: 1.45;
+  line-height: 1.6;
+}
+
+/* Same explicit line-height on every plain-value cell, long-text or not.
+   A taller line-height doesn't just space out wrapped lines — it also adds
+   "half-leading" above the very first line, pushing that line down. With
+   the first column at one line-height and .long-text columns at another,
+   a short first-column value (e.g. "Bleeding") and the long-text cell next
+   to it in the same row started their text at visibly different heights
+   even though both use vertical-align: top. Keeping this value identical
+   everywhere is what actually fixes that — not just giving the first
+   column *an* explicit line-height (which only fixed the case where it was
+   otherwise left at the browser's own, differently-tall, default). */
+.cell-text {
+  line-height: 1.6;
 }
 
 /* Every column except the first (usually the die roll / short key value)
-   reads easier a touch dimmer with looser line spacing — same treatment as
-   the Actions (D6) text on a monster's page (see MonsterDetailView's
-   .action-text). Applied by column position now, not by a per-cell length
-   check, so every cell in a column renders with the same font regardless
-   of how long its own text happens to be. */
+   reads easier a touch dimmer — same treatment as the Actions (D6) text on
+   a monster's page (see MonsterDetailView's .action-text). Applied by
+   column position now, not by a per-cell length check, so every cell in a
+   column renders with the same font regardless of how long its own text
+   happens to be. Line-height is intentionally NOT set here — see .cell-text
+   above for why it has to match the first column's. */
 .long-text {
   color: var(--text-dim);
-  line-height: 1.6;
-}
-
-.cell-list li.long-text {
-  line-height: 1.6;
 }
 
 .cell-image {

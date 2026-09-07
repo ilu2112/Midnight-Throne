@@ -11,6 +11,7 @@ import { starredMonsters } from '../lib/starred'
 import { characterLevel } from '../lib/characterLevel'
 import { overseerInfluence, resistantDamageType, parseInfluence } from '../lib/overseerInfluence'
 import { fixedTooltip } from '../lib/fixedTooltip'
+import { matchingIndices, useRollHighlight } from '../lib/rollHighlight'
 
 const vFixedTooltip = fixedTooltip
 const { isStarred, toggleStar } = starredMonsters
@@ -94,6 +95,34 @@ const hitLocationInfo = computed(() => {
   if (!table) return null
   return { table, vulnerable: vulnerable.trim() }
 })
+
+// Flash the matching row(s) whenever the dice dock finishes a roll — same
+// shared engine TableView.vue uses for every reference table (see
+// lib/rollHighlight.js), wired up by hand here since these two tables (Hit
+// Location and Actions) are ad-hoc markup rather than the generic table
+// renderer. Deliberately no scrolling here (getRowEl always returns null,
+// so useRollHighlight's scrollIntoView call is a no-op): both tables live on
+// a page the user is already reading top-to-bottom, and both are short
+// enough to normally already be on screen, so auto-scrolling just yanked
+// the view around distractingly instead of helping — unlike TableView.vue's
+// tables, which can run to 70+ rows and genuinely need it.
+const { highlighted: hitLocationHighlighted } = useRollHighlight(
+  () => {
+    const info = hitLocationInfo.value
+    if (!info) return null
+    const col = info.table.columns[0]
+    return { indices: matchingIndices(info.table.rows, col, 20) }
+  },
+  () => null,
+)
+
+const { highlighted: actionsHighlighted } = useRollHighlight(
+  () => {
+    if (!mergedActions.value.length) return null
+    return { indices: matchingIndices(mergedActions.value, 'range', 6) }
+  },
+  () => null,
+)
 
 // A monster's TYPE (e.g. "Undead, Construct") is a comma-separated list of
 // entries from the Enemy Type table, which also carries the mechanical
@@ -475,7 +504,10 @@ function statSlug(key) {
               <tr
                 v-for="(row, i) in hitLocationInfo.table.rows"
                 :key="i"
-                :class="{ vulnerable: row[hitLocationInfo.table.columns[1]] === hitLocationInfo.vulnerable }"
+                :class="{
+                  vulnerable: row[hitLocationInfo.table.columns[1]] === hitLocationInfo.vulnerable,
+                  'row-highlight': hitLocationHighlighted.has(i),
+                }"
               >
                 <td>{{ row[hitLocationInfo.table.columns[0]] }}</td>
                 <td class="location-cell">
@@ -517,7 +549,11 @@ function statSlug(key) {
               </tr>
             </thead>
             <tbody>
-              <tr v-for="a in mergedActions" :key="a.range">
+              <tr
+                v-for="(a, i) in mergedActions"
+                :key="a.range"
+                :class="{ 'row-highlight': actionsHighlighted.has(i) }"
+              >
                 <td>{{ a.range }}</td>
                 <td class="action-text">
                   <template v-for="(seg, si) in actionSegments(a.action)" :key="si">
@@ -860,6 +896,25 @@ function statSlug(key) {
 
 tr.vulnerable {
   background: rgba(179, 56, 44, 0.14);
+}
+
+/* Transition declared on the always-applying base rule (not inside
+   .row-highlight itself) so it animates BOTH directions — adding the class
+   fades the background in, removing it fades back out. Declaring it only
+   inside .row-highlight would animate just the "on" direction; removal
+   would snap back instantly, since the transition property leaves with the
+   class. See the identical fix in TableView.vue. */
+td {
+  transition: background 0.4s ease;
+}
+
+/* Placed after tr.vulnerable so a just-rolled Hit Location match briefly
+   outshines the static vulnerable-point tint rather than being masked by
+   it — both are harmless to have active at once (they're just two
+   backgrounds on the same rule specificity, last one in the stylesheet
+   wins), and the highlight clears itself after ~1s regardless. */
+tr.row-highlight td {
+  background: rgba(232, 164, 143, 0.16);
 }
 
 .heart-icon {

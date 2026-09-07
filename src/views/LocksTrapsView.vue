@@ -11,12 +11,46 @@ const vFixedTooltip = fixedTooltip
 // Locks & Traps (rulebook p.117-119). Only the GM-side dice — the parts that
 // don't depend on a character's own Skills — are rolled here: whether a
 // feature is trapped and which trap, whether it's locked, and the suggested
-// Difficulty for the Perception check. The actual checks (Perception,
-// Thievery, Athletics) and the player's choice of how to resolve what's
-// found are the player's own rolls and decisions, so those are left as a
-// short reminder instead of something this tool can roll for you.
+// Difficulty for the Perception check, the Disarm check (p.117, Resolution
+// 2.A.I — "The Difficulty of this check is determined by a roll on the
+// Random Difficulty table", a SEPARATE roll from Perception's own, even
+// though both draw from the same table), the Pick the Lock check (p.118,
+// Resolution 2.B.I — not spelled out as explicitly as the other two, but
+// its failure clause, "reducing its Difficulty by one step", only makes
+// sense if an initial Difficulty was rolled for it the same way), and the
+// Brute Force check (2.B.II — the printed rulebook only describes a flat
+// +20 per repeat attempt with no separate Difficulty, but per the game's
+// author it should get its own rolled Difficulty here too, same as the
+// other three checks). The actual checks (Perception, Thievery, Athletics)
+// and the player's choice of how to resolve what's found are the player's
+// own rolls and decisions, so those are left as a short reminder instead of
+// something this tool can roll for you.
 const difficultyTable = findTable('difficulty_modifiers')
 const trapsTable = findTable('traps')
+
+// Color-codes a rolled Difficulty so it actually stands out at a glance
+// (favorable-to-hostile, green to red) instead of reading as just more
+// prose — see .difficulty-chip's variants below for the actual colors.
+// Keyed on the exact DIFFICULTY column values in
+// data/table_difficulty_modifiers.json (note the curly apostrophe in
+// "Child’s play" — matches the source PDF's own typography).
+const DIFFICULTY_CLASS = {
+  'Child’s play': 'diff-trivial',
+  Effortless: 'diff-trivial',
+  Easy: 'diff-easy',
+  Normal: 'diff-normal',
+  Demanding: 'diff-demanding',
+  Hard: 'diff-hard',
+  Impossible: 'diff-impossible',
+}
+
+function difficultyClass(name) {
+  return DIFFICULTY_CLASS[name] ?? 'diff-normal'
+}
+
+function formatModifier(modifier) {
+  return `${modifier >= 0 ? '+' : ''}${modifier}`
+}
 
 // Same link/tooltip pipeline TableView.vue applies to the Traps table's own
 // TRAP EFFECT column, so hovering a damage type in this preview (e.g.
@@ -97,15 +131,35 @@ function checkFeature() {
   const trapRoll = rollDie(10)
   const isTrapped = trapRoll >= 7
   let trap = null
+  let disarmDifficultyRoll = null
+  let disarmDifficultyRow = null
   if (isTrapped) {
     const trapTypeRoll = rollDie(10)
     trap = { roll: trapTypeRoll, row: rowFor(trapsTable, trapTypeRoll) }
+    // Disarm's own Difficulty — a separate roll from the Perception
+    // Difficulty above, not a reuse of it (see this file's top comment).
+    disarmDifficultyRoll = rollDie(8)
+    disarmDifficultyRow = rowFor(difficultyTable, disarmDifficultyRoll)
   }
 
   // Is it locked? (D20 — Door 12+, Container 10+)
   const lockRoll = rollDie(20)
   const lockThreshold = isContainer ? 10 : 12
   const isLocked = lockRoll >= lockThreshold
+  let pickLockDifficultyRoll = null
+  let pickLockDifficultyRow = null
+  let bruteForceDifficultyRoll = null
+  let bruteForceDifficultyRow = null
+  if (isLocked) {
+    // Pick the Lock's own Difficulty — see this file's top comment.
+    pickLockDifficultyRoll = rollDie(8)
+    pickLockDifficultyRow = rowFor(difficultyTable, pickLockDifficultyRoll)
+    // Brute Force's own Difficulty — a separate roll from Pick the Lock's,
+    // not a reuse of it (same as Disarm vs. Perception above). Added per
+    // the game's author — see this file's top comment.
+    bruteForceDifficultyRoll = rollDie(8)
+    bruteForceDifficultyRow = rowFor(difficultyTable, bruteForceDifficultyRoll)
+  }
 
   result.value = {
     isContainer,
@@ -115,9 +169,18 @@ function checkFeature() {
     trapRoll,
     isTrapped,
     trap,
+    disarmDifficultyRoll,
+    disarmDifficultyName: disarmDifficultyRow?.DIFFICULTY,
+    disarmDifficultyModifier: disarmDifficultyRow?.MODIFIER,
     lockRoll,
     lockThreshold,
     isLocked,
+    pickLockDifficultyRoll,
+    pickLockDifficultyName: pickLockDifficultyRow?.DIFFICULTY,
+    pickLockDifficultyModifier: pickLockDifficultyRow?.MODIFIER,
+    bruteForceDifficultyRoll,
+    bruteForceDifficultyName: bruteForceDifficultyRow?.DIFFICULTY,
+    bruteForceDifficultyModifier: bruteForceDifficultyRow?.MODIFIER,
   }
 }
 
@@ -168,7 +231,12 @@ function confirmClear() {
     <div v-if="result" class="result">
       <section class="block">
         <h2>Perception Difficulty <span class="badge">D8: {{ result.difficultyRoll }}</span></h2>
-        <p>{{ result.difficultyName }} ({{ result.difficultyModifier >= 0 ? '+' : '' }}{{ result.difficultyModifier }}) — roll the player's Perception check against this Difficulty to spot a trap.</p>
+        <p>
+          <span class="difficulty-chip" :class="difficultyClass(result.difficultyName)">
+            {{ result.difficultyName }} <span class="difficulty-mod">({{ formatModifier(result.difficultyModifier) }})</span>
+          </span>
+          — roll the player's Perception check against this Difficulty to spot a trap.
+        </p>
       </section>
 
       <section class="block">
@@ -216,11 +284,44 @@ function confirmClear() {
              container, regardless of the method: +10 XP" (both Pick the lock
              and Brute force count). -->
         <ul>
-          <li v-if="trapRevealed && result.isTrapped"><strong>Disarm:</strong> Thievery check (Thieves' Tools) against the rolled Difficulty. Failure triggers the trap. Success is worth <strong>+10 XP</strong>.</li>
-          <li v-if="trapRevealed && result.isTrapped"><strong>Bypass</strong> (Environmental traps only): Skill check to avoid, +20. Failure triggers the trap.</li>
-          <li v-if="trapRevealed && result.isTrapped"><strong>Trigger voluntarily:</strong> +20 to the trap's avoidance check.</li>
-          <li v-if="result.isLocked"><strong>Pick the lock:</strong> Thievery check (Lockpick). Failure breaks the Lockpick, but the next attempt's Difficulty drops one step. Success is worth <strong>+10 XP</strong>.</li>
-          <li v-if="result.isLocked"><strong>Brute force:</strong> Athletics check. Each attempt (success or failure) triggers a Tension Die check for the noise. Success is worth <strong>+10 XP</strong>.</li>
+          <li v-if="trapRevealed && result.isTrapped" class="resolution-item">
+            <div class="resolution-head">
+              <strong>Disarm</strong>
+              <span class="difficulty-chip" :class="difficultyClass(result.disarmDifficultyName)">
+                {{ result.disarmDifficultyName }} <span class="difficulty-mod">({{ formatModifier(result.disarmDifficultyModifier) }})</span>
+              </span>
+              <span class="badge">D8: {{ result.disarmDifficultyRoll }}</span>
+            </div>
+            <p class="resolution-detail">Thievery check (Thieves' Tools) against this Difficulty. Failure triggers the trap. Success is worth <strong>+10 XP</strong>.</p>
+          </li>
+          <li v-if="trapRevealed && result.isTrapped" class="resolution-item">
+            <div class="resolution-head"><strong>Bypass</strong> <span class="note-inline">(Environmental traps only)</span></div>
+            <p class="resolution-detail">Skill check to avoid, +20. Failure triggers the trap.</p>
+          </li>
+          <li v-if="trapRevealed && result.isTrapped" class="resolution-item">
+            <div class="resolution-head"><strong>Trigger voluntarily</strong></div>
+            <p class="resolution-detail">+20 to the trap's avoidance check.</p>
+          </li>
+          <li v-if="result.isLocked" class="resolution-item">
+            <div class="resolution-head">
+              <strong>Pick the lock</strong>
+              <span class="difficulty-chip" :class="difficultyClass(result.pickLockDifficultyName)">
+                {{ result.pickLockDifficultyName }} <span class="difficulty-mod">({{ formatModifier(result.pickLockDifficultyModifier) }})</span>
+              </span>
+              <span class="badge">D8: {{ result.pickLockDifficultyRoll }}</span>
+            </div>
+            <p class="resolution-detail">Thievery check (Lockpick) against this Difficulty. Failure breaks the Lockpick, but the next attempt's Difficulty drops one step. Success is worth <strong>+10 XP</strong>.</p>
+          </li>
+          <li v-if="result.isLocked" class="resolution-item">
+            <div class="resolution-head">
+              <strong>Brute force</strong>
+              <span class="difficulty-chip" :class="difficultyClass(result.bruteForceDifficultyName)">
+                {{ result.bruteForceDifficultyName }} <span class="difficulty-mod">({{ formatModifier(result.bruteForceDifficultyModifier) }})</span>
+              </span>
+              <span class="badge">D8: {{ result.bruteForceDifficultyRoll }}</span>
+            </div>
+            <p class="resolution-detail">Athletics check against this Difficulty. Each attempt (success or failure) triggers a Tension Die check for the noise. Failed attempts after the first add +20 to it. Success is worth <strong>+10 XP</strong>.</p>
+          </li>
         </ul>
       </section>
     </div>
@@ -371,9 +472,98 @@ function confirmClear() {
   padding-left: 1.1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.7rem;
   color: var(--text);
   line-height: 1.5;
+}
+
+.resolution-item {
+  /* Was a single run-on sentence with the Difficulty buried mid-clause —
+     splitting the check's name + its Difficulty chip onto their own row
+     (resolution-head) from the rest of the description (resolution-detail)
+     is what actually makes the Difficulty readable at a glance instead of
+     something you have to hunt for in a paragraph. */
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.resolution-head {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.resolution-detail {
+  margin: 0;
+  color: var(--text-dim);
+}
+
+.note-inline {
+  color: var(--text-faint);
+  font-size: 0.85rem;
+}
+
+/* Color-coded by how favorable the roll is to the player attempting the
+   check — green (easy) fading through neutral (Normal) to red (near-
+   impossible) — so the Difficulty reads at a glance instead of disappearing
+   into the surrounding prose as just another word. Colors are deliberately
+   distinct from --accent (the app's own brand/danger red, used everywhere
+   else for buttons and highlights) except at the "Impossible" end, where
+   reusing that same red is fitting — that IS the worst case. */
+.difficulty-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.difficulty-mod {
+  font-weight: 600;
+  font-size: 0.76rem;
+  opacity: 0.85;
+}
+
+.difficulty-chip.diff-trivial {
+  background: rgba(122, 178, 94, 0.16);
+  color: #9bd17e;
+  border-color: rgba(122, 178, 94, 0.4);
+}
+
+.difficulty-chip.diff-easy {
+  background: rgba(178, 189, 94, 0.16);
+  color: #c3cf8c;
+  border-color: rgba(178, 189, 94, 0.4);
+}
+
+.difficulty-chip.diff-normal {
+  background: var(--surface-2);
+  color: var(--text-dim);
+  border-color: var(--border);
+}
+
+.difficulty-chip.diff-demanding {
+  background: rgba(201, 138, 61, 0.18);
+  color: #e0a866;
+  border-color: rgba(201, 138, 61, 0.45);
+}
+
+.difficulty-chip.diff-hard {
+  background: rgba(194, 96, 58, 0.2);
+  color: #e08c66;
+  border-color: rgba(194, 96, 58, 0.5);
+}
+
+.difficulty-chip.diff-impossible {
+  background: var(--accent-dim);
+  color: var(--accent-light);
+  border-color: var(--accent);
 }
 
 .note {

@@ -28,6 +28,17 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* Firefox's equivalent of the ::-webkit-scrollbar rules below — same
+     thumb color, so a scrollable panel looks the same regardless of
+     browser. Both properties are inherited, so setting them once here
+     covers every scrollable element in the app. Also overrides macOS'
+     auto-hiding "overlay" scrollbar behavior in Firefox, matching the
+     always-visible, theme-colored thumb the ::-webkit-scrollbar rules force
+     in Chrome/Safari. Track is transparent rather than a fixed color — see
+     the ::-webkit-scrollbar-track comment below for why. */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
 }
 
 * {
@@ -94,16 +105,41 @@ input[type='text'] {
   color: #fff;
 }
 
+/* Defining any ::-webkit-scrollbar rule switches Chrome/Safari from macOS'
+   auto-hiding "overlay" scrollbar to a classic one that's always drawn (and
+   always reserves its own width) whenever content overflows — which is the
+   point here, not just the coloring. Same thumb color as the scrollbar-color
+   pair above, for Firefox. */
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
+/* Transparent, not a flat color: the sidebar, the right panel and a table's
+   wrapper all sit on different backgrounds (--surface, --bg, ...), so any
+   single fixed track color would read as a mismatched stripe painted over
+   whichever of those it doesn't match. Leaving it transparent lets each
+   container's own background show through instead — only the thumb needs
+   its own color; the reserved gutter (scrollbar-gutter: stable, on the two
+   sidebars) just looks like part of that panel until there's something to
+   scroll. */
 ::-webkit-scrollbar-track {
-  background: var(--bg);
+  background: transparent;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--border);
   border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-faint);
+}
+
+/* Otherwise a mismatched plain-white square appears where a vertical and
+   horizontal scrollbar meet (e.g. TableView's .table-wrap, which scrolls
+   both ways on a wide table) — transparent for the same reason as the track
+   above. */
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

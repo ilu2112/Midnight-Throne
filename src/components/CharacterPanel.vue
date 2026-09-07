@@ -2,6 +2,7 @@
 import { nextTick, computed, ref, watch } from 'vue'
 import { Heart, Shield, Sparkles, Brain, BatteryLow, Flashlight, Dices, Star, Trophy, IdCard, PersonStanding, Plus, Minus, X, ChevronUp, ChevronDown, RotateCcw } from '@lucide/vue'
 import { findTable } from '../registry'
+import { matchingIndices, useRollHighlight } from '../lib/rollHighlight'
 import { characterLevel, experience, adjustExperience } from '../lib/characterLevel'
 import {
   stats,
@@ -135,6 +136,27 @@ function toggleSection(key) {
 // attack's damage.
 const hitLocationHumanoidTable = findTable('hit_location_humanoid')
 const WEAK_SPOT_LOCATION = 'Head'
+
+// Same dice-dock roll-highlight treatment as the full reference tables (see
+// lib/rollHighlight.js) — this panel is a persistent fixture in the right
+// sidebar across every page, not just the Hit Locations table view, so it
+// listens for a settled roll the same way regardless of what's currently
+// open elsewhere. No scrolling (the grid is only 7 cells, always either
+// fully visible or fully hidden by the section collapse — nothing to
+// scroll to). The section defaults collapsed (see loadSectionsOpen above);
+// a roll that actually lands on a row auto-expands it, since a highlight
+// nobody can see isn't much of one.
+const { highlighted: hitLocHighlighted } = useRollHighlight(
+  () => {
+    const rows = hitLocationHumanoidTable?.rows
+    if (!rows || !rows.length) return null
+    const indices = matchingIndices(rows, 'D20', 20)
+    if (!indices.length) return null
+    if (!sectionsOpen.value.hitLocation) sectionsOpen.value.hitLocation = true
+    return { indices }
+  },
+  () => null,
+)
 </script>
 
 <template>
@@ -340,9 +362,10 @@ const WEAK_SPOT_LOCATION = 'Head'
 
       <div class="hitloc-grid">
         <div
-          v-for="row in hitLocationHumanoidTable?.rows || []"
+          v-for="(row, i) in hitLocationHumanoidTable?.rows || []"
           :key="row['HIT LOCATION - HUMANOID']"
           class="hitloc-cell"
+          :class="{ 'hitloc-cell-highlight': hitLocHighlighted.has(i) }"
         >
           <span class="hitloc-range">{{ row.D20 }}</span>
           <span class="hitloc-name">
@@ -663,6 +686,18 @@ const WEAK_SPOT_LOCATION = 'Head'
   align-items: baseline;
   gap: 0.35rem;
   font-size: 0.72rem;
+  /* Declared on the base rule (not just inside .hitloc-cell-highlight) so
+     both directions animate — the flash fading in when the class is added,
+     and back out when it's removed a second later. See the identical fix
+     in TableView.vue/rollHighlight.js. */
+  transition: background 0.4s ease, border-color 0.4s ease;
+}
+
+/* Flash for a just-rolled D20 that lands on this location — see
+   lib/rollHighlight.js/useRollHighlight, wired up above. */
+.hitloc-cell-highlight {
+  background: rgba(232, 164, 143, 0.16);
+  border-color: rgba(232, 164, 143, 0.5);
 }
 
 .hitloc-range {

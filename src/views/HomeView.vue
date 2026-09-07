@@ -1,20 +1,10 @@
 <script setup>
 import { computed, ref } from 'vue'
-import { Star, Download, Upload } from '@lucide/vue'
-import { tables, monsters, findTable } from '../registry'
-import { starredTables, starredMonsters } from '../lib/starred'
+import { Download, Upload } from '@lucide/vue'
+import { findTable } from '../registry'
 import { characterLevel, characterName } from '../lib/characterLevel'
 import { overseerInfluence, resistantDamageType, parseInfluence } from '../lib/overseerInfluence'
 import { downloadSave, loadSaveFromFile } from '../lib/saveGame'
-
-// Preserves the order things were starred in, rather than their
-// alphabetical registry order.
-const starredTableList = computed(() =>
-  starredTables.slugs.value.map((slug) => tables.find((t) => t.slug === slug)).filter(Boolean),
-)
-const starredMonsterList = computed(() =>
-  starredMonsters.slugs.value.map((slug) => monsters.find((m) => m.slug === slug)).filter(Boolean),
-)
 
 const overseerInfluenceTable = findTable('overseer_influence')
 const overseerInfluenceOptions = computed(
@@ -144,64 +134,6 @@ async function confirmLoad() {
           </p>
         </template>
       </div>
-    </section>
-
-    <section class="featured">
-      <h2>Starred tables</h2>
-
-      <div v-if="starredTableList.length" class="featured-grid">
-        <router-link
-          v-for="t in starredTableList"
-          :key="t.slug"
-          :to="`/table/${t.slug}`"
-          class="featured-card"
-        >
-          <button
-            type="button"
-            class="unstar-btn"
-            aria-label="Unstar table"
-            title="Unstar table"
-            @click.stop.prevent="starredTables.toggleStar(t.slug)"
-          >
-            <Star :size="15" fill="currentColor" :stroke-width="1.75" />
-          </button>
-          <strong>{{ t.title }}</strong>
-          <span v-if="t.pages.length">{{ t.isMultiPage ? 'pages' : 'page' }} {{ t.pages.join(', ') }}</span>
-        </router-link>
-      </div>
-      <p v-else class="featured-empty">
-        No starred tables yet — click the ☆ next to a table's name to add it here.
-      </p>
-    </section>
-
-    <section class="featured">
-      <h2>Starred monsters</h2>
-
-      <div v-if="starredMonsterList.length" class="featured-grid">
-        <router-link
-          v-for="m in starredMonsterList"
-          :key="m.slug"
-          :to="`/monsters/${m.slug}`"
-          class="featured-card"
-          :class="{ 'featured-card-overseer': m.OVERSEER }"
-        >
-          <button
-            type="button"
-            class="unstar-btn"
-            aria-label="Unstar monster"
-            title="Unstar monster"
-            @click.stop.prevent="starredMonsters.toggleStar(m.slug)"
-          >
-            <Star :size="15" fill="currentColor" :stroke-width="1.75" />
-          </button>
-          <strong>{{ m.name }}</strong>
-          <span v-if="m.OVERSEER" class="overseer-tag">Overseer</span>
-          <span v-else-if="m.TYPE">{{ m.TYPE }}</span>
-        </router-link>
-      </div>
-      <p v-else class="featured-empty">
-        No starred monsters yet — click the ☆ next to a monster's name to add it here.
-      </p>
     </section>
 
     <section class="save-section">
@@ -376,86 +308,6 @@ async function confirmLoad() {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
-}
-
-.featured h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.75rem;
-}
-
-.featured + .featured {
-  margin-top: 2rem;
-}
-
-.featured-empty {
-  color: var(--text-faint);
-  font-size: 0.88rem;
-  font-style: italic;
-}
-
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 0.6rem;
-}
-
-.featured-card {
-  position: relative;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 0.75rem 2.1rem 0.75rem 0.85rem;
-  text-decoration: none;
-  color: var(--text);
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.unstar-btn {
-  position: absolute;
-  top: 0.4rem;
-  right: 0.4rem;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 1.6rem;
-  height: 1.6rem;
-  background: none;
-  border: none;
-  border-radius: 6px;
-  color: #e6bb5c;
-  cursor: pointer;
-}
-
-.unstar-btn:hover {
-  background: var(--surface-2);
-}
-
-.featured-card:hover {
-  border-color: var(--accent);
-}
-
-.featured-card span {
-  font-size: 0.78rem;
-  color: var(--text-faint);
-}
-
-.featured-card-overseer {
-  border-color: #8a6a1f;
-  background: linear-gradient(180deg, rgba(201, 152, 47, 0.1), var(--surface));
-}
-
-.featured-card-overseer:hover {
-  border-color: #c9982f;
-}
-
-.overseer-tag {
-  font-size: 0.7rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: #e6bb5c;
 }
 
 .modal-overlay {

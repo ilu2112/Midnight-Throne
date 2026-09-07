@@ -1,0 +1,38 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Where Did You Train?",
+  "mastery": "Brawler",
+  "page": 27,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "WHERE DID YOU TRAIN?"
+  ],
+  "num_rows": 6,
+  "rows": [
+    {
+      "D6": 1,
+      "WHERE DID YOU TRAIN?": "Master Remos, the Steel Fist: Master Remos is a legendary martial arts instructor known for his mastery of unarmed combat. Students who seek to excel in hand-to-hand combat train under his expert guidance, and through intense training regimens and disciplined techniques, Master Remos instills in his disciples the power and precision of the Steel Fist style, enabling them to deliver devastating strikes and grapple with exceptional skill."
+    },
+    {
+      "D6": 2,
+      "WHERE DID YOU TRAIN?": "The Whispering Pines Academy: The Whispering Pines Academy is a sanctuary where martial artists dedicate themselves to the mastery of unarmed combat. Within the tranquil setting, students train under the guidance of experienced masters from diverse backgrounds. They learn a wide range of martial arts techniques and principles, developing agility, balance, and the ability to adapt their fighting style to any situation."
+    },
+    {
+      "D6": 3,
+      "WHERE DID YOU TRAIN?": "Mara, the Resolute Guardian: Mara is a renowned martial arts master who has dedicated her life to the pursuit of excellence in unarmed combat. Students flock to her training center to learn the Resolute Guardian style, which focuses on precise strikes and efficient defensive maneuvers. Mara’s teachings emphasize discipline, mental fortitude, and the integration of mind, body, and spirit in combat."
+    },
+    {
+      "D6": 4,
+      "WHERE DID YOU TRAIN?": "The Temple of Serene Harmony: Nestled in a tranquil valley in the Havencrest Peninsula, the Temple of Serene Harmony is a revered institution where warriors train in the art of unarmed combat. Students undergo rigorous physical conditioning, practicing a variety of martial arts techniques and forms. The temple's experienced masters guide disciples in cultivating inner peace, mastering self-control, and harnessing their energy to deliver powerful strikes and flawless defensive maneuvers."
+    },
+    {
+      "D6": 5,
+      "WHERE DID YOU TRAIN?": "The Order of the Silent Wind: The Order of the Silent Wind is a secret society of martial artists dedicated to the pursuit of unarmed combat mastery. Students who join the Order undergo intense physical training and mental discipline, honing their skills in striking, grappling, and evasion techniques. Guided by skilled mentors, members of the Order develop the ability to move silently and neutralize opponents with efficient and precise techniques."
+    },
+    {
+      "D6": 6,
+      "WHERE DID YOU TRAIN?": "The Zenatu Clan: The Zenatu Clan is a close-knit community of warriors who specialize in unarmed combat. Training within the Clan emphasizes physical strength, agility, and mastering a unique style that combines powerful strikes with evasive footwork and fluid movements. Each member of the Clan is assigned a personal mentor, an experienced warrior who imparts their knowledge and expertise, ensuring the traditions and techniques of the Mountain Peak style are passed down through generations."
+    }
+  ]
+}

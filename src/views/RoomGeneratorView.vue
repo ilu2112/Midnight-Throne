@@ -1,6 +1,7 @@
 <script setup>
 import { ref, watch } from 'vue'
 import { findTable, monsters } from '../registry'
+import { linkSegments } from '../lib/textLinks'
 
 // A simplified version of the room-generation procedure on page 96: skips
 // the "who is the Overseer" step entirely, and turns the Lair Check /
@@ -13,6 +14,8 @@ const combatGeneralTable = findTable('combat_encounters_general')
 const combatTableA = findTable('combat_encounters_table_a')
 const combatTableB = findTable('combat_encounters_table_b')
 const eventsTable = findTable('events')
+const scavengingTable = findTable('scavenging')
+const growingDarknessTable = findTable('growing_darkness')
 
 function rollDie(sides) {
   return Math.floor(Math.random() * sides) + 1
@@ -124,7 +127,20 @@ function generateRoom() {
     combatTableLabel,
     monster,
     event,
+    scavenge: null,
   }
+}
+
+// Page 116: "Once per room, you can make a Scavenge check; if you pass it,
+// you can roll on the Scavenging table." The pass/fail check itself is
+// tracked on paper like the other Usage Die checks — this just rolls the
+// D20 on the table once you've told us you passed.
+function rollScavenging() {
+  if (!result.value) return
+  const roll = rollDie(20)
+  const row = rowFor(scavengingTable, roll)
+  const text = row?.[scavengingTable.columns[1]]
+  result.value.scavenge = { roll, text }
 }
 
 const showClearConfirm = ref(false)
@@ -174,14 +190,33 @@ function confirmClear() {
 
       <section class="block reminder">
         <h2>Reminders</h2>
+        <!-- Page 96/98: "Each time you place a new room, you must make a Lair
+             Check" — corridors never trigger it. Once the Lair's been found,
+             it's replaced by a Domain Exit check "each time you enter a new
+             room or corridor", so that one does apply either way. -->
         <ul>
-          <li>
+          <li v-if="!result.isCorridor">
             Make a <strong>Lair Check</strong> (Usage Die, starting at D10) to see if this is
             the Domain's Overseer's Lair — unless the Overseer's Lair has already been found,
             in which case make a <strong>Domain Exit check</strong> instead (Usage Die,
             starting at D8).
           </li>
-          <li>Make a <strong>Tension Die check</strong> (page 120).</li>
+          <li v-else>
+            No <strong>Lair Check</strong> here — that's only rolled when you place a new
+            Room. If the Overseer's Lair has already been found, make a
+            <strong>Domain Exit check</strong> instead (Usage Die, starting at D8).
+          </li>
+          <li>
+            Make a <strong>Tension Die check</strong> (page 120) — rolling 1-2 on the D4 resets it back
+            to D8 and triggers a roll on the
+            <router-link v-if="growingDarknessTable" :to="`/table/${growingDarknessTable.slug}`" class="cell-link">Growing Darkness</router-link>
+            <template v-else>Growing Darkness</template>
+            table.
+          </li>
+          <!-- Page 17: "Your character's starting Aether points are D6+8, and
+               all Aether is replenished upon entering a new room" — room-only,
+               same as Lightsource/Scavenging below. -->
+          <li v-if="!result.isCorridor">Your <strong>Aether</strong> is fully replenished upon entering this room.</li>
         </ul>
       </section>
 
@@ -198,6 +233,10 @@ function confirmClear() {
           <span v-else>an unknown enemy</span>
           (Combat Encounters – Table {{ result.combatTableLabel }}).
         </p>
+        <!-- Page 62: "Each time you defeat a regular Combat Encounter: +50
+             XP" — the Overseer itself is worth +200 XP instead, but that's
+             not something this simplified generator identifies on its own. -->
+        <p v-if="result.hasCombat" class="note">Defeating it is worth <strong>+50 XP</strong>.</p>
         <p v-else class="note">No encounter.</p>
       </section>
 
@@ -208,7 +247,39 @@ function confirmClear() {
 
       <section class="block reminder">
         <h2>Lightsource</h2>
-        <p>Tick off 1 use on your Lightsource tracker for entering this room.</p>
+        <!-- Page 96/99: a Torch or Lamp "will remain lit for 20 rooms" and
+             "your lightsource will be spent as usual (once per room)" — it's
+             only consumed by entering a Room, never a Corridor. -->
+        <p v-if="!result.isCorridor">Tick off 1 use on your Lightsource tracker for entering this room.</p>
+        <p v-else class="note">No Lightsource use — only rooms consume it, not corridors.</p>
+      </section>
+
+      <section class="block reminder">
+        <h2>Scavenging</h2>
+        <!-- Page 116: "Once per room, you can make a Scavenge check; if you
+             pass it, you can roll on the Scavenging table." — same
+             room-only wording as Lightsource, so it doesn't apply to corridors. -->
+        <template v-if="!result.isCorridor">
+          <p>
+            Once per room, you can make a Scavenge check to roll on the
+            <router-link v-if="scavengingTable" :to="`/table/${scavengingTable.slug}`" class="cell-link">Scavenging</router-link>
+            <template v-else>Scavenging</template>
+            table.
+          </p>
+          <button type="button" class="scavenge-btn" @click="rollScavenging">
+            {{ result.scavenge ? 'Roll again' : 'Roll Scavenging' }}
+          </button>
+          <p v-if="result.scavenge" class="scavenge-result">
+            <span class="badge">D20: {{ result.scavenge.roll }}</span>
+            <span>
+              <template v-for="(seg, si) in linkSegments(result.scavenge.text, scavengingTable?.slug)" :key="si">
+                <router-link v-if="seg.to" :to="seg.to" class="cell-link">{{ seg.text }}</router-link>
+                <template v-else>{{ seg.text }}</template>
+              </template>
+            </span>
+          </p>
+        </template>
+        <p v-else class="note">No Scavenge check — that's once per room, not per corridor.</p>
       </section>
     </div>
 
@@ -231,7 +302,7 @@ function confirmClear() {
 
 <style scoped>
 .room-generator {
-  max-width: 780px;
+  max-width: var(--content-max-width);
 }
 
 .lead {
@@ -275,6 +346,31 @@ function confirmClear() {
 .clear-btn:hover {
   border-color: var(--accent);
   color: var(--accent-light);
+}
+
+.scavenge-btn {
+  display: inline-block;
+  margin-top: 0.6rem;
+  background: none;
+  color: var(--accent-light);
+  border: 1px solid var(--accent);
+  padding: 0.4rem 0.9rem;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.scavenge-btn:hover {
+  background: var(--accent-dim);
+}
+
+.scavenge-result {
+  margin-top: 0.6rem !important;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 
 .result {

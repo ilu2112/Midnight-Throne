@@ -1,0 +1,38 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Where Did You Train?",
+  "mastery": "Bulwark",
+  "page": 29,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "WHERE DID YOU TRAIN?"
+  ],
+  "num_rows": 6,
+  "rows": [
+    {
+      "D6": 1,
+      "WHERE DID YOU TRAIN?": "The Ironheart Guild: Located in the heart of Veldonia, the Ironheart Guild is a renowned organization of master armorers and warriors. They offer comprehensive training in heavy armor and defensive abilities, focusing on techniques such as shield-bashing, parrying, and advanced weapon techniques suited for heavily armored fighters."
+    },
+    {
+      "D6": 2,
+      "WHERE DID YOU TRAIN?": "The Eshakon Bastion: A massive fortress perched atop a craggy mountain, the Eshakon Bastion serves as a training ground for knights and defenders. Its ancient walls echo with the clashing of steel as seasoned warriors teach aspiring fighters the art of heavy armor combat. Trainees learn to maneuver in cumbersome armor, endure punishing blows, and develop impeccable defensive skills."
+    },
+    {
+      "D6": 3,
+      "WHERE DID YOU TRAIN?": "The Temple of the Shielded Path: Hidden deep within the dense forest of Honopeia, the Temple of the Shielded Path is a secluded sanctuary dedicated to the preservation of ancient martial traditions. Here, monks and sages instruct students in the use of heavy armor, emphasizing a harmonious blend of physical and spiritual strength. Techniques include meditation, balance training, and the development of impeccable reflexes."
+    },
+    {
+      "D6": 4,
+      "WHERE DID YOU TRAIN?": "The Blacksteel Citadel: Located in the volcanic regions of northern Breccia, the Blacksteel Citadel is a stronghold carved out of obsidian rock. This ancient order of warriors focuses on the art of forging and enchanting heavy armor, as well as imparting the skills necessary to wield it effectively. Trainees undergo grueling physical conditioning, learn the secrets of metallurgy, and study defensive tactics tailored for heavy armor users."
+    },
+    {
+      "D6": 5,
+      "WHERE DID YOU TRAIN?": "The Valley of the Stalwart: A remote valley nestled between towering mountain ranges, this hidden locale serves as a refuge for warriors seeking to master the art of heavy armor. Inhabitants of the valley train in an environment rich with natural obstacles, perfect for honing defensive skills. Trainees learn to withstand harsh weather conditions, navigate treacherous terrains, and engage in combat against formidable adversaries."
+    },
+    {
+      "D6": 6,
+      "WHERE DID YOU TRAIN?": "The Order of the Bronze Shields: Founded centuries ago by Thelia the Wall, this knightly order is renowned for its unwavering dedication to protecting the realm. Housed within a grand fortress, the Order of the Bronze Shields specializes in teaching defensive strategies and techniques tailored specifically for heavy armor users. Trainees undergo rigorous physical training, engage in mock battles, and learn to coordinate with fellow knights for effective defensive formations."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Where Did You Train?",
+  "mastery": "Mindbinder",
+  "page": 45,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "WHERE DID YOU TRAIN?"
+  ],
+  "num_rows": 6,
+  "rows": [
+    {
+      "D6": 1,
+      "WHERE DID YOU TRAIN?": "The Unchained: Located within the remains of an ancient citadel, the Unchained is a group of Mindbinders dedicated to the study and refinement of mind control magic. Members delve into the depths of psychic arts, honing their abilities to manipulate thoughts, emotions, and perceptions. Under the guidance of skilled mentors, they learn to exert influence over others' minds, practicing techniques of telepathy, illusion, and subtle manipulation."
+    },
+    {
+      "D6": 2,
+      "WHERE DID YOU TRAIN?": "The Guild of Minds: The Guild of Minds is an elusive organization that specializes in training individuals in the arts of mind control and psychic manipulation. Members of the Guild study a range of disciplines, including telekinesis, telepathy, and mesmerism, and learn to probe the depths of consciousness, exert control over thoughts and actions, and unleash the power of their minds with precision."
+    },
+    {
+      "D6": 3,
+      "WHERE DID YOU TRAIN?": "The Sanctum of Psionic Insight: The Sanctum of Psionic Insight serves as a sanctuary for those who seek to master mind control magic. Its members usually arrive at the institution after having suffered persecution due to their inability to control their power. Only the lucky ones arrive at the Sanctum’s safe grounds, with the vast majority being burned at the stake as heretics or witches. Once safe, students within the Sanctum immerse themselves in the study of psionics, developing their mental prowess and sharpening their abilities to manipulate minds."
+    },
+    {
+      "D6": 4,
+      "WHERE DID YOU TRAIN?": "The Order of Serenity: The Order of Serenity is a revered order that trains individuals in the art of mind control and hypnotic suggestion. Members of the Order undergo rigorous mental conditioning, studying the techniques of inducing trance, implanting suggestions, and exerting control over the thoughts and actions of others."
+    },
+    {
+      "D6": 5,
+      "WHERE DID YOU TRAIN?": "The Closed Fist: Housed within an imposing fortress in the Duchy of Tyrros, the Closed Fist is a controversial organization that delves into the darkest aspects of mind control magic. Students within the institute explore forbidden arts, studying techniques such as mental compulsion, thought alteration, and psychic domination, pursuing the absolute submission of their victims’ minds."
+    },
+    {
+      "D6": 6,
+      "WHERE DID YOU TRAIN?": "The Sovereign: The Sovereign is a revered sanctuary where individuals train in the art of mind control magic while emphasizing the importance of ethical conduct and personal responsibility. Students within the temple delve into psychic disciplines such as telepathy, empathy, and mental shielding, learning to channel their abilities with restraint, respecting the boundaries of free will while honing their skills in mental influence and persuasion."
+    }
+  ]
+}

@@ -1,9 +1,10 @@
 <script setup>
-import { ref, computed } from 'vue'
+import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { Star, Info, House, Skull, KeyRound, Lock } from '@lucide/vue'
+import { Star, Info, House, Skull, KeyRound, Lock, ChevronsRight } from '@lucide/vue'
 import { tables, groupedTables, findTable } from './registry'
 import { starredTables } from './lib/starred'
+import CharacterPanel from './components/CharacterPanel.vue'
 
 const { isStarred, toggleStar } = starredTables
 
@@ -18,6 +19,28 @@ const activeCategory = computed(() => {
   return findTable(route.params.slug)?.category ?? null
 })
 
+// Which category groups are currently expanded. A plain div+button pair
+// (rather than <details>/<summary>) so the open/close transition below can
+// actually animate — browsers snap <details> content open/closed instantly,
+// with no reliable cross-browser way to animate it.
+const openCategories = ref(new Set())
+watch(
+  activeCategory,
+  (category) => {
+    if (category) openCategories.value = new Set(openCategories.value).add(category)
+  },
+  { immediate: true },
+)
+function isCategoryOpen(category) {
+  return openCategories.value.has(category)
+}
+function toggleCategory(category) {
+  const next = new Set(openCategories.value)
+  if (next.has(category)) next.delete(category)
+  else next.add(category)
+  openCategories.value = next
+}
+
 const isSearching = computed(() => navSearch.value.trim().length > 0)
 
 const filteredTables = computed(() => {
@@ -27,11 +50,49 @@ const filteredTables = computed(() => {
 })
 
 const sidebarOpen = ref(false)
+
+// Right-hand sidebar — the character quick-reference panel (level, core
+// stats, exhaustion, lightsource, usage dice). Collapsible so it doesn't eat
+// into the reading width on pages that don't need it; defaults to collapsed
+// so it doesn't cost every page 320px of width unasked. Collapsed/expanded
+// state is remembered across refreshes, same as the other small per-viewer
+// preferences in this app.
+const RIGHT_SIDEBAR_STORAGE_KEY = 'kn-right-sidebar-open'
+
+function loadRightSidebarOpen() {
+  try {
+    const raw = localStorage.getItem(RIGHT_SIDEBAR_STORAGE_KEY)
+    return raw === null ? false : raw === 'true'
+  } catch {
+    return false
+  }
+}
+
+const rightSidebarOpen = ref(loadRightSidebarOpen())
+watch(rightSidebarOpen, (value) => {
+  try {
+    localStorage.setItem(RIGHT_SIDEBAR_STORAGE_KEY, String(value))
+  } catch {
+    // Ignore write failures (quota, private mode, etc.) — the toggle just
+    // won't be remembered across reloads in that case.
+  }
+})
 </script>
 
 <template>
   <div class="layout">
     <button class="menu-toggle" @click="sidebarOpen = !sidebarOpen" aria-label="Menu">☰</button>
+
+    <button
+      type="button"
+      class="right-menu-toggle"
+      :class="{ 'is-open': rightSidebarOpen }"
+      @click="rightSidebarOpen = !rightSidebarOpen"
+      :aria-label="rightSidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'"
+      :title="rightSidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'"
+    >
+      <ChevronsRight :size="18" :stroke-width="2" />
+    </button>
 
     <aside class="sidebar" :class="{ open: sidebarOpen }">
       <div class="sidebar-scroll">
@@ -88,34 +149,37 @@ const sidebarOpen = ref(false)
           </template>
 
           <template v-else>
-            <details
+            <div
               v-for="group in groupedTables"
               :key="group.category"
               class="table-group"
-              :open="group.category === activeCategory"
+              :class="{ open: isCategoryOpen(group.category) }"
             >
-              <summary>
+              <button type="button" class="group-summary" @click="toggleCategory(group.category)">
+                <span class="group-arrow">▸</span>
                 <span class="group-name">{{ group.category }}</span>
                 <span class="group-count">({{ group.tables.length }})</span>
-              </summary>
-              <div class="group-links">
-                <div v-for="t in group.tables" :key="t.slug" class="table-link-row">
-                  <router-link :to="`/table/${t.slug}`" class="table-link" @click="sidebarOpen = false">
-                    {{ t.title }}<span v-if="t.mastery" class="table-link-sub"> — {{ t.mastery }}</span>
-                  </router-link>
-                  <button
-                    type="button"
-                    class="star-btn"
-                    :class="{ starred: isStarred(t.slug) }"
-                    :aria-label="isStarred(t.slug) ? 'Unstar table' : 'Star table'"
-                    :title="isStarred(t.slug) ? 'Unstar table' : 'Star table'"
-                    @click="toggleStar(t.slug)"
-                  >
-                    <Star :size="14" :fill="isStarred(t.slug) ? 'currentColor' : 'none'" :stroke-width="1.75" />
-                  </button>
+              </button>
+              <div class="group-links-wrapper">
+                <div class="group-links">
+                  <div v-for="t in group.tables" :key="t.slug" class="table-link-row">
+                    <router-link :to="`/table/${t.slug}`" class="table-link" @click="sidebarOpen = false">
+                      {{ t.title }}<span v-if="t.mastery" class="table-link-sub"> — {{ t.mastery }}</span>
+                    </router-link>
+                    <button
+                      type="button"
+                      class="star-btn"
+                      :class="{ starred: isStarred(t.slug) }"
+                      :aria-label="isStarred(t.slug) ? 'Unstar table' : 'Star table'"
+                      :title="isStarred(t.slug) ? 'Unstar table' : 'Star table'"
+                      @click="toggleStar(t.slug)"
+                    >
+                      <Star :size="14" :fill="isStarred(t.slug) ? 'currentColor' : 'none'" :stroke-width="1.75" />
+                    </button>
+                  </div>
                 </div>
               </div>
-            </details>
+            </div>
           </template>
         </nav>
       </div>
@@ -131,6 +195,27 @@ const sidebarOpen = ref(false)
     <main class="content">
       <router-view />
     </main>
+
+    <aside
+      class="right-sidebar"
+      :class="{ collapsed: !rightSidebarOpen }"
+      @click="!rightSidebarOpen && (rightSidebarOpen = true)"
+    >
+      <button
+        type="button"
+        class="right-sidebar-toggle"
+        :class="{ 'is-open': rightSidebarOpen }"
+        @click.stop="rightSidebarOpen = !rightSidebarOpen"
+        :aria-label="rightSidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'"
+        :title="rightSidebarOpen ? 'Collapse sidebar' : 'Expand sidebar'"
+      >
+        <ChevronsRight :size="17" :stroke-width="2" />
+      </button>
+
+      <div class="right-sidebar-content" v-show="rightSidebarOpen">
+        <CharacterPanel />
+      </div>
+    </aside>
   </div>
 </template>
 
@@ -153,6 +238,39 @@ const sidebarOpen = ref(false)
   width: 2.5rem;
   height: 2.5rem;
   font-size: 1.1rem;
+}
+
+/* Mirrors .menu-toggle on the opposite corner — mobile-only trigger for the
+   right sidebar, since its always-visible in-flow edge handle only makes
+   sense in the desktop three-column layout. */
+.right-menu-toggle {
+  display: none;
+  position: fixed;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 20;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 8px;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.right-menu-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent-light);
+}
+
+.right-menu-toggle svg {
+  transition: transform 0.2s ease;
+}
+
+.right-menu-toggle:not(.is-open) svg {
+  transform: rotate(180deg);
 }
 
 .sidebar {
@@ -314,7 +432,10 @@ const sidebarOpen = ref(false)
   margin-bottom: 0.15rem;
 }
 
-.table-group summary {
+.group-summary {
+  all: unset;
+  box-sizing: border-box;
+  width: 100%;
   cursor: pointer;
   padding: 0.4rem 0.3rem;
   font-size: 0.8rem;
@@ -322,7 +443,6 @@ const sidebarOpen = ref(false)
   color: var(--text-dim);
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  list-style: none;
   user-select: none;
   display: flex;
   align-items: baseline;
@@ -334,19 +454,15 @@ const sidebarOpen = ref(false)
   min-width: 0;
 }
 
-.table-group summary::-webkit-details-marker {
-  display: none;
-}
-
-.table-group summary::before {
-  content: '▸';
+.group-arrow {
   display: inline-block;
   width: 1em;
   color: var(--text-faint);
+  transition: transform 0.15s ease;
 }
 
-.table-group[open] > summary::before {
-  content: '▾';
+.table-group.open .group-arrow {
+  transform: rotate(90deg);
 }
 
 .group-count {
@@ -356,7 +472,23 @@ const sidebarOpen = ref(false)
   white-space: nowrap;
 }
 
+/* Animates open/close instead of the instant snap a native <details>
+   element gives you: the wrapper's grid row goes from 0fr to 1fr (an
+   animatable "auto height"), and the actual content — sized to fit as
+   normal — gets clipped by overflow:hidden while that row is shrinking. */
+.group-links-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.18s ease;
+}
+
+.table-group.open .group-links-wrapper {
+  grid-template-rows: 1fr;
+}
+
 .group-links {
+  overflow: hidden;
+  min-height: 0;
   display: flex;
   flex-direction: column;
   gap: 0.1rem;
@@ -458,10 +590,87 @@ const sidebarOpen = ref(false)
   color: var(--accent-light);
 }
 
+/* Intentionally no max-width here: this is the one place page width is
+   decided. Text/card-first views (Home, Room Generator, Locks & Traps,
+   About) cap their own reading width via --content-max-width; data-first
+   views (Bestiary, Table) leave it fluid on purpose. Either way, this flex
+   item just fills whatever's left between the two sidebars. */
 .content {
   flex: 1;
   padding: 2rem 2.5rem;
   min-width: 0;
+}
+
+.right-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  background: var(--surface);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  transition: width 0.2s ease;
+}
+
+.right-sidebar.collapsed {
+  width: 2.25rem;
+  cursor: pointer;
+}
+
+/* A permanent full-height strip docked to the sidebar's own left edge, in
+   both states — its size never changes, so there's nothing to (mis-)animate
+   when the sidebar itself expands or collapses. Collapsed, it IS the whole
+   rail; expanded, it's a slim always-visible handle beside the content. */
+.right-sidebar-toggle {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  cursor: pointer;
+}
+
+.right-sidebar:not(.collapsed) .right-sidebar-toggle {
+  border-right: 1px solid var(--border);
+}
+
+.right-sidebar-toggle:hover {
+  background: var(--surface-2);
+  color: var(--accent-light);
+}
+
+.right-sidebar-toggle svg {
+  transition: transform 0.2s ease;
+}
+
+/* Chevrons point right (away, off-screen) while open — click to collapse
+   that way — and flip to point left (back toward the content) once
+   collapsed, hinting at "bring it back". */
+.right-sidebar-toggle:not(.is-open) svg {
+  transform: rotate(180deg);
+}
+
+/* Fixed to the sidebar's own final (expanded) width rather than flexing to
+   fill it. If this instead flexed to fill the animating parent, the browser
+   would reflow its whole contents at every frame of the width transition —
+   text rewrapping, rows resizing — which reads as the panel "assembling
+   itself" as it opens. Pinned to its resting width, the content is always
+   fully laid out; expanding/collapsing the (overflow: hidden) parent just
+   reveals or hides more of it, so it reads as sliding in from behind the
+   edge instead. */
+.right-sidebar-content {
+  width: calc(320px - 2.25rem);
+  flex-shrink: 0;
+  padding: 1rem;
+  overflow-y: auto;
 }
 
 @media (max-width: 860px) {
@@ -489,6 +698,46 @@ const sidebarOpen = ref(false)
   }
   .content {
     padding: 4.5rem 1.25rem 2rem;
+  }
+  /* Same slide-over treatment as the left .sidebar, mirrored to the right
+     edge: hidden off-screen by default, sliding in over the content when
+     opened via .right-menu-toggle (top-right corner) instead of living
+     in-flow as a permanent narrow rail — there's no width to spare for
+     that on small screens. Both states are written here (matching the
+     ".right-sidebar.collapsed" specificity from the desktop rules above)
+     so this media query's width/position reliably wins over it. */
+  .right-sidebar,
+  .right-sidebar.collapsed {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 15;
+    transform: translateX(100%);
+    transition: transform 0.2s ease;
+    width: 85vw;
+    max-width: 320px;
+    cursor: default;
+  }
+  .right-sidebar:not(.collapsed) {
+    transform: translateX(0);
+  }
+  /* The always-visible edge handle only makes sense docked in the desktop
+     layout — on mobile, .right-menu-toggle is the trigger instead. */
+  .right-sidebar-toggle {
+    display: none;
+  }
+  .right-menu-toggle {
+    display: flex;
+  }
+  /* On mobile the whole sidebar slides via transform (not a width
+     transition — see the .right-sidebar rule above), and with the toggle
+     hidden, content is the only flex child. It should fill the sidebar's
+     mobile width (85vw/320px) rather than stay pinned to the desktop
+     content width computed above. */
+  .right-sidebar-content {
+    width: auto;
+    flex: 1;
+    min-width: 0;
   }
 }
 </style>

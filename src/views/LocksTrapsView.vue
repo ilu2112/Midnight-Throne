@@ -1,6 +1,12 @@
 <script setup>
 import { ref, watch, computed } from 'vue'
 import { findTable } from '../registry'
+import { linkSegments } from '../lib/textLinks'
+import { withDamageTypeProseTooltips } from '../lib/damageTypeTooltips'
+import { withConditionTooltips } from '../lib/conditionTooltips'
+import { fixedTooltip } from '../lib/fixedTooltip'
+
+const vFixedTooltip = fixedTooltip
 
 // Locks & Traps (rulebook p.117-119). Only the GM-side dice — the parts that
 // don't depend on a character's own Skills — are rolled here: whether a
@@ -11,6 +17,16 @@ import { findTable } from '../registry'
 // short reminder instead of something this tool can roll for you.
 const difficultyTable = findTable('difficulty_modifiers')
 const trapsTable = findTable('traps')
+
+// Same link/tooltip pipeline TableView.vue applies to the Traps table's own
+// TRAP EFFECT column, so hovering a damage type in this preview (e.g.
+// "Piercing damage") matches hovering it on the Traps table itself, and a
+// "Roll on the Combat Encounter table" effect (D10: 9) still links out.
+function trapEffectSegments(text) {
+  const linked = linkSegments(text, 'traps')
+  const withDamage = withDamageTypeProseTooltips(linked)
+  return withConditionTooltips(withDamage)
+}
 
 function rollDie(sides) {
   return Math.floor(Math.random() * sides) + 1
@@ -170,7 +186,19 @@ function confirmClear() {
             <router-link :to="`/table/${trapsTable.slug}`" class="cell-link">Traps</router-link>
             <span class="badge">D10: {{ result.trap.roll }}</span>
           </p>
-          <p><strong>{{ result.trap.row?.['SKILL CHECK TO AVOID'] }} check to avoid:</strong> {{ result.trap.row?.['TRAP EFFECT'] }}</p>
+          <p>
+            <strong>{{ result.trap.row?.['SKILL CHECK TO AVOID'] }} check to avoid:</strong>{{ ' ' }}<template
+              v-for="(seg, si) in trapEffectSegments(result.trap.row?.['TRAP EFFECT'])"
+              :key="si"
+            >
+              <router-link v-if="seg.to" :to="seg.to" class="cell-link">{{ seg.text }}</router-link>
+              <span v-else-if="seg.tooltip" v-fixed-tooltip class="trait-tip">
+                {{ seg.text }}
+                <span class="tooltip-box">{{ seg.tooltip }}</span>
+              </span>
+              <template v-else>{{ seg.text }}</template>
+            </template>
+          </p>
         </template>
         <p v-else class="note">Not trapped.</p>
       </section>
@@ -180,15 +208,19 @@ function confirmClear() {
         <p>{{ result.isLocked ? 'Locked.' : 'Unlocked.' }}</p>
       </section>
 
-      <section class="block reminder">
+      <section v-if="hasResolutionReminders" class="block reminder">
         <h2>Resolution reminders</h2>
+        <!-- Page 62: "Successfully dismantle a trap: +10 XP" (Disarm is the
+             one method that actually dismantles it — Bypass and voluntarily
+             Triggering it just avoid or accept it) and "Open a locked door or
+             container, regardless of the method: +10 XP" (both Pick the lock
+             and Brute force count). -->
         <ul>
-          <li v-if="trapRevealed && result.isTrapped"><strong>Disarm:</strong> Thievery check (Thieves' Tools) against the rolled Difficulty. Failure triggers the trap.</li>
+          <li v-if="trapRevealed && result.isTrapped"><strong>Disarm:</strong> Thievery check (Thieves' Tools) against the rolled Difficulty. Failure triggers the trap. Success is worth <strong>+10 XP</strong>.</li>
           <li v-if="trapRevealed && result.isTrapped"><strong>Bypass</strong> (Environmental traps only): Skill check to avoid, +20. Failure triggers the trap.</li>
           <li v-if="trapRevealed && result.isTrapped"><strong>Trigger voluntarily:</strong> +20 to the trap's avoidance check.</li>
-          <li v-if="result.isLocked"><strong>Pick the lock:</strong> Thievery check (Lockpick). Failure breaks the Lockpick, but the next attempt's Difficulty drops one step.</li>
-          <li v-if="result.isLocked"><strong>Brute force:</strong> Athletics check. Each attempt (success or failure) triggers a Tension Die check for the noise.</li>
-          <li v-if="!hasResolutionReminders">-</li>
+          <li v-if="result.isLocked"><strong>Pick the lock:</strong> Thievery check (Lockpick). Failure breaks the Lockpick, but the next attempt's Difficulty drops one step. Success is worth <strong>+10 XP</strong>.</li>
+          <li v-if="result.isLocked"><strong>Brute force:</strong> Athletics check. Each attempt (success or failure) triggers a Tension Die check for the noise. Success is worth <strong>+10 XP</strong>.</li>
         </ul>
       </section>
     </div>
@@ -208,7 +240,7 @@ function confirmClear() {
 
 <style scoped>
 .locks-traps {
-  max-width: 780px;
+  max-width: var(--content-max-width);
 }
 
 .lead {
@@ -367,6 +399,32 @@ function confirmClear() {
 
 .cell-link:hover {
   border-bottom-style: solid;
+}
+
+.trait-tip {
+  display: inline-block;
+  cursor: help;
+  color: var(--accent-light);
+  border-bottom: 1px dotted var(--accent-light);
+}
+
+/* Positioned by the v-fixed-tooltip directive (position: fixed + computed
+   top/left) rather than CSS — see lib/fixedTooltip.js. */
+.tooltip-box {
+  display: none;
+  z-index: 20;
+  width: 260px;
+  max-width: min(260px, calc(100vw - 16px));
+  background: var(--surface-2);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 0.6rem 0.75rem;
+  color: var(--text);
+  font-size: 0.82rem;
+  font-style: normal;
+  line-height: 1.45;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+  white-space: normal;
 }
 
 .modal-overlay {

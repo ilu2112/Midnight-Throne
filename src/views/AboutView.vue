@@ -36,7 +36,7 @@
 
 <style scoped>
 .about {
-  max-width: 640px;
+  max-width: var(--content-max-width);
 }
 
 .block {

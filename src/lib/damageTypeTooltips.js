@@ -58,6 +58,24 @@ export function damageTypeSegments(text) {
   return segments
 }
 
+// Layers prose-style damage-type tooltips (see damageTypeProseSegments below)
+// on top of segments already produced by another segmenter (a table/monster
+// link, a Trait, a Weapon Trait, ...), by further splitting only the
+// still-plain-text runs — a segment that already has a `.to` link or a
+// `.tooltip` from something else is left untouched, mirroring
+// conditionTooltips.js's withConditionTooltips.
+export function withDamageTypeProseTooltips(segments) {
+  const out = []
+  for (const seg of segments) {
+    if (seg.to || seg.tooltip) {
+      out.push(seg)
+    } else {
+      out.push(...damageTypeProseSegments(seg.text))
+    }
+  }
+  return out
+}
+
 // A monster action's free-form prose (its D6_ACTIONS / ACTION text) reuses
 // damage-type words in ways damageTypeSegments' bare word-match can't tell
 // apart from an actual mechanical mention: a flavor title ("Infernal Claw",
@@ -68,7 +86,7 @@ export function damageTypeSegments(text) {
 // this only tags a name when "damage" actually follows it, optionally after
 // an Oxford-comma list of other type names ("Resistant to Bludgeoning,
 // Piercing, and Slashing damage" still tags all three, not just the last).
-const DAMAGE_SUFFIX = /^(?:,\s*(?:and\s+)?[A-Za-z]+){0,4}\s+damage\b/
+const DAMAGE_SUFFIX = /^(?:,\s*(?:and\s+)?[A-Za-z]+){0,4}\s+damage\b/i
 
 function hasDamageSuffix(text, afterIdx) {
   return DAMAGE_SUFFIX.test(text.slice(afterIdx, afterIdx + 200))

@@ -1,0 +1,38 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Where Did You Train?",
+  "mastery": "Frostweaver",
+  "page": 37,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "WHERE DID YOU TRAIN?"
+  ],
+  "num_rows": 6,
+  "rows": [
+    {
+      "D6": 1,
+      "WHERE DID YOU TRAIN?": "Frostweaver Elara: Frostweaver Elara is a renowned master of frost magic, known for her ability to conjure and control the chilling powers of ice and frost. Students aspiring to become frost mages seek Elara's tutelage, learning to manipulate and shape frost with precision. Under her guidance, disciples study the intricacies of frost spells, practice ice manipulation techniques, and understand the elemental nature of cold."
+    },
+    {
+      "D6": 2,
+      "WHERE DID YOU TRAIN?": "The Frostborne Citadel: Located in the frozen island of Iceshard, the Frostborne Citadel serves as a bastion for those who seek to master the art of frost magic. Within its icy walls, students train under experienced frost mages, honing their control over cold and frost, and studying the principles of frost-based spellcasting."
+    },
+    {
+      "D6": 3,
+      "WHERE DID YOU TRAIN?": "The Iceheart Sect: The Iceheart Sect is a prestigious organization dedicated to the study and mastery of frost magic. Students immerse themselves in the study of frost spells, learning to harness the power of freezing temperatures under the guidance of experienced mentors, while practicing ice manipulation, and understanding the art of frost-based enchantments."
+    },
+    {
+      "D6": 4,
+      "WHERE DID YOU TRAIN?": "The Frostfall Coven: The members of this secretive society of frost mages study ancient texts and delve into the mysteries of manipulating cold and ice. Initiates undergo rigorous training, developing their command over frost spells, learning to create frost shields, and summoning icy allies."
+    },
+    {
+      "D6": 5,
+      "WHERE DID YOU TRAIN?": "The Nexus: The Nexus is a revered training ground for frostweavers who seek to channel the raw power of ice and cold. Within its frigid domain, students endure the biting chill as they study frost-based spellcasting, ice manipulation, and the creation of frozen constructs, all under the watchful eye of seasoned mentors."
+    },
+    {
+      "D6": 6,
+      "WHERE DID YOU TRAIN?": "The Icetrap Monastery: Hidden amidst icy caverns, the Icetrap Monastery is a sanctuary where frost mages study and refine their skills in manipulating cold and frost. Students practice intricate frost spells, learning to shape and control ice with precision. The Icetrap Monastery offers a serene environment for frost mages to deepen their connection to the essence of frost and embrace the power of icy magic, immersing themselves in meditation and seeking harmony with the frozen elements."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Where Did You Train?",
+  "mastery": "Umbra Phantom",
+  "page": 53,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "WHERE DID YOU TRAIN?"
+  ],
+  "num_rows": 6,
+  "rows": [
+    {
+      "D6": 1,
+      "WHERE DID YOU TRAIN?": "The Twilight Brotherhood: An ancient and enigmatic order, the Twilight Brotherhood specializes in training rogues and assassins who harness the power of darkness and shadows. Initiates undertake rigorous training in shadow manipulation, illusion, and the art of concealment. They learn to blend seamlessly with the darkness, becoming one with it, and striking their targets from the shadows."
+    },
+    {
+      "D6": 2,
+      "WHERE DID YOU TRAIN?": "The Veil: Operating from the labyrinthine alleys and hidden hideouts of Westhumbria, the Veil is a clandestine organization that trains individuals in the art of shadow-based combat and infiltration. Members study shadow magic, enhancing their abilities to move undetected, manipulate shadows, and strike with precision. The organization's intricate network of informants and covert operatives provides a wealth of resources for those seeking to embrace the path of shadows."
+    },
+    {
+      "D6": 3,
+      "WHERE DID YOU TRAIN?": "The Great Temple of Kevona: The Great Temple of Kevona, Goddess of the Night, is a renowned training ground for shadow masters, rogue operatives, and assassins. Here, acolytes immerse themselves in the study of shadow arts, learning to manipulate darkness, create illusions, and move with unmatched stealth. They train in the arts of silent takedowns, trap detection, and the utilization of shadow-infused weaponry."
+    },
+    {
+      "D6": 4,
+      "WHERE DID YOU TRAIN?": "The Hall of Whispers: Located in a hidden mountain retreat, the Hall of Whispers is a sanctuary for those seeking mastery over darkness and the shadows. Within its ancient halls, shadow masters, rogues, and assassins hone their skills in subterfuge, silent movement, and shadowy combat techniques. They learn to call upon the powers of shadow, obscuring their presence, and manipulating the darkness to their advantage."
+    },
+    {
+      "D6": 5,
+      "WHERE DID YOU TRAIN?": "The Order of Nightfall: Embracing the mystique of the night, the Order of Nightfall trains individuals in the arts of shadow manipulation and assassination. Aspiring shadow masters receive comprehensive instruction in stealth, illusion, and the art of disappearing into the shadows. They learn to tap into the dark energies, melding with the night, and employing shadowy techniques to strike swiftly and decisively."
+    },
+    {
+      "D6": 6,
+      "WHERE DID YOU TRAIN?": "The Temple of Eternal Shadows: Shrouded in perpetual darkness, the Temple of Eternal Shadows is a revered shrine dedicated to the Unnamed, God of Shadows. Students undergo rigorous training in shadow magic, stealthy movement, and the use of shadow-infused weapons. Guided by the Temple's mysterious masters, they learn to harness the secrets of darkness, becoming ethereal predators that strike fear into the hearts of their enemies."
+    }
+  ]
+}

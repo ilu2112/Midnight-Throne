@@ -4,7 +4,7 @@ import { useRouter } from 'vue-router'
 import { Star } from '@lucide/vue'
 import { findTable } from '../registry'
 import { linkSegments } from '../lib/textLinks'
-import { damageTypeSegments } from '../lib/damageTypeTooltips'
+import { damageTypeSegments, withDamageTypeProseTooltips } from '../lib/damageTypeTooltips'
 import { weaponTraitSegments } from '../lib/weaponTraitTooltips'
 import { withConditionTooltips } from '../lib/conditionTooltips'
 import { starredTables } from '../lib/starred'
@@ -47,6 +47,12 @@ function segmentsForValue(value, col) {
   if (col === 'DAMAGE') segments = damageTypeSegments(value)
   else if (col === 'NOTES' && table.value?.slug === 'weapons') segments = weaponTraitSegments(value)
   else segments = linkSegments(value, table.value?.slug)
+  // Layered on top of whichever segmenter ran above, same as the Condition
+  // pass below: any "<Type> damage" mention still left as plain text (e.g.
+  // the Traps table's TRAP EFFECT column — "dealing 2D6 Piercing damage")
+  // gets its own hover tooltip too. A no-op on the DAMAGE column itself,
+  // since that segment is already tagged and gets skipped.
+  segments = withDamageTypeProseTooltips(segments)
   // Layered on top of whichever segmenter ran above: any Condition name
   // (Bleeding, Poisoned, Restrained, ...) still left as plain text in any
   // column of any table gets its own hover tooltip from the Conditions

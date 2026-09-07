@@ -1,0 +1,38 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Where Did You Train?",
+  "mastery": "Ritualist",
+  "page": 47,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "WHERE DID YOU TRAIN?"
+  ],
+  "num_rows": 6,
+  "rows": [
+    {
+      "D6": 1,
+      "WHERE DID YOU TRAIN?": "The Arcane Circle: The Arcane Circle is a renowned institution where individuals train in the intricate art of ritual magic. There, students study the ancient texts and esoteric knowledge surrounding rituals, symbols, and incantations, learning to harness the latent power of sacred rites, and conducting intricate ceremonies that tap into the aetheric energies of the world."
+    },
+    {
+      "D6": 2,
+      "WHERE DID YOU TRAIN?": "The Silent Enigma: Hidden within a remote mountain range, the Silent Enigma is a prestigious school that specializes in the study and practice of ritual magic. Students delve deep into the complexities of arcane rituals, exploring the connections between symbols, gestures, and the manipulation of magical energies. They learn to decipher ancient scripts, perform sacred rites, and unlock the secrets of conducting powerful rituals."
+    },
+    {
+      "D6": 3,
+      "WHERE DID YOU TRAIN?": "The Temple of Mystical Convergence: Located in a serene valley not far from Veldonia, the Temple of Mystical Convergence is a revered sanctuary dedicated to the mastery of ritual magic and the worship of Jherenos, God of Magic. Within the temple's tranquil halls, students immerse themselves in the study of ancient rites and the manipulation of arcane forces through complex ceremonies, always guided by the Temple's priests, who teach them how to harmonize elements, commune with spirits, and manifest the desired effects through the art of ritual magic."
+    },
+    {
+      "D6": 4,
+      "WHERE DID YOU TRAIN?": "The Coven of Sacred Mysteries: A clandestine gathering of Ritualists, the Coven of Sacred Mysteries is a secretive society that delves into the depths of ancient rituals and forbidden knowledge. Aspiring practitioners of ritual magic seek initiation into the Coven, where they explore the intricate connections between symbols, chants, and gestures."
+    },
+    {
+      "D6": 5,
+      "WHERE DID YOU TRAIN?": "The Shrine of Rites: Housed within a remote sanctuary in the depths of Harw Canyon, the Shrine of Rites is a revered place of training for those seeking to master the art of ritual magic. Students undertake intensive studies in ceremonial magic, mastering the precise timing, gestures, and invocations necessary to invoke the desired effects, and explore the interplay of symbolism and mysticism."
+    },
+    {
+      "D6": 6,
+      "WHERE DID YOU TRAIN?": "The Order of the Spheres: The Order of Spheres is a revered organization dedicated to the preservation and mastery of ritual magic. Within the Order's sanctuaries, individuals train to become adept Ritualists, delving into the intricacies of ancient rites and sacred ceremonies. They study the interweaving of symbols, elemental correspondences, and the harmonization of energies through precise rituals."
+    }
+  ]
+}

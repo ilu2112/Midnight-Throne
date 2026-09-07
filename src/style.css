@@ -12,6 +12,14 @@
   --accent-dim: rgba(179, 56, 44, 0.16);
   --accent-light: #e8a48f;
 
+  /* Shared content width cap for Home, Room Generator, Locks & Traps, and
+     About — kept in one place so it's a deliberate, reusable decision
+     rather than each view guessing its own number. Currently 100% (fully
+     fluid, same as the data-first views) but kept as a variable so it can
+     be dialed back to a fixed reading width later without touching each
+     view. */
+  --content-max-width: 100%;
+
   color-scheme: dark;
   font-family: 'Inter', system-ui, 'Segoe UI', Roboto, sans-serif;
   color: var(--text);

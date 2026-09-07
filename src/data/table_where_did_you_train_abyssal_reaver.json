@@ -1,0 +1,38 @@
+{
+  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "title": "Where Did You Train?",
+  "mastery": "Abyssal Reaver",
+  "page": 23,
+  "table_index_on_page": 1,
+  "columns": [
+    "D6",
+    "WHERE DID YOU TRAIN?"
+  ],
+  "num_rows": 6,
+  "rows": [
+    {
+      "D6": 1,
+      "WHERE DID YOU TRAIN?": "The Infernal Bloodline: Those born with the Infernal Bloodline possess a natural affinity for demonic energies. They learn to harness the power of the infernal realms, channeling demonic energy to empower their own attacks and abilities. Through intense training and self-discipline, individuals with this bloodline can tap into the raw, chaotic power of demons, infusing their attacks with dark flames, shadowy tendrils, and other demonic manifestations."
+    },
+    {
+      "D6": 2,
+      "WHERE DID YOU TRAIN?": "The Order of the Abyssal Pact: The Order of the Abyssal Pact is a secretive organization that seeks to harness and control demonic energies. Members of the Order study ancient grimoires, learning to make pacts with demonic entities. They willingly embrace the dark powers bestowed upon them, using demonic energies to enhance their own combat skills and magical abilities."
+    },
+    {
+      "D6": 3,
+      "WHERE DID YOU TRAIN?": "The Hellforge: The Hellforge is a renowned training ground for those who seek to tap into demonic energies. Simply reaching this cursed location is a feat unto itself, and survival is never guaranteed. Once there, they learn to draw upon demonic energies, channeling them into their attacks and abilities, transforming themselves into vessels of dark power."
+    },
+    {
+      "D6": 4,
+      "WHERE DID YOU TRAIN?": "The Soulbrand: The Soulbrand are practitioners who delve into the forbidden arts of summoning and binding demons. Through their rigorous training, they learn to forge a connection with demonic entities, channeling their energies into their own attacks and abilities. These conjurers can manifest ethereal blades, imbue their strikes with demonic flames, and call upon infernal forces to augment their powers."
+    },
+    {
+      "D6": 5,
+      "WHERE DID YOU TRAIN?": "The Black Gate: The Black Gate is the only known point of access from the physical world into one of the demonic realms. Since most mortals would immediately die if attempting to cross it, aspiring Abyssal Reavers train outside, letting the demonic energies permeate their whole beings while they train and develop new demon-infused techniques and spells."
+    },
+    {
+      "D6": 6,
+      "WHERE DID YOU TRAIN?": "The Demonsong Cult: The Demonsong Cult worships and embraces the powers of the demonic realms. Its members undergo dark rituals and intense training, willingly becoming vessels for demonic energies. Through their connection with demons, they gain heightened strength, speed, and arcane abilities. The Demonsong Cultists blend their own martial skills with the unholy might of demons, using their dark empowerment to unleash devastating attacks and terrifying displays of demonic power."
+    }
+  ]
+}

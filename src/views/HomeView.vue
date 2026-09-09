@@ -224,6 +224,24 @@ async function confirmLoad() {
   font-size: 0.92rem;
 }
 
+/* The Character name/level rows above sit label-then-input side by side in
+   the same .level-row, so their labels and inputs should line up as one
+   column of each — "Character level" is the wider of the two labels, so
+   that's the width both rows' labels get. Scoped to .level-row rather than
+   .level-label itself: the Overseer Influence/Resistant to labels below
+   reuse .level-label too, but stand alone on their own line above a
+   full-width select, where a fixed width would just misalign the text for
+   no benefit. */
+.level-row .level-label {
+  flex: 0 0 auto;
+  width: 9rem;
+}
+
+.level-row .level-input {
+  width: 12rem;
+  max-width: 100%;
+}
+
 .level-input {
   width: 5rem;
   padding: 0.4rem 0.6rem;
@@ -237,11 +255,6 @@ async function confirmLoad() {
 .overseer-select {
   width: 100%;
   cursor: pointer;
-}
-
-.name-input {
-  width: 12rem;
-  max-width: 100%;
 }
 
 .level-hint {

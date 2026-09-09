@@ -356,6 +356,24 @@ tr.row-highlight td {
   background: rgba(232, 164, 143, 0.16);
 }
 
+/* The <th> header row (style.css) is `position: sticky; top: 0` inside
+   .table-wrap's own scroll container, so it stays pinned over the top of
+   the table while scrolling. Native scrollIntoView({ block: 'nearest' })
+   has no idea that overlay exists, though: when rollHighlight.js scrolls
+   UP to a row above the current view, it stops the instant the row's top
+   edge reaches the container's top edge — which is exactly where the
+   sticky header sits, so the row that just lit up ends up hidden behind
+   it. scroll-margin-top tells scrollIntoView to treat the header's height
+   as off-limits too, so it scrolls a bit further and the row lands
+   visible just below the header instead. (Scrolling down to a row below
+   the view isn't affected — nothing covers the bottom edge.)
+   ~2.0625rem is the header's actual measured height (0.5rem padding top
+   + bottom, ~0.9rem line height, 1px borders); rounded up to 2.25rem for
+   a small visual gap rather than the row landing flush against it. */
+tbody tr {
+  scroll-margin-top: 2.25rem;
+}
+
 .sort-arrow {
   color: var(--accent-light);
   font-size: 0.7rem;

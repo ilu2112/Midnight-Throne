@@ -1,6 +1,10 @@
 # Midnight Throne
 
-A reference-table and bestiary browser for the *Ker Nethalas — Gravebound Edition* tabletop RPG, built with Vue 3, Vite, and Vue Router. All content is extracted from the rulebook PDF into structured JSON and rendered as a searchable, cross-linked web app.
+This is a fan-made companion app for the *Ker Nethalas — Gravebound Edition* tabletop RPG — a quick way to look up the rulebook's tables, browse the bestiary, and run a couple of small tools for a session (Room Generator, Locks & Traps) instead of flipping through the PDF.
+
+## About the code
+
+This project is vibe-coded: built by talking to Claude Code rather than being hand-written line by line. That's also why the code is the way it is — if something looks inconsistent or overengineered in places, that's the reason.
 
 ## Features
 

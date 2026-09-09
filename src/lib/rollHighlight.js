@@ -7,7 +7,7 @@
 // registry entry says "this table reacts to the dice dock", the column name
 // already says which die it wants.
 import { ref, watch, nextTick } from 'vue'
-import { isRolling, diceResults, D100_SECOND_KEY } from './dice'
+import { isRolling, diceResults } from './dice'
 import { settings } from './settings'
 
 const DIE_COLUMN_PATTERN = /^D\s?(\d+)$/i
@@ -23,21 +23,16 @@ export function dieSizeFromColumn(col) {
   return trimmed.toUpperCase() === 'D%' ? 100 : null
 }
 
-// The currently rolled value(s) for a given die size — an array since D100
-// can have a second, independent roll stacked in the dock (see
-// D100_SECOND_KEY in lib/dice.js); every other size has exactly one current
-// value. A table keyed on D100 (e.g. Events, Mundane Items) can therefore
-// highlight two rows at once, one per roll — but only while the Settings
-// page's "second D100 roll" toggle is actually on; with it off, the dock
-// itself never shows or uses that second roll (see DiceDock.vue), so
-// matching against it here would just highlight a row nobody asked about.
-function rolledValuesFor(sides) {
-  if (sides === 100) {
-    const rolls = [diceResults.value[100]]
-    if (settings.value.topDockEnabled && settings.value.secondD100Enabled) rolls.push(diceResults.value[D100_SECOND_KEY])
-    return rolls
-  }
-  return [diceResults.value[sides]]
+// The currently rolled value for a given die size. D100 can have a second,
+// independent roll stacked in the dock (see D100_SECOND_KEY in lib/dice.js)
+// for opposed/percentile checks, but only the primary/top D100 result is
+// ever used for table highlighting — the second roll is a separate result
+// the player reads off the dock on its own, not something that should also
+// light up a row in every open table (that was flashing two rows at once
+// for D100-keyed tables, which is the bug this comment used to explain away
+// as intentional — it wasn't).
+function primaryRollFor(sides) {
+  return sides === 100 ? diceResults.value[100] : diceResults.value[sides]
 }
 
 // Same "5" or "4-6" / "19-20" range matching every table-driven roll in this
@@ -56,28 +51,26 @@ function cellMatchesRoll(cellValue, roll) {
 }
 
 // Given an array of row-like objects and the property name holding that
-// row's die value/range, returns the indices whose value matches ANY of
-// `sides`'s current roll(s).
+// row's die value/range, returns the indices whose value matches the
+// primary roll for `sides`. Normally at most one index (well-formed tables
+// cover the roll range without overlap), but returns every match just in
+// case.
 export function matchingIndices(rows, dieKey, sides) {
-  const rolls = rolledValuesFor(sides)
+  const roll = primaryRollFor(sides)
   const out = []
   rows.forEach((row, i) => {
-    if (rolls.some((roll) => cellMatchesRoll(row[dieKey], roll))) out.push(i)
+    if (cellMatchesRoll(row[dieKey], roll)) out.push(i)
   })
   return out
 }
 
-// Which row to actually scroll to when a roll matches more than one (a
-// D100 table can match both the primary and the secondary roll at once —
-// see rolledValuesFor). The dock always keeps the primary/top D100 result
-// as the "current" one people read off first, so that's the row that should
-// end up in view — not just whichever matching row happens to sort first in
-// the table. Returns -1 if the primary roll itself doesn't match anything
-// (can happen for a D100 table when only the secondary roll landed on a
-// valid row, though every row should normally cover the full 1-100 range).
+// Which row to scroll to — same primary-roll match as matchingIndices,
+// exposed separately for callers that just want the one index (e.g. as a
+// scrollTo target) without building the full indices array themselves.
+// Returns -1 if the primary roll doesn't match any row.
 export function primaryMatchIndex(rows, dieKey, sides) {
-  const primaryRoll = rolledValuesFor(sides)[0]
-  return rows.findIndex((row) => cellMatchesRoll(row[dieKey], primaryRoll))
+  const roll = primaryRollFor(sides)
+  return rows.findIndex((row) => cellMatchesRoll(row[dieKey], roll))
 }
 
 // Wires up "on the next dice-dock roll that finishes (isRolling true ->
@@ -89,10 +82,9 @@ export function primaryMatchIndex(rows, dieKey, sides) {
 // `indices`) when this page's current table isn't keyed by a recognizable
 // die at all, or the roll for that die didn't land on any of its rows
 // (shouldn't normally happen for a well-formed table, but cheap to guard).
-// `scrollTo` names which of those indices to actually scroll into view —
-// for a D100 table that matched both rolls, that's the primary/top result
-// (see primaryMatchIndex), not just indices[0]; omit it (or pass -1) to
-// fall back to indices[0]. Re-run fresh on every call rather than cached,
+// `scrollTo` names which of those indices to actually scroll into view;
+// omit it (or pass -1) to fall back to indices[0]. Re-run fresh on every
+// call rather than cached,
 // since the "current table" a page is showing can itself change without a
 // remount (e.g. TableView.vue navigating between /table/:slug routes
 // reuses the same component instance).

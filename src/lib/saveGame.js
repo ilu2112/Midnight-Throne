@@ -43,7 +43,9 @@ function slugify(name) {
 function todayStamp() {
   const d = new Date()
   const pad = (n) => String(n).padStart(2, '0')
-  return `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
+  const date = `${d.getFullYear()}-${pad(d.getMonth() + 1)}-${pad(d.getDate())}`
+  const time = `${pad(d.getHours())}-${pad(d.getMinutes())}-${pad(d.getSeconds())}`
+  return `${date}_${time}`
 }
 
 export function saveFileName(characterName) {

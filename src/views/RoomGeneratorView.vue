@@ -237,6 +237,12 @@ function confirmClear() {
              XP" — the Overseer itself is worth +200 XP instead, but that's
              not something this simplified generator identifies on its own. -->
         <p v-if="result.hasCombat" class="note">Defeating it is worth <strong>+50 XP</strong>.</p>
+        <!-- Page 18 (Character Attributes, Toughness): "Characters recover
+             D4 Toughness immediately after a fight is over." This is a
+             universal rule, unlike the D4 Toughness recovery some Belt/Armor
+             magic properties grant (1-in-6 chance on their own D6 roll) — no
+             need to track those here, this always applies. -->
+        <p v-if="result.hasCombat" class="note">You also recover <strong>D4 Toughness</strong> immediately once the fight ends.</p>
         <p v-else class="note">No encounter.</p>
       </section>
 

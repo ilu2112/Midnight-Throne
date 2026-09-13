@@ -1,9 +1,9 @@
 <script setup>
 import { computed, ref } from 'vue'
-import { Download, Upload } from '@lucide/vue'
+import { Download, Upload, Plus, X } from '@lucide/vue'
 import { findTable } from '../registry'
 import { characterLevel, characterName } from '../lib/characterLevel'
-import { overseerInfluence, resistantDamageType, parseInfluence } from '../lib/overseerInfluence'
+import { overseerInfluences, addOverseerInfluence, removeOverseerInfluence, parseInfluence } from '../lib/overseerInfluence'
 import { downloadSave, loadSaveFromFile } from '../lib/saveGame'
 
 const overseerInfluenceTable = findTable('overseer_influence')
@@ -12,11 +12,14 @@ const overseerInfluenceOptions = computed(
 )
 
 // "Resistant" is rolled randomly against the Damage Type table (page 100)
-// rather than being a fixed effect, so a second dropdown appears only when
-// that's the active Influence, to record what it rolled.
-const isResistantActive = computed(
-  () => overseerInfluenceOptions.value.find((o) => o.d10 === overseerInfluence.value)?.name === 'Resistant',
-)
+// rather than being a fixed effect, so a second dropdown appears inline
+// under any row that landed on it, to record what it rolled. Nothing stops
+// a Domain from rolling the same Influence — Resistant included — more
+// than once over its lifetime, which is exactly why this is a list of
+// independent picks rather than one value (see lib/overseerInfluence.js).
+function isResistant(entry) {
+  return overseerInfluenceOptions.value.find((o) => o.d10 === entry.d10)?.name === 'Resistant'
+}
 const damageTypeTable = findTable('damage_type')
 const damageTypeOptions = computed(() => {
   const seen = new Set()
@@ -106,33 +109,55 @@ async function confirmLoad() {
       </div>
 
       <div class="level-col">
-        <label class="level-label" for="overseer-influence">Current Overseer Influence</label>
-        <select id="overseer-influence" v-model="overseerInfluence" class="level-input overseer-select">
-          <option :value="null">None</option>
-          <option v-for="opt in overseerInfluenceOptions" :key="opt.d10" :value="opt.d10">{{ opt.name }}</option>
-        </select>
+        <label class="level-label" id="overseer-influence-label">Current Overseer Influence(s)</label>
+
+        <div class="overseer-entries">
+          <div v-for="(entry, i) in overseerInfluences" :key="i" class="overseer-entry">
+            <div class="overseer-entry-row">
+              <select
+                v-model="entry.d10"
+                class="level-input overseer-select"
+                aria-labelledby="overseer-influence-label"
+              >
+                <option :value="null">None</option>
+                <option v-for="opt in overseerInfluenceOptions" :key="opt.d10" :value="opt.d10">{{ opt.name }}</option>
+              </select>
+              <button
+                type="button"
+                class="remove-influence-btn"
+                @click="removeOverseerInfluence(i)"
+                aria-label="Remove this Overseer Influence"
+                title="Remove"
+              >
+                <X :size="14" />
+              </button>
+            </div>
+
+            <select v-if="isResistant(entry)" v-model="entry.resistantDamageType" class="level-input overseer-select resistant-select">
+              <option :value="null">Resistant to — not rolled yet</option>
+              <option v-for="t in damageTypeOptions" :key="t" :value="t">Resistant to {{ t }}</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="button" class="btn-secondary add-influence-btn" @click="addOverseerInfluence">
+          <Plus :size="14" />
+          Add next
+        </button>
+
         <p class="level-hint">
-          Rolled once per Domain and applied to every creature in it (except the Overseer itself) — pick it here to see how it currently affects a monster's page.
+          Rolled once per Domain and applied to every creature in it (except the Overseer itself) — a Domain can roll more than one over its lifetime (even the same result twice), so add a row for each one to see how they currently stack on a monster's page.
         </p>
         <!-- Page 62 — the two Domain-scoped XP rewards, anchored here since
              this is the app's other per-Domain control. -->
         <p class="level-hint">
           Entering a new Domain is worth <strong>+50 XP</strong>; defeating its Overseer is worth <strong>+200 XP</strong>.
         </p>
-
-        <template v-if="isResistantActive">
-          <label class="level-label" for="resistant-damage-type">Resistant to</label>
-          <select id="resistant-damage-type" v-model="resistantDamageType" class="level-input overseer-select">
-            <option :value="null">Not rolled yet</option>
-            <option v-for="t in damageTypeOptions" :key="t" :value="t">{{ t }}</option>
-          </select>
-          <p class="level-hint">
-            "Resistant" rolls a random type on the
-            <router-link v-if="damageTypeTable" :to="`/table/${damageTypeTable.slug}`" class="hint-link">Damage Type</router-link>
-            <template v-else>Damage Type</template>
-            table (page 225) — pick what it rolled here to see it on a monster's page.
-          </p>
-        </template>
+        <p v-if="damageTypeTable" class="level-hint">
+          "Resistant" rolls a random type on the
+          <router-link :to="`/table/${damageTypeTable.slug}`" class="hint-link">Damage Type</router-link>
+          table (page 225) — pick what it rolled in that row's second dropdown.
+        </p>
       </div>
     </section>
 
@@ -255,6 +280,68 @@ async function confirmLoad() {
 .overseer-select {
   width: 100%;
   cursor: pointer;
+}
+
+/* Each Overseer Influence pick gets its own row (select + remove button),
+   stacked with its own inline Resistant sub-select right underneath when
+   that row landed on "Resistant" — flex-basis: 100% so this whole block
+   drops to its own line below the label, same as .level-hint does. */
+.overseer-entries {
+  flex-basis: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.overseer-entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.overseer-entry-row {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.overseer-entry-row .overseer-select {
+  flex: 1 1 auto;
+}
+
+.resistant-select {
+  /* Indented slightly so it visually reads as "belonging to" the row
+     above it rather than as its own independent Influence pick. */
+  margin-left: 1.4rem;
+  width: calc(100% - 1.4rem);
+}
+
+.remove-influence-btn {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text-faint);
+  cursor: pointer;
+}
+
+.remove-influence-btn:hover {
+  color: #e0473d;
+  border-color: #e0473d;
+}
+
+.add-influence-btn {
+  flex-basis: 100%;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.85rem;
 }
 
 .level-hint {

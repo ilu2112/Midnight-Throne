@@ -9,7 +9,7 @@ import { damageTypeProseSegments } from '../lib/damageTypeTooltips'
 import { conditionSegments, withConditionTooltips } from '../lib/conditionTooltips'
 import { starredMonsters } from '../lib/starred'
 import { characterLevel } from '../lib/characterLevel'
-import { overseerInfluence, resistantDamageType, parseInfluence } from '../lib/overseerInfluence'
+import { overseerInfluences, parseInfluence } from '../lib/overseerInfluence'
 import { fixedTooltip } from '../lib/fixedTooltip'
 import { matchingIndices, useRollHighlight } from '../lib/rollHighlight'
 
@@ -228,33 +228,46 @@ function hasLevelBonus(key) {
   return statBonus(key) > 0 || statNotes(key).length > 0
 }
 
-// The current Domain's Overseer Influence (rolled once per Domain, page
-// 100) applies to every creature in it — EXCEPT the Overseer itself (page
-// 98: "An Overseer is not affected by its own influence") — so it's
-// suppressed entirely on an Overseer's own page.
+// The current Domain's Overseer Influence(s) (rolled once per Domain, page
+// 100 — but nothing stops a Domain from rolling more than once over its
+// lifetime, even landing on the same result twice) apply to every creature
+// in it — EXCEPT the Overseer itself (page 98: "An Overseer is not affected
+// by its own influence") — so they're suppressed entirely on an Overseer's
+// own page. Each entry is resolved independently so two picks of the same
+// Influence (or two different "Resistant" rolls) both show up.
 const overseerInfluenceTable = findTable('overseer_influence')
-const activeOverseerInfluence = computed(() => {
-  if (overseerInfluence.value == null || monster.value?.OVERSEER) return null
-  const row = overseerInfluenceTable?.rows.find((r) => r.D10 === overseerInfluence.value)
-  const parsed = row ? parseInfluence(row['OVERSEER INFLUENCE']) : null
-  // "Resistant" is rolled randomly (page 100: "Roll on the Damage Type
-  // table") — once the type has been picked on Home, show the resolved
-  // type here instead of the generic "1 random type of damage" text.
-  if (parsed?.name === 'Resistant' && resistantDamageType.value) {
-    return { ...parsed, effect: `Resistant to ${resistantDamageType.value} damage.` }
-  }
-  return parsed
+const hasAnyInfluencePicked = computed(() => overseerInfluences.value.some((e) => e.d10 != null))
+const activeOverseerInfluences = computed(() => {
+  if (monster.value?.OVERSEER) return []
+  return overseerInfluences.value
+    .filter((e) => e.d10 != null)
+    .map((e) => {
+      const row = overseerInfluenceTable?.rows.find((r) => r.D10 === e.d10)
+      const parsed = row ? parseInfluence(row['OVERSEER INFLUENCE']) : null
+      if (!parsed) return null
+      // "Resistant" is rolled randomly (page 100: "Roll on the Damage Type
+      // table") — once the type has been picked on Home, show the resolved
+      // type here instead of the generic "1 random type of damage" text.
+      if (parsed.name === 'Resistant' && e.resistantDamageType) {
+        return { ...parsed, effect: `Resistant to ${e.resistantDamageType} damage.` }
+      }
+      return parsed
+    })
+    .filter(Boolean)
 })
 
 // Piercing doesn't boost a stat tile — it grants the whole Domain's
 // creatures an extra Trait, so it's surfaced there instead, in the same
-// bright purple used for the rest of the Overseer Influence UI.
+// bright purple used for the rest of the Overseer Influence UI. Rolling
+// Piercing more than once stacks — two picks grant +2 Penetrating, not +1.
 const OVERSEER_TRAIT_EFFECTS = {
   Piercing: { name: 'Penetrating', bonus: 1 },
 }
 const overseerTraitEffect = computed(() => {
-  const influence = activeOverseerInfluence.value
-  return influence ? OVERSEER_TRAIT_EFFECTS[influence.name] || null : null
+  const count = activeOverseerInfluences.value.filter((inf) => inf.name === 'Piercing').length
+  if (!count) return null
+  const base = OVERSEER_TRAIT_EFFECTS.Piercing
+  return { name: base.name, bonus: base.bonus * count }
 })
 
 // The rulebook says the grant "can stack with other instances of the same
@@ -325,19 +338,29 @@ const OVERSEER_STAT_EFFECTS = {
   Alert: { key: 'MIND', bonus: 20 },
 }
 
-function overseerEffectFor(key) {
-  const influence = activeOverseerInfluence.value
-  const effect = influence && OVERSEER_STAT_EFFECTS[influence.name]
-  return effect && effect.key === key ? { ...effect, text: influence.effect } : null
+// All active Influence picks whose effect touches this stat — normally at
+// most one, but a Domain that rolled e.g. Skilled twice gets two entries
+// here, and the numeric bonuses below are meant to stack for that case.
+function overseerEffectsFor(key) {
+  return activeOverseerInfluences.value
+    .map((inf) => {
+      const effect = OVERSEER_STAT_EFFECTS[inf.name]
+      return effect && effect.key === key ? { ...effect, text: inf.effect } : null
+    })
+    .filter(Boolean)
 }
 
 function overseerStatBonus(key) {
-  return overseerEffectFor(key)?.bonus || 0
+  return overseerEffectsFor(key).reduce((sum, e) => sum + (e.bonus || 0), 0)
 }
 
 function overseerStatNote(key) {
-  const effect = overseerEffectFor(key)
-  return effect?.note ? effect.text : null
+  const notes = overseerEffectsFor(key).filter((e) => e.note)
+  if (!notes.length) return null
+  // The descriptive text is identical every time the same Influence is
+  // picked again (e.g. two Vital rolls), so dedupe rather than repeating
+  // the same sentence twice.
+  return [...new Set(notes.map((e) => e.text))].join(' ')
 }
 
 function hasOverseerBonus(key) {
@@ -415,13 +438,15 @@ function statSlug(key) {
       </div>
     </section>
 
-    <section v-if="overseerInfluence != null" class="block overseer-banner">
+    <section v-if="hasAnyInfluencePicked" class="block overseer-banner">
       <h2>
         <Crown :size="15" class="overseer-icon" />
         Overseer Influence
       </h2>
-      <p v-if="activeOverseerInfluence"><strong>{{ activeOverseerInfluence.name }}:</strong> {{ activeOverseerInfluence.effect }}</p>
-      <p v-else class="note">This monster is the Overseer — it isn't affected by its own influence.</p>
+      <p v-if="monster.OVERSEER" class="note">This monster is the Overseer — it isn't affected by its own influence.</p>
+      <template v-else>
+        <p v-for="(inf, i) in activeOverseerInfluences" :key="i"><strong>{{ inf.name }}:</strong> {{ inf.effect }}</p>
+      </template>
     </section>
 
     <div class="detail-columns">

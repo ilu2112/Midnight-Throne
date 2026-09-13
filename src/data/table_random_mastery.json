@@ -1,93 +1,38 @@
 {
-  "source_file": "Ker_Nethalas_-_Gravebound_Edition_V1_2.pdf",
+  "source_file": "The_Book_of_Masteries.pdf",
   "title": "Masteries",
-  "page": 222,
+  "page": 8,
   "table_index_on_page": 1,
   "columns": [
-    "D20",
+    "D100",
     "RANDOM MASTERY"
   ],
-  "num_rows": 20,
+  "num_rows": 25,
   "rows": [
-    {
-      "D20": 1,
-      "RANDOM MASTERY": "Abyssal Reaver"
-    },
-    {
-      "D20": 2,
-      "RANDOM MASTERY": "Arcanist"
-    },
-    {
-      "D20": 3,
-      "RANDOM MASTERY": "Brawler"
-    },
-    {
-      "D20": 4,
-      "RANDOM MASTERY": "Bulwark"
-    },
-    {
-      "D20": 5,
-      "RANDOM MASTERY": "Duskblade"
-    },
-    {
-      "D20": 6,
-      "RANDOM MASTERY": "Emissary"
-    },
-    {
-      "D20": 7,
-      "RANDOM MASTERY": "Flamecaster"
-    },
-    {
-      "D20": 8,
-      "RANDOM MASTERY": "Frostweaver"
-    },
-    {
-      "D20": 9,
-      "RANDOM MASTERY": "Gravecaller"
-    },
-    {
-      "D20": 10,
-      "RANDOM MASTERY": "Hexmancer"
-    },
-    {
-      "D20": 11,
-      "RANDOM MASTERY": "Icon Caller"
-    },
-    {
-      "D20": 12,
-      "RANDOM MASTERY": "Mindbinder"
-    },
-    {
-      "D20": 13,
-      "RANDOM MASTERY": "Ritualist"
-    },
-    {
-      "D20": 14,
-      "RANDOM MASTERY": "Stormbrand"
-    },
-    {
-      "D20": 15,
-      "RANDOM MASTERY": "Tracker"
-    },
-    {
-      "D20": 16,
-      "RANDOM MASTERY": "Umbra Phantom"
-    },
-    {
-      "D20": 17,
-      "RANDOM MASTERY": "Weapon Master"
-    },
-    {
-      "D20": 18,
-      "RANDOM MASTERY": "Wraith"
-    },
-    {
-      "D20": 19,
-      "RANDOM MASTERY": "Wrathspawn"
-    },
-    {
-      "D20": 20,
-      "RANDOM MASTERY": "Zealot"
-    }
+    { "D100": "01-04", "RANDOM MASTERY": "Abyssal Reaver" },
+    { "D100": "05-08", "RANDOM MASTERY": "Arcanist" },
+    { "D100": "09-12", "RANDOM MASTERY": "Archivist" },
+    { "D100": "13-16", "RANDOM MASTERY": "Blood Adept" },
+    { "D100": "17-20", "RANDOM MASTERY": "Brawler" },
+    { "D100": "21-24", "RANDOM MASTERY": "Caustic Blade" },
+    { "D100": "25-28", "RANDOM MASTERY": "Commander" },
+    { "D100": "29-32", "RANDOM MASTERY": "Bulwark" },
+    { "D100": "33-36", "RANDOM MASTERY": "Duskblade" },
+    { "D100": "37-40", "RANDOM MASTERY": "Emissary" },
+    { "D100": "41-44", "RANDOM MASTERY": "Flamecaster" },
+    { "D100": "45-48", "RANDOM MASTERY": "Frostweaver" },
+    { "D100": "49-52", "RANDOM MASTERY": "Gravecaller" },
+    { "D100": "53-56", "RANDOM MASTERY": "Hexmancer" },
+    { "D100": "57-60", "RANDOM MASTERY": "Icon Caller" },
+    { "D100": "61-64", "RANDOM MASTERY": "Mindbinder" },
+    { "D100": "65-68", "RANDOM MASTERY": "Ritualist" },
+    { "D100": "69-72", "RANDOM MASTERY": "Stormbrand" },
+    { "D100": "73-76", "RANDOM MASTERY": "Thornbinder" },
+    { "D100": "77-80", "RANDOM MASTERY": "Tracker" },
+    { "D100": "81-84", "RANDOM MASTERY": "Umbra Phantom" },
+    { "D100": "85-88", "RANDOM MASTERY": "Weapon Master" },
+    { "D100": "89-92", "RANDOM MASTERY": "Wraith" },
+    { "D100": "93-96", "RANDOM MASTERY": "Wrathspawn" },
+    { "D100": "97-100", "RANDOM MASTERY": "Zealot" }
   ]
 }
